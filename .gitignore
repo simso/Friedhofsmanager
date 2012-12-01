@@ -1,1 +1,9 @@
 /Icon.jpg
+.DS_Store
+/lib/.DS_Store
+/lib/natives/.DS_Store
+/out/artifacts/.DS_Store
+/out/artifacts/Friedhofsmanager_jar/.DS_Store
+/res/de/fhflensburg/.DS_Store
+/res/de/fhflensburg/graveyardmanager/.DS_Store
+out
