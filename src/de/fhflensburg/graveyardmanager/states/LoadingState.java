@@ -46,7 +46,7 @@ public class LoadingState extends BasicGameState
 	public void init(GameContainer container, StateBasedGame sbgame) throws SlickException
 	{
 		this.game = sbgame;
-		this.loading = new Image("de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg");
+		this.loading = new Image("de/fhflensburg/graveyardmanager/images/splash.jpg");
 
 	}
 

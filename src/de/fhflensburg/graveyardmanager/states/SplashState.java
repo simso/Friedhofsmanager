@@ -70,7 +70,7 @@ public class SplashState extends BasicGameState
 		container = gameContainer;
 		fot = new FadeOutTransition(Color.black);
 		fit = new FadeInTransition(Color.black);
-		splash = new Image("de/fhflensburg/games/graveyardmanager/Graphics/slick.png");
+		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
 
 
 	}

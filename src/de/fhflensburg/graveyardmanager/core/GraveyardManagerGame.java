@@ -26,18 +26,6 @@ public class GraveyardManagerGame extends StateBasedGame
 	/** The current version of the game */
 	public static final String VERSION = "1.0.0-Alpha";
 
-	/** The height of the game window */
-	public static int resolutionHeight = 1024;
-
-	/** The width of the game window */
-	public static int resolutionWidth = 768;
-
-	/** Flag for fullscreen */
-	public static final boolean fullscreen = false;
-
-	/** Flag for debug mode */
-	public static final boolean debugMode = false;
-
 	/**
 	 * Generate game state ids
 	 */
@@ -54,15 +42,6 @@ public class GraveyardManagerGame extends StateBasedGame
 
 	/**
 	 * The constructor
-	 * @param title The title/name of the game
-	 */
-//	public GraveyardManagerGame(String title)
-//	{
-//		super(title);
-//	}
-
-	/**
-	 * The constructor
 	 *
 	 * @param configurationFile The path to the configuration file
 	 * @throws IOException
@@ -73,18 +52,6 @@ public class GraveyardManagerGame extends StateBasedGame
 		super(GAMETITLE);
 		Configuration.init(configurationFile);
 	}
-
-//	public static void main(String[] argv)
-//	{
-//		try {
-//			AppGameContainer container = new AppGameContainer(new GraveyardManagerGame(GAMETITLE));
-//			container.setDisplayMode(resolutionHeight, resolutionWidth, fullscreen);
-//			container.start();
-//		} catch (SlickException e)
-//		{
-//			e.printStackTrace();
-//		}
-//	}
 
 	/**
 	 * Register the different game states to the game
@@ -113,6 +80,12 @@ public class GraveyardManagerGame extends StateBasedGame
 		}
 	}
 
+	/**
+	 * Our entry point to start the game
+	 *
+	 * @throws SlickException
+	 * @throws IOException
+	 */
 	public void start() throws SlickException, IOException
 	{
 		AppGameContainer container = new AppGameContainer(this);
@@ -134,5 +107,11 @@ public class GraveyardManagerGame extends StateBasedGame
 		Configuration.updateConfigFile();
 		container.setDisplayMode(Configuration.getWidth(), Configuration.getHeight(), Configuration.isFullScreen());
 		container.setVerbose(Configuration.isDebugMode() ? true : false);
+		container.setShowFPS(Configuration.isDebugMode() ? true : false);
+	}
+
+	public void setCurrentConfiguration() throws IOException, SlickException
+	{
+		setCurrentConfiguration((AppGameContainer) this.getContainer());
 	}
 }

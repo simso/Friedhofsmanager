@@ -1,6 +1,7 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.utils.Configuration;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -70,7 +71,7 @@ public class MenuState extends BasicGameState
 		container = gameContainer;
 		fot = new FadeOutTransition(Color.black);
 		fit = new FadeInTransition(Color.black);
-		backgroundImage = new Image("de/fhflensburg/games/graveyardmanager/Graphics/menu_plain.png");
+		backgroundImage = new Image("de/fhflensburg/graveyardmanager/images/menu_plain.png");
 	}
 
 	@Override
@@ -79,7 +80,7 @@ public class MenuState extends BasicGameState
 		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
 		g.setColor(Color.black);
 
-		if (GraveyardManagerGame.debugMode)
+		if (Configuration.isDebugMode())
 		{
 			g.drawString("Window height: " + container.getHeight(), 0, 0);
 			g.drawString("Window width: " + container.getWidth(), 0, 20);

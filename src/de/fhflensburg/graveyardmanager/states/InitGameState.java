@@ -84,9 +84,9 @@ public class InitGameState extends BasicGameState
 		container = gameContainer;
 		fot = new FadeOutTransition(Color.black);
 		fit = new FadeInTransition(Color.black);
-		loading = new Image("de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg");
-		new Image("de/fhflensburg/games/graveyardmanager/Graphics/menu_plain.png");
-		new Image("de/fhflensburg/games/graveyardmanager/Graphics/slick.png");
+		loading = new Image("de/fhflensburg/graveyardmanager/images/splash.jpg");
+		new Image("de/fhflensburg/graveyardmanager/images/menu_plain.png");
+		new Image("de/fhflensburg/graveyardmanager/images/slick.png");
 	}
 
 	@Override
