@@ -11,6 +11,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/resources/inherit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/resources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/Start.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.GameStates.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/EndGameState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/InGameState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/InitGameState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/LoadingState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/MenuState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/PauseState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/SplashState.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/GameSettings.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/Configuration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/deprecated-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/help-doc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index-all.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-summary.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/package-list" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javadoc/stylesheet.css" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/lib/jinput.jar" afterPath="$PROJECT_DIR$/libs/jinput.jar" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/lib/lwjgl.jar" afterPath="$PROJECT_DIR$/libs/lwjgl.jar" />
@@ -36,6 +79,7 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/menu_plain.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/menu_plain.png" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/slick.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/slick.png" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/splash.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Friedhofsmanager_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Friedhofsmanager_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/sok.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/sok.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
