@@ -1,5 +1,6 @@
-package de.fhflensburg.graveyardmanager;
+package de.fhflensburg.games.graveyardmanager.states;
 
+import de.fhflensburg.games.graveyardmanager.GraveyardManagerGame;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -9,46 +10,53 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
  * Casual Game im Kurs Game Design an der FH Flensburg
- * <p/>
+ *
  * Created with IntelliJ IDEA.
  * Author: Stefano Kowalke
  * Date: 28.11.12
- * Time: 18:11
+ * Time: 00:11
  */
-public class SplashState extends BasicGameState
+public class LoadingState extends BasicGameState
 {
-	public final int id;
-
-	public Image splash;
-
-	public StateBasedGame game;
+	// The game holding this state
+	private StateBasedGame game;
 
 	private static final int delay = 2000;
 	private int elapsedTime;
 
-	public SplashState(int id)
+	// The game id
+	private int ID;
+
+	// The splash screen
+	Image loading;
+	Image slickLogo;
+
+	public LoadingState(int id)
 	{
-		this.id = id;
+		this.ID = id;
 	}
 
 	@Override
 	public int getID()
 	{
-		return this.id;
+		return this.ID;
 	}
 
 	@Override
 	public void init(GameContainer container, StateBasedGame sbgame) throws SlickException
 	{
 		this.game = sbgame;
-		this.splash = new Image("de/fhflensburg/graveyardmanager/Graphics/slick.png");
+		this.loading = new Image("de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg");
+
 	}
 
 	@Override
 	public void render(GameContainer container, StateBasedGame sbgame, Graphics g) throws SlickException
 	{
-		splash.draw((container.getWidth()/2) - (splash.getWidth()/2),(container.getHeight()/2) - (splash.getHeight()/2));
-		g.drawString(String.valueOf(container.getHeight()), 0, 0);
+
+		//this.loading.draw((container.getWidth()/2) - (loading.getWidth()/2), (container.getHeight()/2) - (loading.getHeight()/2));
+		this.loading.draw(0,0,1024,768);
+
 	}
 
 	@Override
@@ -59,7 +67,7 @@ public class SplashState extends BasicGameState
 		if (elapsedTime > delay)
 		{
 			elapsedTime = 0;
-			game.enterState(Game.GameStates.INITGAME.ordinal(), new FadeOutTransition(), new FadeInTransition());
+			game.enterState(GraveyardManagerGame.GameStates.MENU.ordinal(), new FadeOutTransition(), new FadeInTransition());
 		}
 	}
 }

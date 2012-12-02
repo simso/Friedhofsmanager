@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Module 'Friedhofsmanager'" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="Friedhofsmanager:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="" />
+    <list default="true" id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/EndGameState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InGameState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/MenuState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/PauseState.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/CreditState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Helpers.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InGameState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/MenuState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Moin.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PauseState.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/SplashState.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics/menu_plain.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/menu_plain.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics/slick.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/slick.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics/splash.jpg" afterPath="$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Game.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/GraveyardManagerGame.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InitGameState.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InitGameState.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/LoadingState.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/LoadingState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/slick.jar" afterPath="$PROJECT_DIR$/lib/slick.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/sok.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/sok.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    </list>
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,19 +90,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Game.java">
+      <file leaf-file-name="GraveyardManagerGame.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/GraveyardManagerGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="60" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InGameState.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InGameState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="22" selection-start="661" selection-end="661" vertical-scroll-proportion="0.21172023">
+            <state line="35" column="51" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.5562914">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,55 +101,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PauseState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PauseState.java">
+      <file leaf-file-name="InGameState.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InGameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="32" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+            <state line="81" column="56" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PauseState.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/PauseState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="52" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="InitGameState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InitGameState.java">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InitGameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="63" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0">
+            <state line="142" column="57" selection-start="3603" selection-end="3603" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/CreditState.java">
+      <file leaf-file-name="EndGameState.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/EndGameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="80" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0">
+            <state line="33" column="7" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MenuState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/MenuState.java">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/MenuState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="8" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0">
+            <state line="81" column="32" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="SplashState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/SplashState.java">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/SplashState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="8" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LoadingState.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/LoadingState.java">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/LoadingState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="80" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
+            <state line="69" column="50" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,7 +167,7 @@
       <file leaf-file-name="GameSettings.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/GameSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+            <state line="26" column="57" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,18 +186,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Moin.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PongGame.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Helpers.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/GameSettings.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InitGameState.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/CreditState.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/LoadingState.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/MenuState.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/SplashState.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Game.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PauseState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InitGameState.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InGameState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PauseState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/CreditState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/EndGameState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Game.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/GraveyardManagerGame.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InitGameState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InGameState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/LoadingState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/MenuState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/PauseState.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/SplashState.java" />
       </list>
     </option>
   </component>
@@ -210,6 +241,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemId" value="fhflensburg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,66 +319,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fhflensburg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="graveyardmanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graveyardmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Graphics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TheGame" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -351,19 +346,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/de/fhflensburg" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="Mercurial.Project" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -384,15 +380,16 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.fhflensburg.graveyardmanager" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="de.fhflensburg.graveyardmanager" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.fhflensburg.games.graveyardmanager" />
+      <recent name="de.fhflensburg.graveyardmanager" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Game">
+  <component name="RunManager" selected="Application.GraveyardManagerGame">
     <configuration default="false" name="Moin" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="de.fhflensburg.graveyardmanager.Moin" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=lib/natives" />
@@ -409,8 +406,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Game" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="de.fhflensburg.graveyardmanager.Game" />
+    <configuration default="false" name="GraveyardManagerGame" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="de.fhflensburg.games.graveyardmanager.GraveyardManagerGame" />
       <option name="VM_PARAMETERS" value="-Djava.library.path=lib/natives" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -544,7 +541,7 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Moin" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GraveyardManagerGame" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -585,24 +582,27 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.4935065" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114854515" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5073052" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.21745789" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25892857" sideWeight="0.8851455" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25892857" sideWeight="0.6707504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.48701298" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="ArgoUML Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6707504" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="ArgoUML Details" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="ArgoUML Editor" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54383117" sideWeight="0.6707504" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -684,69 +684,85 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Moin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics/slick.png">
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/slick.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/Graphics/splash.jpg">
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Helpers.java">
+    <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/state/BasicGameState.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" />
+        <state line="41" column="27" selection-start="1552" selection-end="1563" vertical-scroll-proportion="0.7293447" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/Game.java">
+    <entry file="jar://$PROJECT_DIR$/lib/slick.jar!/org/newdawn/slick/Game.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="60" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.0" />
+        <state line="2" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.045584045" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/PauseState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InGameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="32" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0" />
+        <state line="81" column="56" selection-start="2080" selection-end="2080" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InitGameState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/PauseState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="63" selection-start="1601" selection-end="1601" vertical-scroll-proportion="0.0" />
+        <state line="67" column="52" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/CreditState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/InitGameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="80" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.0" />
+        <state line="142" column="57" selection-start="3603" selection-end="3603" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/MenuState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/EndGameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="8" selection-start="1563" selection-end="1563" vertical-scroll-proportion="0.0" />
+        <state line="33" column="7" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/SplashState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/MenuState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="8" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0" />
+        <state line="81" column="32" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/LoadingState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/SplashState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="80" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0" />
+        <state line="18" column="13" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/states/LoadingState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="50" selection-start="1677" selection-end="1677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/GameSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="5" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" />
+        <state line="26" column="57" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/InGameState.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/games/graveyardmanager/GraveyardManagerGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="661" selection-end="661" vertical-scroll-proportion="0.21172023">
+        <state line="35" column="51" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.5562914">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -760,8 +776,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
               <type id="library" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>Friedhofsmanager:jar</last-edited>
@@ -777,7 +793,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit</last-edited>
+          <last-edited>TestNG</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

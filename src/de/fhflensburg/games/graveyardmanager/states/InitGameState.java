@@ -1,5 +1,6 @@
-package de.fhflensburg.graveyardmanager;
+package de.fhflensburg.games.graveyardmanager.states;
 
+import de.fhflensburg.games.graveyardmanager.GraveyardManagerGame;
 import org.newdawn.slick.*;
 import org.newdawn.slick.loading.DeferredResource;
 import org.newdawn.slick.loading.LoadingList;
@@ -13,7 +14,7 @@ import java.io.IOException;
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
  * Casual Game im Kurs Game Design an der FH Flensburg
- * <p/>
+ *
  * Created with IntelliJ IDEA.
  * Author: Stefano Kowalke
  * Date: 29.11.12
@@ -21,53 +22,75 @@ import java.io.IOException;
  */
 public class InitGameState extends BasicGameState
 {
-	// The game holding this state
+	/** The game holding this state */
 	private StateBasedGame game;
 
+	/** Holds the window where the game lives in */
+	private GameContainer container;
+
+	/** Loading image */
+	public Image loading;
+
+	/** Holds unique game id */
+	private final int id;
+
+	/** Shortcut for fadeout transition */
+	private FadeOutTransition fot;
+
+	/** Shortcut for fadein transition */
+	private FadeInTransition fit;
+
+	/** The music which could play during loading */
 	private Music music;
 
+	/** The sound which could play during loading */
 	private Sound sound;
 
-	// The splash screen
-	private Image loading;
-
+	/** The font we used for loading text */
 	private Font font;
 
-	// The next resource to load
+	/** The next resource to load */
 	private DeferredResource nextResource;
 
-	// True if we have loaded all the resources and started the game
+	/** True if we have loaded all the resources and started the game */
 	private boolean started;
 
-	// The game id
-	private int ID;
-
-
-
-
+	/**
+	 * The constructor of this class
+	 *
+	 * @param id
+	 */
 	public InitGameState(int id)
 	{
-		this.ID = id;
+		this.id = id;
 	}
 
+	/**
+	 * Returns the id of the state
+	 *
+	 * @return int id
+	 */
 	@Override
 	public int getID()
 	{
-		return this.ID;
+		return id;
 	}
 
 	@Override
-	public void init(GameContainer container, StateBasedGame sbgame) throws SlickException
+	public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
 		LoadingList.setDeferredLoading(true);
-
-		this.loading = new Image("de/fhflensburg/graveyardmanager/Graphics/splash.jpg");
-		new Image("de/fhflensburg/graveyardmanager/Graphics/menu_plain.png");
-		new Image("de/fhflensburg/graveyardmanager/Graphics/slick.png");
+		game = stateBasedGame;
+		container = gameContainer;
+		fot = new FadeOutTransition(Color.black);
+		fit = new FadeInTransition(Color.black);
+		loading = new Image("de/fhflensburg/games/graveyardmanager/Graphics/splash.jpg");
+		new Image("de/fhflensburg/games/graveyardmanager/Graphics/menu_plain.png");
+		new Image("de/fhflensburg/games/graveyardmanager/Graphics/slick.png");
 	}
 
 	@Override
-	public void render(GameContainer container, StateBasedGame sbgame, Graphics g) throws SlickException
+	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		loading.draw(0,0,container.getWidth(),container.getScreenHeight());
 
@@ -91,7 +114,7 @@ public class InitGameState extends BasicGameState
 	}
 
 	@Override
-	public void update(GameContainer container, StateBasedGame game, int i) throws SlickException
+	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
 		if (nextResource != null)
 		{
@@ -117,7 +140,7 @@ public class InitGameState extends BasicGameState
 				started = true;
 //				music.loop();
 //				sound.play();
-				game.enterState(Game.GameStates.MENU.ordinal(), new FadeOutTransition(), new FadeInTransition());
+				game.enterState(GraveyardManagerGame.GameStates.MENU.ordinal(), fot, fit);
 			}
 		}
 	}

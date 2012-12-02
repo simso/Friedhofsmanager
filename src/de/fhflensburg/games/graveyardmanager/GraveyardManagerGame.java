@@ -1,5 +1,7 @@
-package de.fhflensburg.graveyardmanager;
+package de.fhflensburg.games.graveyardmanager;
 
+import de.fhflensburg.games.graveyardmanager.states.*;
+import de.fhflensburg.games.graveyardmanager.states.LoadingState;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
@@ -14,16 +16,21 @@ import org.newdawn.slick.state.StateBasedGame;
  * Date: 28.11.12
  * Time: 00:02
  */
-public class Game extends StateBasedGame
+public class GraveyardManagerGame extends StateBasedGame
 {
-	/**
-	 * The name of the game
-	 */
+	/** The name of the game */
 	public static final String gameName = "Hodie mihi, Cras tibi - Der Friedhofsmanager";
 
+	/** The height of the game window */
 	public static int resolutionHeight = 1024;
+
+	/** The width of the game window */
 	public static int resolutionWidth = 768;
+
+	/** Flag for fullscreen */
 	public static final boolean fullscreen = false;
+
+	/** Flag for debug mode */
 	public static final boolean debugMode = false;
 
 
@@ -31,13 +38,13 @@ public class Game extends StateBasedGame
 	 * The constructor
 	 * @param title The title/name of the game
 	 */
-	public Game(String title)
+	public GraveyardManagerGame(String title)
 	{
 		super(title);
 	}
 
 	/**
-	 * Generate gamestates ids on the fly
+	 * Generate game state ids
 	 */
 	public enum GameStates {
 		SPLASH,
@@ -50,6 +57,24 @@ public class Game extends StateBasedGame
 		CREDITS
 	}
 
+	public static void main(String[] argv)
+	{
+		try {
+			AppGameContainer container = new AppGameContainer(new GraveyardManagerGame(gameName));
+			container.setDisplayMode(resolutionHeight, resolutionWidth, fullscreen);
+			container.start();
+		} catch (SlickException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Register the different game states to the game
+	 *
+	 * @param container
+	 * @throws SlickException
+	 */
 	@Override
 	public void initStatesList(GameContainer container) throws SlickException
 	{
@@ -59,8 +84,8 @@ public class Game extends StateBasedGame
 		addState(new MenuState(GameStates.MENU.ordinal()));
 		addState(new InGameState(GameStates.INGAME.ordinal()));
 		addState(new PauseState(GameStates.PAUSE.ordinal()));
-		addState(new CreditState(GameStates.CREDITS.ordinal()));
-//		addState(new OptionState());
+		addState(new EndGameState(GameStates.CREDITS.ordinal()));
+		//		addState(new OptionState());
 		if (!debugMode)
 		{
 			enterState(GameStates.SPLASH.ordinal());
@@ -68,18 +93,6 @@ public class Game extends StateBasedGame
 		else
 		{
 			enterState(GameStates.INITGAME.ordinal());
-		}
-	}
-
-	public static void main(String[] argv)
-	{
-		try {
-			AppGameContainer container = new AppGameContainer(new Game(gameName));
-			container.setDisplayMode(resolutionHeight, resolutionWidth, fullscreen);
-			container.start();
-		} catch (SlickException e)
-		{
-			e.printStackTrace();
 		}
 	}
 }
