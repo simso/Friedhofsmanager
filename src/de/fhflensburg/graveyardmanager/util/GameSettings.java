@@ -1,4 +1,4 @@
-package de.fhflensburg.graveyardmanager;
+package de.fhflensburg.graveyardmanager.util;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager

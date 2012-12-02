@@ -1,6 +1,6 @@
-package de.fhflensburg.games.graveyardmanager.states;
+package de.fhflensburg.graveyardmanager.states;
 
-import de.fhflensburg.games.graveyardmanager.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
