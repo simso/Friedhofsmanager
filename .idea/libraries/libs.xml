@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slick.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/twl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/xpp3-1.1.4c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/asm-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ibxm.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/kryo-1.01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/kryonet-1.01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/minlog-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/reflectasm-0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/resources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -22,19 +22,6 @@ public class PauseState extends BasicGameState
 	/** Holds the window where the game lives in */
 	private GameContainer container;
 
-	/** Holds unique game id */
-	private final int id;
-
-	/**
-	 * The constructor of this class
-	 *
-	 * @param id
-	 */
-	public PauseState(int id)
-	{
-		this.id = id;
-	}
-
 	/**
 	 * Returns the id of the state
 	 *
@@ -43,7 +30,7 @@ public class PauseState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.PAUSE.ordinal();
 	}
 
 	@Override

@@ -24,24 +24,11 @@ public class InGameState extends BasicGameState
 	/** Holds the window where the game lives in */
 	private GameContainer container;
 
-	/** Holds unique game id */
-	private final int id;
-
 	/** Shortcut for fadeout transition */
 	private FadeOutTransition fot;
 
 	/** Shortcut for fadein transition */
 	private FadeInTransition fit;
-
-	/**
-	 * The constructor of this class
-	 *
-	 * @param id
-	 */
-	public InGameState(int id)
-	{
-		this.id = id;
-	}
 
 	/**
 	 * Returns the id of the state
@@ -51,7 +38,7 @@ public class InGameState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.INGAME.ordinal();
 	}
 
 	@Override

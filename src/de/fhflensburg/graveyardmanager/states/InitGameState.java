@@ -31,9 +31,6 @@ public class InitGameState extends BasicGameState
 	/** Loading image */
 	public Image loading;
 
-	/** Holds unique game id */
-	private final int id;
-
 	/** Shortcut for fadeout transition */
 	private FadeOutTransition fot;
 
@@ -56,16 +53,6 @@ public class InitGameState extends BasicGameState
 	private boolean started;
 
 	/**
-	 * The constructor of this class
-	 *
-	 * @param id
-	 */
-	public InitGameState(int id)
-	{
-		this.id = id;
-	}
-
-	/**
 	 * Returns the id of the state
 	 *
 	 * @return int id
@@ -73,7 +60,7 @@ public class InitGameState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.INITGAME.ordinal();
 	}
 
 	@Override

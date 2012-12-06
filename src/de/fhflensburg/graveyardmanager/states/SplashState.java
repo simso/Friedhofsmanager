@@ -27,9 +27,6 @@ public class SplashState extends BasicGameState
 	/** Splash image */
 	public Image splash;
 
-	/** Holds unique game id */
-	private final int id;
-
 	/** Shortcut for fadeout transition */
 	private FadeOutTransition fot;
 
@@ -43,16 +40,6 @@ public class SplashState extends BasicGameState
 	private int elapsedTime;
 
 	/**
-	 * The constructor of this class
-	 *
-	 * @param id
-	 */
-	public SplashState(int id)
-	{
-		this.id = id;
-	}
-
-	/**
 	 * Returns the id of the state
 	 *
 	 * @return int id
@@ -60,7 +47,7 @@ public class SplashState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.SPLASH.ordinal();
 	}
 
 	@Override

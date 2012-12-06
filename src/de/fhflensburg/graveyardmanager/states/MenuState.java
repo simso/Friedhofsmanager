@@ -28,9 +28,6 @@ public class MenuState extends BasicGameState
 	/** Background image of the main menu */
 	Image backgroundImage;
 
-	/** Holds unique game id */
-	private final int id;
-
 	/** Main menu options */
 	private String[] options = new String[] {"Neues Spiel", "Spiel laden", "Optionen", "Spiel beerdigen"};
 
@@ -44,16 +41,6 @@ public class MenuState extends BasicGameState
 	private FadeInTransition fit;
 
 	/**
-	 * Constructor of the class
-	 *
-	 * @param id
-	 */
-	public MenuState(int id)
-	{
-		this.id = id;
-	}
-
-	/**
 	 * Returns the id of this state
 	 *
 	 * @return int id
@@ -61,7 +48,7 @@ public class MenuState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.MENU.ordinal();
 	}
 
 	@Override

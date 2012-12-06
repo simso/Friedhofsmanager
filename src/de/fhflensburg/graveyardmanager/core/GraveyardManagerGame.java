@@ -37,7 +37,8 @@ public class GraveyardManagerGame extends StateBasedGame
 		INGAME,
 		OPTIONS,
 		PAUSE,
-		CREDITS
+		CREDITS,
+		ENDGAME
 	}
 
 	/**
@@ -62,13 +63,13 @@ public class GraveyardManagerGame extends StateBasedGame
 	@Override
 	public void initStatesList(GameContainer container) throws SlickException
 	{
-		addState(new SplashState(GameStates.SPLASH.ordinal()));
-		addState(new InitGameState(GameStates.INITGAME.ordinal()));
-		addState(new LoadingState(GameStates.LOADING.ordinal()));
-		addState(new MenuState(GameStates.MENU.ordinal()));
-		addState(new InGameState(GameStates.INGAME.ordinal()));
-		addState(new PauseState(GameStates.PAUSE.ordinal()));
-		addState(new EndGameState(GameStates.CREDITS.ordinal()));
+		addState(new SplashState());
+		addState(new InitGameState());
+		addState(new LoadingState());
+		addState(new MenuState());
+		addState(new InGameState());
+		addState(new PauseState());
+		addState(new EndGameState());
 		//		addState(new OptionState());
 		if (!Configuration.isDebugMode())
 		{

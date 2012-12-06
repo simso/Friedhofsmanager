@@ -24,22 +24,13 @@ public class LoadingState extends BasicGameState
 	private static final int delay = 2000;
 	private int elapsedTime;
 
-	// The game id
-	private int ID;
-
 	// The splash screen
 	Image loading;
-	Image slickLogo;
-
-	public LoadingState(int id)
-	{
-		this.ID = id;
-	}
 
 	@Override
 	public int getID()
 	{
-		return this.ID;
+		return GraveyardManagerGame.GameStates.LOADING.ordinal();
 	}
 
 	@Override

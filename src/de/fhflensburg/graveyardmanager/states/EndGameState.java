@@ -1,5 +1,6 @@
 package de.fhflensburg.graveyardmanager.states;
 
+import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
@@ -23,19 +24,6 @@ public class EndGameState extends BasicGameState
 	/** Holds the window where the game lives in */
 	private GameContainer container;
 
-	/** Holds unique game id */
-	private final int id;
-
-	/**
-	 * The constructor of this class
-	 *
-	 * @param id
-	 */
-	public EndGameState(int id)
-	{
-		this.id = id;
-	}
-
 	/**
 	 * Returns the id of the state
 	 *
@@ -44,7 +32,7 @@ public class EndGameState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return id;
+		return GraveyardManagerGame.GameStates.ENDGAME.ordinal();
 	}
 
 	@Override
