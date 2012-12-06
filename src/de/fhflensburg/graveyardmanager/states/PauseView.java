@@ -1,22 +1,20 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-import org.newdawn.slick.GameContainer;
-import org.newdawn.slick.Graphics;
-import org.newdawn.slick.SlickException;
+import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
  * Casual Game im Kurs Game Design an der FH Flensburg
- * <p/>
+ *
  * Created with IntelliJ IDEA.
  * Author: Stefano Kowalke
  * Date: 29.11.12
- * Time: 17:57
+ * Time: 23:08
  */
-public class EndGameState extends BasicGameState
+public class PauseView extends BasicGameState
 {
 	/** The game holding this state */
 	private StateBasedGame game;
@@ -32,7 +30,7 @@ public class EndGameState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return GraveyardManagerGame.GameStates.ENDGAME.ordinal();
+		return GraveyardManagerGame.GameStates.PAUSE_STATE.ordinal();
 	}
 
 	@Override
@@ -45,12 +43,16 @@ public class EndGameState extends BasicGameState
 	@Override
 	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
-		//To change body of implemented methods use File | Settings | File Templates.
+		g.setColor(Color.white);
+		g.drawString("Pause", (float) container.getWidth() / 2, (float) container.getHeight() / 2);
 	}
 
 	@Override
 	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
-		container.exit();
+		if (container.getInput().isKeyPressed(Input.KEY_SPACE))
+		{
+			game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
+		}
 	}
 }

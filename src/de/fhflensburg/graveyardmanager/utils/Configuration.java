@@ -78,8 +78,18 @@ public class Configuration
 		return configurationFile.getProperty("debug").equals("true");
 	}
 
-	public static void toggleDebugMode(boolean debug)
+	public static void setDebugMode(boolean debug)
 	{
 		configurationFile.setProperty("debug", (debug) ? "true" : "false");
+	}
+
+	public static boolean isVSync()
+	{
+		return configurationFile.getProperty("vsync").equals("true");
+	}
+
+	public static void setVSync(boolean vsync)
+	{
+		configurationFile.setProperty("vsync", (vsync) ? "true" : "false");
 	}
 }

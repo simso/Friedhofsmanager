@@ -2,6 +2,7 @@ package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
+import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -17,22 +18,13 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
  * Date: 28.11.12
  * Time: 00:48
  */
-public class MenuState extends BasicGameState
+public class MainMenuView extends View
 {
-	/** The game holding this state */
-	private StateBasedGame game;
-
-	/** Holds the window where the game lives in */
-	private GameContainer container;
-
 	/** Background image of the main menu */
 	Image backgroundImage;
 
 	/** Main menu options */
 	private String[] options = new String[] {"Neues Spiel", "Spiel laden", "Optionen", "Spiel beerdigen"};
-
-	/** The index of the selected option */
-	private int selectedOption;
 
 	/** Shortcut for fadeout transition */
 	private FadeOutTransition fot;
@@ -48,29 +40,25 @@ public class MenuState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return GraveyardManagerGame.GameStates.MENU.ordinal();
+		return GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal();
 	}
 
 	@Override
-	public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	public void initResources()
 	{
-		game = stateBasedGame;
-		container = gameContainer;
-		fot = new FadeOutTransition(Color.black);
-		fit = new FadeInTransition(Color.black);
-		backgroundImage = new Image("de/fhflensburg/graveyardmanager/images/menu_plain.png");
+		backgroundImage = ResourceManager.getImage("menu_plain");
 	}
 
 	@Override
 	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
+		super.render(gameContainer, stateBasedGame, g);
 		g.setColor(Color.black);
 
 		if (Configuration.isDebugMode())
 		{
-			g.drawString("Window height: " + container.getHeight(), 0, 0);
-			g.drawString("Window width: " + container.getWidth(), 0, 20);
+			g.drawString(GraveyardManagerGame.VERSION, 5, container.getHeight() - 20);
 		}
 
 		g.drawString("Menu", 500f, 350f);
@@ -96,22 +84,22 @@ public class MenuState extends BasicGameState
 	{
 		if (key == Input.KEY_1)
 		{
-			game.enterState(GraveyardManagerGame.GameStates.INGAME.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal(), fot, fit);
 		}
 
 		if (key == Input.KEY_2)
 		{
-			game.enterState(GraveyardManagerGame.GameStates.LOADING.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.SAVE_LOAD_GAME_STATE.ordinal(), fot, fit);
 		}
 
 		if (key == Input.KEY_3)
 		{
-			game.enterState(GraveyardManagerGame.GameStates.OPTIONS.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.OPTION_MENU_STATE.ordinal(), fot, fit);
 		}
 
 		if (key == Input.KEY_4)
 		{
-			game.enterState(GraveyardManagerGame.GameStates.CREDITS.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.ENDGAME.ordinal(), fot, fit);
 		}
 	}
 }

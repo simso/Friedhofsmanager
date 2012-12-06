@@ -16,7 +16,7 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
  * Date: 28.11.12
  * Time: 00:11
  */
-public class LoadingState extends BasicGameState
+public class SaveLoadGameView extends BasicGameState
 {
 	// The game holding this state
 	private StateBasedGame game;
@@ -30,7 +30,7 @@ public class LoadingState extends BasicGameState
 	@Override
 	public int getID()
 	{
-		return GraveyardManagerGame.GameStates.LOADING.ordinal();
+		return GraveyardManagerGame.GameStates.SAVE_LOAD_GAME_STATE.ordinal();
 	}
 
 	@Override
@@ -58,7 +58,7 @@ public class LoadingState extends BasicGameState
 		if (elapsedTime > delay)
 		{
 			elapsedTime = 0;
-			game.enterState(GraveyardManagerGame.GameStates.MENU.ordinal(), new FadeOutTransition(), new FadeInTransition());
+			game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal(), new FadeOutTransition(), new FadeInTransition());
 		}
 	}
 }

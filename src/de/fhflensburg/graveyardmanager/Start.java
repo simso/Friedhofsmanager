@@ -26,7 +26,7 @@ public class Start
 	{
 		try
 		{
-			GraveyardManagerGame g = new GraveyardManagerGame("config/game.properties");
+			GraveyardManagerGame g = new GraveyardManagerGame("libs/resources.jar", "config/game.properties");
 			g.start();
 		}
 		catch (IOException e)
