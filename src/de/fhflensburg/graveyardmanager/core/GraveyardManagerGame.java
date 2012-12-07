@@ -73,8 +73,8 @@ public class GraveyardManagerGame extends StateBasedGame
 		addState(new LoadResourcesView(container));
 //		addState(new SaveLoadGameView());
 		addState(new MainMenuView());
-//		addState(new InGameView());
-//		addState(new PauseView());
+		addState(new InGameView());
+		addState(new PauseView());
 		addState(new EndGameView());
 		//		addState(new OptionState());
 		if (!Configuration.isDebugMode())

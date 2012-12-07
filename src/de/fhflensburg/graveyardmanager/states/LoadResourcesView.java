@@ -19,9 +19,6 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
  */
 public class LoadResourcesView extends View
 {
-	/** Holds the window where the game lives in */
-	private GameContainer container;
-
 	/** Loading images */
 	public Image[] backgroundImages;
 
@@ -78,10 +75,6 @@ public class LoadResourcesView extends View
 		{
 			e.printStackTrace();
 		}
-
-
-		fot = new FadeOutTransition(Color.black);
-		fit = new FadeInTransition(Color.black);
 	}
 
 	@Override

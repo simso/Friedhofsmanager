@@ -14,14 +14,8 @@ import org.newdawn.slick.state.StateBasedGame;
  * Date: 29.11.12
  * Time: 23:08
  */
-public class PauseView extends BasicGameState
+public class PauseView extends View
 {
-	/** The game holding this state */
-	private StateBasedGame game;
-
-	/** Holds the window where the game lives in */
-	private GameContainer container;
-
 	/**
 	 * Returns the id of the state
 	 *
@@ -34,10 +28,9 @@ public class PauseView extends BasicGameState
 	}
 
 	@Override
-	public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	public void initResources()
 	{
-		game = stateBasedGame;
-		container = gameContainer;
+
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package de.fhflensburg.graveyardmanager.utils;
 
+import de.fhflensburg.graveyardmanager.core.map.Map;
 import org.newdawn.slick.*;
 import org.newdawn.slick.loading.DeferredResource;
 import org.newdawn.slick.loading.LoadingList;
@@ -38,7 +39,7 @@ public class ResourceManager {
 
 	private static HashMap<String, AngelCodeFont> fonts = new HashMap<String, AngelCodeFont>();
 	private static HashMap<String, Image> images = new HashMap<String, Image>();
-	private static HashMap<String, TiledMap> maps = new HashMap<String, TiledMap>();
+	private static HashMap<String, Map> maps = new HashMap<String, Map>();
 	private static HashMap<String, Music> musics = new HashMap<String, Music>();
 	private static HashMap<String, Sound> sounds = new HashMap<String, Sound>();
 	private static HashMap<String, SpriteSheet> sprites = new HashMap<String, SpriteSheet>();
@@ -172,7 +173,7 @@ public class ResourceManager {
 	 *            the name of the map.
 	 * @return the requested map or null if the resource was not found.
 	 */
-	public static TiledMap getMap(String name) {
+	public static Map getMap(String name) {
 		return maps.get(name);
 	}
 
@@ -181,7 +182,7 @@ public class ResourceManager {
 	 *
 	 * @return a hashmap with all loaded maps.
 	 */
-	public static HashMap<String, TiledMap> getAllMaps() {
+	public static HashMap<String, Map> getAllMaps() {
 		return maps;
 	}
 
@@ -286,8 +287,7 @@ public class ResourceManager {
 
 		public void load() throws IOException {
 			try {
-//				TiledMap map = new TiledMap(name, Thread.currentThread().getContextClassLoader().getResourceAsStream(path), tilePath);
-				TiledMap map = new TiledMap(path);
+				Map map = new Map(name, Thread.currentThread().getContextClassLoader().getResourceAsStream(path), tilePath);
 				ResourceManager.maps.put(name, map);
 			} catch (SlickException e1) {
 				e1.printStackTrace();
