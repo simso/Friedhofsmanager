@@ -5,6 +5,7 @@
     </property>
 
     <target name="jar-resources">
+        <delete file="libs/resources.jar" />
         <jar destfile="libs/resources.jar" basedir="." includes="res/**" />
     </target>
 
