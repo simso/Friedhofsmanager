@@ -17,20 +17,8 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
  */
 public class SplashView extends View
 {
-	/** The game holding this state */
-	private StateBasedGame game;
-
-	/** Holds the window where the game lives in */
-	private GameContainer container;
-
 	/** Splash image */
 	public Image splash;
-
-	/** Shortcut for fadeout transition */
-	private FadeOutTransition fot;
-
-	/** Shortcut for fadein transition */
-	private FadeInTransition fit;
 
 	/** Defines the duration in ms how long the splash screen will be shown */
 	private static final int delay = 2000;
@@ -52,13 +40,9 @@ public class SplashView extends View
 	@Override
 	public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		game = stateBasedGame;
-		container = gameContainer;
-		fot = new FadeOutTransition(Color.black);
-		fit = new FadeInTransition(Color.black);
 		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
-
-
+		container = gameContainer;
+		game = (GraveyardManagerGame) stateBasedGame;
 	}
 
 	@Override

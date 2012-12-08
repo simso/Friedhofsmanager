@@ -1,11 +1,14 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
+import org.newdawn.slick.state.transition.FadeInTransition;
+import org.newdawn.slick.state.transition.FadeOutTransition;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -25,6 +28,12 @@ public abstract class View extends BasicGameState
 	/** The game context */
 	protected GraveyardManagerGame game;
 
+	/** Shortcut for fadeout transition */
+	protected FadeOutTransition fot;
+
+	/** Shortcut for fadein transition */
+	protected FadeInTransition fit;
+
 	/** Flag if TWL is initialized */
 //	protected boolean initTWL;
 
@@ -34,6 +43,8 @@ public abstract class View extends BasicGameState
 	{
 		container = gameContainer;
 		game = (GraveyardManagerGame) stateBasedGame;
+		fot = new FadeOutTransition(Color.black);
+		fit = new FadeInTransition(Color.black);
 	}
 
 	@Override

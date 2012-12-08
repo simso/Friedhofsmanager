@@ -32,15 +32,9 @@ public class InGameView extends View
 	private PlayerInput input;
 	private int xScrollDecal;
 	private int yScrollDecal;
-	private boolean mouseRightPressed;
-	private boolean mouseLeftPressed;
+	//private boolean mouseRightPressed;
+	//private boolean mouseLeftPressed;
 	private float mouseScrollSpeed;
-
-	/** Shortcut for fadeout transition */
-	private FadeOutTransition fot;
-
-	/** Shortcut for fadein transition */
-	private FadeInTransition fit;
 
 	public InGameView()
 	{
@@ -62,15 +56,15 @@ public class InGameView extends View
 	@Override
 	public void initResources()
 	{
-		map = ResourceManager.getMap("testmap");
+		map = ResourceManager.getMap("Desert");
 		map.init(this);
 	}
 
 	@Override
 	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
-//		map.render(0, 0);
 		map.render(gameContainer, g, -xScrollDecal, -yScrollDecal);
+		map.renderMiniMap(g, gameContainer.getWidth() - 200 + 25, 25, 150, 150, -xScrollDecal, -yScrollDecal);
 	}
 
 	@Override
@@ -81,27 +75,25 @@ public class InGameView extends View
 		int mx = gameContainer.getInput().getMouseX();
 		int my = gameContainer.getInput().getMouseY();
 
-		mouseLeftPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
-		mouseRightPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON);
+		//mouseLeftPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
+		//mouseRightPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON);
 
 		// UPDATE SCROLL
 		if (/*!input.isPressedLeft() && */!container.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && map.isNeedScroll()) {
 			float s = (container.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON)) ? mouseScrollSpeed * delta * 2 : mouseScrollSpeed * delta;
 
 			xScrollDecal += (mx < LIMIT_BEFORE_SCROLL && xScrollDecal + s < 0) ? s : 0;
-			xScrollDecal -= (mx > container.getWidth() - LIMIT_BEFORE_SCROLL && xScrollDecal + s > container.getWidth() - map.getWidthInPixel()
-					- 200 /*gui.getWidth()*/) ? s : 0;
+			xScrollDecal -= (mx > container.getWidth() - LIMIT_BEFORE_SCROLL && xScrollDecal + s > container.getWidth() - map.getWidthInPixel()) ? s : 0;
 
 			yScrollDecal += (my < LIMIT_BEFORE_SCROLL && yScrollDecal + s < 0) ? s : 0;
-			yScrollDecal -= (my > container.getHeight() - LIMIT_BEFORE_SCROLL && yScrollDecal + s > container.getHeight() - map.getHeightInPixel()) ? s
-					: 0;
+			yScrollDecal -= (my > container.getHeight() - LIMIT_BEFORE_SCROLL && yScrollDecal + s > container.getHeight() - map.getHeightInPixel()) ? s : 0;
 
 			if (yScrollDecal + s < container.getHeight() - map.getHeightInPixel()) {
 				yScrollDecal = container.getHeight() - map.getHeightInPixel();
 			}
 
-			if (xScrollDecal + s < container.getWidth() - map.getWidthInPixel() - 200 /*gui.getWidth()*/) {
-				xScrollDecal = container.getWidth() - map.getWidthInPixel() - 200 /*gui.getWidth()*/;
+			if (xScrollDecal + s < container.getWidth() - map.getWidthInPixel()) {
+				xScrollDecal = container.getWidth() - map.getWidthInPixel();
 			}
 		}
 

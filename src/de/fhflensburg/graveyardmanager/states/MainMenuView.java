@@ -26,12 +26,6 @@ public class MainMenuView extends View
 	/** Main menu options */
 	private String[] options = new String[] {"Neues Spiel", "Spiel laden", "Optionen", "Spiel beerdigen"};
 
-	/** Shortcut for fadeout transition */
-	private FadeOutTransition fot;
-
-	/** Shortcut for fadein transition */
-	private FadeInTransition fit;
-
 	/**
 	 * Returns the id of this state
 	 *
