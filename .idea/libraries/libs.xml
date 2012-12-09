@@ -6,6 +6,8 @@
       <root url="jar://$PROJECT_DIR$/libs/lwjgl_util.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/slick.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/resources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jogg-0.0.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -1,5 +1,6 @@
 package de.fhflensburg.graveyardmanager.states;
 
+import de.fhflensburg.graveyardmanager.core.GameMusic;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.util.Timer;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
@@ -65,6 +66,8 @@ public class LoadResourcesView extends View
 	public void initResources()
 	{
 		try {
+			GameMusic.initMainTheme();
+			GameMusic.loopMainTheme();
 			for (int i = 0; i < backgroundImages.length; i++)
 			{
 				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/kerze" + (i + 1) + ".png");

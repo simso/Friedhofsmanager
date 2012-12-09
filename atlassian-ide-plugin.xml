@@ -1,5 +1,13 @@
 <atlassian-ide-plugin>
   <project-configuration>
-    <servers />
+    <servers>
+      <jira>
+        <server-id>79b3d63d-4edb-428b-802f-3c699a639293</server-id>
+        <name>Game Design [JIRA Server FH]</name>
+        <url>http://kahuna.inf.fh-flensburg.de:8080/jira</url>
+        <shared>false</shared>
+      </jira>
+    </servers>
+    <default-jira-server>79b3d63d-4edb-428b-802f-3c699a639293</default-jira-server>
   </project-configuration>
 </atlassian-ide-plugin>
