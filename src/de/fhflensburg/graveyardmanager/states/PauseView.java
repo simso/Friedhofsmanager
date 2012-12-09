@@ -1,6 +1,7 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -16,6 +17,17 @@ import org.newdawn.slick.state.StateBasedGame;
  */
 public class PauseView extends View
 {
+	/** Loading images */
+	public Image[] backgroundImages;
+
+	/** The animation of the candle */
+	public Animation candleAnimation;
+
+	public PauseView()
+	{
+		backgroundImages = new Image[7];
+	}
+
 	/**
 	 * Returns the id of the state
 	 *
@@ -30,14 +42,20 @@ public class PauseView extends View
 	@Override
 	public void initResources()
 	{
+		for (int i = 0; i < backgroundImages.length; i++)
+		{
+			backgroundImages[i] = ResourceManager.getImage("Kerze" + (i + 1));
+		}
 
+		candleAnimation = new Animation(backgroundImages, 110);
 	}
 
 	@Override
 	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		g.setColor(Color.white);
-		g.drawString("Pause", (float) container.getWidth() / 2, (float) container.getHeight() / 2);
+		candleAnimation.draw(0, 0, container.getWidth(), container.getHeight());
+		g.drawString("Pause", (float) container.getWidth() / 2, (float) container.getHeight() / 2 + 250);
 	}
 
 	@Override

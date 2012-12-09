@@ -50,7 +50,6 @@ public class Map extends TiledMap implements Comparable<Map>
 				water[x][y] = value.equals("true");
 			}
 		}
-		int i = 0;
 	}
 
 	public void init(InGameView engine)

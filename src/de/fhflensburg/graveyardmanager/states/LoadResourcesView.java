@@ -26,12 +26,6 @@ public class LoadResourcesView extends View
 	/** The animation of the candle */
 	public Animation candleAnimation;
 
-	/** Shortcut for fadeout transition */
-	private FadeOutTransition fot;
-
-	/** Shortcut for fadein transition */
-	private FadeInTransition fit;
-
 	private static final int WAIT_TIME_BEFORE_NEXTRESOURCE = 100;
 
 	private boolean finished;

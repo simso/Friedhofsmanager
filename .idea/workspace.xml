@@ -11,18 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/atlassian-ide-plugin.xml" afterPath="$PROJECT_DIR$/atlassian-ide-plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" />
     </list>
-    <list default="true" id="60f3d5f2-2be2-4303-b542-acad400044bd" name="GWIGD-20 - Sound hinzufügen" comment="GWIGD-20 - Sound hinzufügen&#10;">
+    <list default="true" id="b4d64b4e-d9c0-4d1a-a114-d71869d26c1b" name="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein." comment="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein.&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/resources.jar" afterPath="$PROJECT_DIR$/libs/resources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
     </list>
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/atlassian-ide-plugin.xml" changelist="60f3d5f2-2be2-4303-b542-acad400044bd" time="1355061441150" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java" line="52" class="de.fhflensburg.graveyardmanager.core.map.Map" package="de.fhflensburg.graveyardmanager.core.map">
+      <breakpoint url="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" line="46" class="de.fhflensburg.graveyardmanager.states.PauseView" package="de.fhflensburg.graveyardmanager.states">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -105,15 +104,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainMenuView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="73" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InGameView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -126,16 +116,7 @@
       <file leaf-file-name="LoadResourcesView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="38" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Graphics.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/Graphics.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="162" column="16" selection-start="7277" selection-end="7277" vertical-scroll-proportion="0.0">
+            <state line="88" column="82" selection-start="2334" selection-end="2383" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -171,16 +152,34 @@
       <file leaf-file-name="Map.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="27" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameMusic.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameMusic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GameMusic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="84" selection-start="605" selection-end="605" vertical-scroll-proportion="0.071428575">
+            <state line="23" column="84" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PauseView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="102" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.8123393">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/ResourceManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="165" column="0" selection-start="5009" selection-end="5009" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -208,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/PlayerInput.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" />
@@ -219,11 +217,12 @@
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/maps/Desert.tmx" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Sound.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Music.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GameMusic.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
       </list>
     </option>
   </component>
@@ -368,6 +367,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -631,9 +670,9 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="" />
-      <changelist id="60f3d5f2-2be2-4303-b542-acad400044bd" name="GWIGD-20 - Sound hinzufügen" comment="GWIGD-20 - Sound hinzufügen&#10;" />
+      <changelist id="b4d64b4e-d9c0-4d1a-a114-d71869d26c1b" name="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein." comment="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein.&#10;" />
       <created>1353516282550</created>
-      <updated>1355058101694</updated>
+      <updated>1355062062316</updated>
     </task>
     <servers />
   </component>
@@ -642,9 +681,9 @@
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Atlassian " active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.47166923" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6003063" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39969373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5073052" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -655,8 +694,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.21745789" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25892857" sideWeight="0.47166923" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5283308" sideWeight="0.48701298" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25892857" sideWeight="0.6707504" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5283308" sideWeight="0.48701298" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6707504" order="2" side_tool="false" content_ui="tabs" />
@@ -782,6 +822,15 @@
     <option name="recentlyOpenIssuess">
       <list>
         <IssueRecentlyOpenBean>
+          <option name="issueKey" value="GWIGD-22" />
+          <option name="issueUrl" value="http://kahuna.inf.fh-flensburg.de:8080/jira/browse/GWIGD-22" />
+          <option name="serverId">
+            <ServerIdImpl>
+              <option name="id" value="79b3d63d-4edb-428b-802f-3c699a639293" />
+            </ServerIdImpl>
+          </option>
+        </IssueRecentlyOpenBean>
+        <IssueRecentlyOpenBean>
           <option name="issueKey" value="GWIGD-20" />
           <option name="issueUrl" value="http://kahuna.inf.fh-flensburg.de:8080/jira/browse/GWIGD-20" />
           <option name="serverId">
@@ -806,16 +855,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/tiled/TiledMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="15" selection-start="2109" selection-end="2109" vertical-scroll-proportion="0.3133903" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/maps/Desert.tmx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="49" selection-start="616" selection-end="616" vertical-scroll-proportion="0.039893616" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="53" selection-start="191" selection-end="191" vertical-scroll-proportion="0.34532374" />
@@ -846,11 +885,6 @@
         <state line="66" column="108" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/Graphics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="162" column="16" selection-start="7277" selection-end="7277" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/SplashView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="36" selection-start="1253" selection-end="1253" vertical-scroll-proportion="0.0" />
@@ -866,26 +900,49 @@
         <state line="7" column="3" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="27" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Sound.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="2" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java">
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GameMusic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="38" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0">
+        <state line="23" column="84" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GameMusic.java">
+    <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/Graphics.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="84" selection-start="605" selection-end="605" vertical-scroll-proportion="0.071428575">
+        <state line="162" column="16" selection-start="7277" selection-end="7277" vertical-scroll-proportion="0.06130268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="82" selection-start="2334" selection-end="2383" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1411" selection-end="1411" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/ResourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="0" selection-start="5009" selection-end="5009" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="102" selection-start="1464" selection-end="1464" vertical-scroll-proportion="0.8123393">
           <folding />
         </state>
       </provider>
