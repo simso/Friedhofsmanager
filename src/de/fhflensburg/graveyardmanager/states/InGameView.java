@@ -1,5 +1,6 @@
 package de.fhflensburg.graveyardmanager.states;
 
+import de.fhflensburg.graveyardmanager.core.GameSound;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.core.PlayerInput;
 import de.fhflensburg.graveyardmanager.core.map.Map;
@@ -33,7 +34,7 @@ public class InGameView extends View
 	private int xScrollDecal;
 	private int yScrollDecal;
 	//private boolean mouseRightPressed;
-	//private boolean mouseLeftPressed;
+	private boolean mouseLeftPressed;
 	private float mouseScrollSpeed;
 
 	public InGameView()
@@ -75,8 +76,13 @@ public class InGameView extends View
 		int mx = gameContainer.getInput().getMouseX();
 		int my = gameContainer.getInput().getMouseY();
 
-		//mouseLeftPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
+		mouseLeftPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
 		//mouseRightPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON);
+
+		if (mouseLeftPressed)
+		{
+			GameSound.inGameMouseClick();
+		}
 
 		// UPDATE SCROLL
 		if (/*!input.isPressedLeft() && */!container.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && map.isNeedScroll()) {
