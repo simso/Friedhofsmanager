@@ -2,6 +2,7 @@ package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -28,6 +29,18 @@ public class PauseView extends View
 		backgroundImages = new Image[7];
 	}
 
+	@Override
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
 	/**
 	 * Returns the id of the state
 	 *
@@ -51,7 +64,7 @@ public class PauseView extends View
 	}
 
 	@Override
-	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		g.setColor(Color.white);
 		candleAnimation.draw(0, 0, container.getWidth(), container.getHeight());
@@ -59,11 +72,17 @@ public class PauseView extends View
 	}
 
 	@Override
-	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
+	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
 		if (container.getInput().isKeyPressed(Input.KEY_SPACE))
 		{
 			game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
 		}
+	}
+
+	@Override
+	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

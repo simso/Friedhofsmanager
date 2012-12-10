@@ -3,6 +3,7 @@ package de.fhflensburg.graveyardmanager.core;
 import de.fhflensburg.graveyardmanager.states.*;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.slick2d.NiftyStateBasedGame;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
@@ -21,7 +22,7 @@ import java.util.ArrayList;
  * Date: 28.11.12
  * Time: 00:02
  */
-public class GraveyardManagerGame extends StateBasedGame
+public class GraveyardManagerGame extends NiftyStateBasedGame
 {
 	/** The name of the game */
 	public static final String GAMETITLE = "Hodie mihi, Cras tibi - Der Friedhofsmanager";

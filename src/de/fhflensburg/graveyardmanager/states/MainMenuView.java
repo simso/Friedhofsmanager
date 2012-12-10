@@ -3,6 +3,7 @@ package de.fhflensburg.graveyardmanager.states;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
@@ -43,30 +44,7 @@ public class MainMenuView extends View
 		backgroundImage = ResourceManager.getImage("menu_plain");
 	}
 
-	@Override
-	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
-	{
-		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
-		super.render(gameContainer, stateBasedGame, g);
-		g.setColor(Color.black);
 
-		if (Configuration.isDebugMode())
-		{
-			g.drawString(GraveyardManagerGame.VERSION, 5, container.getHeight() - 20);
-		}
-
-		g.drawString("Menu", 500f, 350f);
-
-		for (int i = 0; i < options.length; i++)
-		{
-			g.drawString(i + 1 + ". " + options[i], 430f, 380 + (i * 30));
-		}
-	}
-
-	@Override
-	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
-	{
-	}
 
 	/**
 	 * Implements the method from BasicGameState to pass the input to the game
@@ -95,5 +73,23 @@ public class MainMenuView extends View
 		{
 			game.enterState(GraveyardManagerGame.GameStates.ENDGAME.ordinal(), fot, fit);
 		}
+	}
+
+	@Override
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

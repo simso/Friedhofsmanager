@@ -8,6 +8,11 @@
       <root url="jar://$PROJECT_DIR$/libs/resources.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/jorbis-0.0.15.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-default-controls-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-slick-renderer-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-examples-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/eventbus-1.4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

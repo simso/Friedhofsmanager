@@ -1,6 +1,7 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.state.transition.FadeInTransition;
@@ -38,15 +39,28 @@ public class SplashView extends View
 	}
 
 	@Override
-	public void init(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
 		container = gameContainer;
 		game = (GraveyardManagerGame) stateBasedGame;
 	}
 
 	@Override
-	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		splash.draw((container.getWidth()/2) - (splash.getWidth()/2),(container.getHeight()/2) - (splash.getHeight()/2));
 	}
@@ -58,7 +72,7 @@ public class SplashView extends View
 	}
 
 	@Override
-	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
+	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
 		elapsedTime += delta;
 
@@ -67,5 +81,11 @@ public class SplashView extends View
 			elapsedTime = 0;
 			game.enterState(GraveyardManagerGame.GameStates.LOAD_RESOURCES_STATE.ordinal(), fot, fit);
 		}
+	}
+
+	@Override
+	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

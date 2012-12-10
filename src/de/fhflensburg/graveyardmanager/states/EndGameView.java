@@ -1,6 +1,7 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
@@ -41,14 +42,32 @@ public class EndGameView extends View
 	}
 
 	@Override
-	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
 		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override
-	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
 		gameContainer.exit();
+	}
+
+	@Override
+	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

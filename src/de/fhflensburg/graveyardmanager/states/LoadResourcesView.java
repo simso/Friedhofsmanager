@@ -4,6 +4,7 @@ import de.fhflensburg.graveyardmanager.core.GameMusic;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.util.Timer;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 import org.newdawn.slick.state.transition.FadeInTransition;
@@ -75,7 +76,25 @@ public class LoadResourcesView extends View
 	}
 
 	@Override
-	public void render(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	public void	initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		super.initGameAndGUI(gameContainer, stateBasedGame);
+	}
+
+	@Override
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	@Override
+	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		super.render(gameContainer, stateBasedGame, g);
 		g.setColor(Color.red);
@@ -92,7 +111,7 @@ public class LoadResourcesView extends View
 	}
 
 	@Override
-	public void update(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
+	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
 		super.update(gameContainer, stateBasedGame, delta);
 		timer.update(delta);
@@ -115,6 +134,12 @@ public class LoadResourcesView extends View
 
 			timer.resetTime();
 		}
+	}
+
+	@Override
+	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override
