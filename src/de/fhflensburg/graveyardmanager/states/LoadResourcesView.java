@@ -7,8 +7,6 @@ import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
-import org.newdawn.slick.state.transition.FadeInTransition;
-import org.newdawn.slick.state.transition.FadeOutTransition;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -76,9 +74,12 @@ public class LoadResourcesView extends View
 	}
 
 	@Override
-	public void	initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGameAndGUI(gameContainer, stateBasedGame);
+		super.initGUI(gameContainer, stateBasedGame);
+		//super.initGameAndGUI(gameContainer, stateBasedGame);
+		initNifty(gameContainer, stateBasedGame, renderDevice, soundDevice, inputSystem, accurateTimer);
+
 	}
 
 	@Override
@@ -96,7 +97,7 @@ public class LoadResourcesView extends View
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
-		super.render(gameContainer, stateBasedGame, g);
+//		super.renderGame(gameContainer, stateBasedGame, g);
 		g.setColor(Color.red);
 		if (!finished)
 		{
@@ -113,7 +114,7 @@ public class LoadResourcesView extends View
 	@Override
 	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
-		super.update(gameContainer, stateBasedGame, delta);
+//		super.updateGame(gameContainer, stateBasedGame, delta);
 		timer.update(delta);
 
 		if (timer.isTimeComplete())

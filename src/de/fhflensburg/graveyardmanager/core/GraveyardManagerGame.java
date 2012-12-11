@@ -3,12 +3,11 @@ package de.fhflensburg.graveyardmanager.core;
 import de.fhflensburg.graveyardmanager.states.*;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.slick2d.NiftyOverlayBasicGameState;
 import de.lessvoid.nifty.slick2d.NiftyStateBasedGame;
 import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
-import org.newdawn.slick.state.GameState;
-import org.newdawn.slick.state.StateBasedGame;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -38,6 +37,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	public enum GameStates {
 		SPLASH_SCREEN_STATE,
 		LOAD_RESOURCES_STATE,
+		CREATE_GAME_STATE,
 		SAVE_LOAD_GAME_STATE,
 		MAIN_MENU_STATE,
 		IN_GAME_STATE,
@@ -74,6 +74,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		addState(new LoadResourcesView(container));
 //		addState(new SaveLoadGameView());
 		addState(new MainMenuView());
+//		addState(new CreateGameView());
 		addState(new InGameView());
 		addState(new PauseView());
 		addState(new EndGameView());
@@ -89,10 +90,11 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	}
 
 	@Override
-	public void addState(GameState state)
+	public void addState(NiftyOverlayBasicGameState state)
 	{
-		super.addState(state);
 		states.add((View) state);
+		super.addState(state);
+
 	}
 
 	public View getStateById(int id)

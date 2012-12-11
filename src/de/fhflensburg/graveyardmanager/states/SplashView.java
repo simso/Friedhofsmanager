@@ -1,11 +1,11 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-import de.lessvoid.nifty.Nifty;
-import org.newdawn.slick.*;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
-import org.newdawn.slick.state.transition.FadeInTransition;
-import org.newdawn.slick.state.transition.FadeOutTransition;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -47,7 +47,7 @@ public class SplashView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGameAndGUI(gameContainer, stateBasedGame);
+		initNifty(gameContainer, stateBasedGame);
 		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
 		container = gameContainer;
 		game = (GraveyardManagerGame) stateBasedGame;
@@ -81,11 +81,5 @@ public class SplashView extends View
 			elapsedTime = 0;
 			game.enterState(GraveyardManagerGame.GameStates.LOAD_RESOURCES_STATE.ordinal(), fot, fit);
 		}
-	}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

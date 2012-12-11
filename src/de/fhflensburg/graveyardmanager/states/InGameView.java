@@ -6,12 +6,11 @@ import de.fhflensburg.graveyardmanager.core.PlayerInput;
 import de.fhflensburg.graveyardmanager.core.map.Map;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.lessvoid.nifty.Nifty;
-import org.newdawn.slick.*;
-import org.newdawn.slick.state.BasicGameState;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
-import org.newdawn.slick.state.transition.FadeInTransition;
-import org.newdawn.slick.state.transition.FadeOutTransition;
-import org.newdawn.slick.tiled.TiledMap;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -75,6 +74,15 @@ public class InGameView extends View
 	}
 
 	@Override
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		super.initGameAndGUI(gameContainer, stateBasedGame);
+		initNifty(gameContainer, stateBasedGame);
+
+	}
+
+
+	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		map.render(gameContainer, g, -xScrollDecal, -yScrollDecal);
@@ -84,8 +92,6 @@ public class InGameView extends View
 	@Override
 	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
-		super.update(gameContainer, stateBasedGame, delta);
-
 		int mx = gameContainer.getInput().getMouseX();
 		int my = gameContainer.getInput().getMouseY();
 

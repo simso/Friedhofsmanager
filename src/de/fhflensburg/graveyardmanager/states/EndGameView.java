@@ -5,7 +5,6 @@ import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
-import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 /**
@@ -40,6 +39,13 @@ public class EndGameView extends View
 	public void initResources()
 	{
 	}
+
+	@Override
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		initNifty(gameContainer, stateBasedGame);
+	}
+
 
 	@Override
 	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException

@@ -3,12 +3,8 @@ package de.fhflensburg.graveyardmanager.states;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
-import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
-import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
-import org.newdawn.slick.state.transition.FadeInTransition;
-import org.newdawn.slick.state.transition.FadeOutTransition;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -44,7 +40,32 @@ public class MainMenuView extends View
 		backgroundImage = ResourceManager.getImage("menu_plain");
 	}
 
+	@Override
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		super.initGameAndGUI(gameContainer, stateBasedGame);
+		initNifty(gameContainer, stateBasedGame);
+	}
 
+	@Override
+	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
+	{
+		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
+		//super.render(gameContainer, stateBasedGame, g);
+		g.setColor(Color.black);
+
+		if (Configuration.isDebugMode())
+		{
+			g.drawString(GraveyardManagerGame.VERSION, 5, container.getHeight() - 20);
+		}
+
+		g.drawString("Menu", 500f, 350f);
+
+		for (int i = 0; i < options.length; i++)
+		{
+			g.drawString(i + 1 + ". " + options[i], 430f, 380 + (i * 30));
+		}
+	}
 
 	/**
 	 * Implements the method from BasicGameState to pass the input to the game
@@ -83,12 +104,6 @@ public class MainMenuView extends View
 
 	@Override
 	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
 		//To change body of implemented methods use File | Settings | File Templates.
 	}

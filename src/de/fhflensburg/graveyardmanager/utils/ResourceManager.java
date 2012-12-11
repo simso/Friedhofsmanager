@@ -11,15 +11,6 @@ import java.util.HashMap;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-
-import org.newdawn.slick.AngelCodeFont;
-import org.newdawn.slick.Image;
-import org.newdawn.slick.Music;
-import org.newdawn.slick.SlickException;
-import org.newdawn.slick.Sound;
-import org.newdawn.slick.SpriteSheet;
-import org.newdawn.slick.tiled.TiledMap;
-
 //import de.fhflensburg.graveyardmanager.core.engine.map.Map;
 
 /**

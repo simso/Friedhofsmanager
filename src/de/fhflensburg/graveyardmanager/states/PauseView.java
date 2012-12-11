@@ -4,7 +4,6 @@ import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
-import org.newdawn.slick.state.BasicGameState;
 import org.newdawn.slick.state.StateBasedGame;
 
 /**
@@ -62,6 +61,14 @@ public class PauseView extends View
 
 		candleAnimation = new Animation(backgroundImages, 110);
 	}
+
+	@Override
+	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		super.initGUI(gameContainer, stateBasedGame);
+		initNifty(gameContainer, stateBasedGame);
+	}
+
 
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
