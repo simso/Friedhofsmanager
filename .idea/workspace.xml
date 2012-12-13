@@ -12,70 +12,10 @@
   <component name="ChangeListManager">
     <list id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="" />
     <list id="b4d64b4e-d9c0-4d1a-a114-d71869d26c1b" name="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein." comment="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein.&#10;" />
-    <list id="9f7688c4-49d2-4ecf-afcd-259a4b5fbc9c" name="GWIGD-21 - Sound hinzufügen" comment="GWIGD-21 - Sound hinzufügen&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" />
-    </list>
-    <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/fonts/courrier16b.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/fonts/courrier16b_00.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang_de.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/options/options.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/GameOptionsView.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/EndGameState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/InGameState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/InitGameState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/LoadingState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/MenuState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/PauseState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/SplashState.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/overview-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javadoc/stylesheet.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/resources.jar" afterPath="$PROJECT_DIR$/libs/resources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/game.properties" afterPath="$PROJECT_DIR$/config/game.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/constant-values.html" afterPath="$PROJECT_DIR$/javadoc/constant-values.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/Start.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/Start.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.GameStates.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.GameStates.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/core/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/states/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/GameSettings.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/GameSettings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/util/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/Configuration.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/Configuration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-frame.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-summary.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-tree.html" afterPath="$PROJECT_DIR$/javadoc/de/fhflensburg/graveyardmanager/utils/package-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/index-all.html" afterPath="$PROJECT_DIR$/javadoc/index-all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/overview-frame.html" afterPath="$PROJECT_DIR$/javadoc/overview-frame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/overview-tree.html" afterPath="$PROJECT_DIR$/javadoc/overview-tree.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javadoc/package-list" afterPath="$PROJECT_DIR$/javadoc/package-list" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Configuration.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Configuration.java" />
-    </list>
+    <list id="9f7688c4-49d2-4ecf-afcd-259a4b5fbc9c" name="GWIGD-21 - Sound hinzufügen" comment="GWIGD-21 - Sound hinzufügen&#10;" />
+    <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;" />
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1355315260285" ignored="true" />
-    <file path="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1355355322188" ignored="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
