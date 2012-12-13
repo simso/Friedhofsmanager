@@ -16,8 +16,14 @@
       <root url="jar://$PROJECT_DIR$/libs/xpp3-1.1.3.4-RC8.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/slick-util.jar!/" />
       <root url="jar://$PROJECT_DIR$/libs/slick.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-style-black-1.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../Nifty/nifty-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../Nifty/nifty-core/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../Nifty/nifty-renderer-slick/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../Slick/Dev/trunk/Slick/src" />
+    </SOURCES>
   </library>
 </component>

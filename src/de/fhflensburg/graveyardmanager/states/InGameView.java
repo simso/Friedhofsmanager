@@ -76,7 +76,7 @@ public class InGameView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGameAndGUI(gameContainer, stateBasedGame);
+		super.initGUI(gameContainer, stateBasedGame);
 		initNifty(gameContainer, stateBasedGame);
 
 	}

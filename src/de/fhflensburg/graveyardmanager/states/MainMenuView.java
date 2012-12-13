@@ -3,6 +3,7 @@ package de.fhflensburg.graveyardmanager.states;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -43,7 +44,7 @@ public class MainMenuView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGameAndGUI(gameContainer, stateBasedGame);
+		super.initGUI(gameContainer, stateBasedGame);
 		initNifty(gameContainer, stateBasedGame);
 	}
 

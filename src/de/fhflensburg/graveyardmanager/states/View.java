@@ -40,11 +40,28 @@ public abstract class View extends NiftyOverlayBasicGameState
 	/** Shortcut for fade in transition */
 	protected FadeInTransition fit;
 
-	SlickRenderDevice renderDevice;
-	SlickSoundDevice soundDevice;
-	SlickSlickInputSystem inputSystem;
-	LWJGLTimeProvider accurateTimer;
+	/** The render device for the Nifty GUI */
+	protected SlickRenderDevice renderDevice;
 
+	/** The sound device for the Nifty GUI */
+	protected SlickSoundDevice soundDevice;
+
+	/** The input system for the Nifty GUI */
+	protected SlickSlickInputSystem inputSystem;
+
+	/** The time for the Nifty GUI */
+	protected LWJGLTimeProvider accurateTimer;
+
+	/** Path to xml files for Nifty GUI */
+	protected static final String GUI_PATH = "res/de/fhflensburg/graveyardmanager/gui/options/";
+
+	/**
+	 * This function must be called in initGameAndGUI methods of every state which
+	 * make use of one of the members in here.
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame The game
+	 */
 	public void initGUI(GameContainer gameContainer, StateBasedGame stateBasedGame)
 	{
 		container = gameContainer;
@@ -58,32 +75,29 @@ public abstract class View extends NiftyOverlayBasicGameState
 	}
 
 	@Override
-	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	protected void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
-		container = gameContainer;
-		game = (GraveyardManagerGame) stateBasedGame;
-		fot = new FadeOutTransition(Color.black);
-		fit = new FadeInTransition(Color.black);
-		//initNifty(gameContainer, game, renderDevice, soundDevice, inputSystem, accurateTimer);
+		//
 	}
 
 	@Override
-	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
-	{}
+	protected void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics graphics) throws SlickException
+	{
+		//
+	}
 
 	@Override
-	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
-	{}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-	{}
+	protected void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+	{
+		//
+	}
 
 	/**
-	 * You must init the state resources here
+	 * We must implement this method in every state where we need to
+	 * load resources like sounds, images, music, ...
 	 *
-	 * @param container The game container
-	 * @param game The game
+	 * It will be called by the LoadResourcesView for every registered state.
 	 */
 	public abstract void initResources();
+
 }

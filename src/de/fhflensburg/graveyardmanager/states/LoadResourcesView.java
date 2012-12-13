@@ -77,7 +77,6 @@ public class LoadResourcesView extends View
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
 		super.initGUI(gameContainer, stateBasedGame);
-		//super.initGameAndGUI(gameContainer, stateBasedGame);
 		initNifty(gameContainer, stateBasedGame, renderDevice, soundDevice, inputSystem, accurateTimer);
 
 	}
@@ -114,7 +113,6 @@ public class LoadResourcesView extends View
 	@Override
 	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
-//		super.updateGame(gameContainer, stateBasedGame, delta);
 		timer.update(delta);
 
 		if (timer.isTimeComplete())

@@ -92,4 +92,24 @@ public class Configuration
 	{
 		configurationFile.setProperty("vsync", (vsync) ? "true" : "false");
 	}
+
+	public static float getMusicVolume()
+	{
+		return Float.parseFloat(configurationFile.getProperty("musicVolume", "1"));
+	}
+
+	public static void setMusicVolume(float volume)
+	{
+		configurationFile.setProperty("musicVolume", volume + "");
+	}
+
+	public static float getSoundVolume()
+	{
+		return Float.parseFloat(configurationFile.getProperty("soundVolume", "1"));
+	}
+
+	public static void setSoundVolume(float volume)
+	{
+		configurationFile.setProperty("soundVolume", volume + "");
+	}
 }
