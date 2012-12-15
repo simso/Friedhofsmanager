@@ -4,7 +4,6 @@ import de.fhflensburg.graveyardmanager.core.GameSound;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.core.PlayerInput;
 import de.fhflensburg.graveyardmanager.core.map.Map;
-import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
@@ -26,39 +25,29 @@ public class InGameView extends View
 	// Configs and others
 	private static float DEFAULT_MOUSE_SCROLL_SPEED = 0.2f;
 	private static final int LIMIT_BEFORE_SCROLL = 20;
-	private static final int PATHFINDING_MAX_SEARCH_DISTANCE = 100;
 	private static final int TIME_BEFORE_SEE_GAME = 5000;
 
 	private Map map;
 	private PlayerInput input;
 	private int xScrollDecal;
 	private int yScrollDecal;
-	//private boolean mouseRightPressed;
+	private boolean mouseRightPressed;
 	private boolean mouseLeftPressed;
 	private float mouseScrollSpeed;
 
+	/**
+	 * The default constructor
+	 */
 	public InGameView()
 	{
 		input = new PlayerInput(this);
 		mouseScrollSpeed = DEFAULT_MOUSE_SCROLL_SPEED;
 	}
 
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
 	/**
-	 * Returns the id of the state
+	 * Called by Slick2D
 	 *
-	 * @return int id
+	 * @return The unique id of this state
 	 */
 	@Override
 	public int getID()
@@ -66,22 +55,53 @@ public class InGameView extends View
 		return GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal();
 	}
 
+	/**
+	 * Will be called every time we enter this state
+	 * Every time we enter this state, we have to reinitialize the map because
+	 * the player could have abort the last game and starts a new one with a different map.
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame A representation of the game
+	 * @throws SlickException
+	 */
 	@Override
-	public void initResources()
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		map = ResourceManager.getMap("Desert");
+		super.enterState(gameContainer, stateBasedGame);
+		map = game.getMap();
 		map.init(this);
 	}
 
+	/**
+	 * Here you have to initialize all resources (images, fonts, sounds, ...)
+	 * which you want to use in this state. The method will be called by the ResourceView and
+	 * pre load all the stuff.
+	 */
+	@Override
+	public void initResources()
+	{
+	}
+
+	/**
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame A representation of the game
+	 * @throws SlickException
+	 */
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
 		super.initGUI(gameContainer, stateBasedGame);
 		initNifty(gameContainer, stateBasedGame);
-
 	}
 
-
+	/**
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame
+	 * @param g
+	 * @throws SlickException
+	 */
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
@@ -89,6 +109,13 @@ public class InGameView extends View
 		map.renderMiniMap(g, gameContainer.getWidth() - 200 + 25, 25, 150, 150, -xScrollDecal, -yScrollDecal);
 	}
 
+	/**
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame A representation of the game
+	 * @param delta
+	 * @throws SlickException
+	 */
 	@Override
 	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
@@ -138,12 +165,23 @@ public class InGameView extends View
 		}
 	}
 
+	/**
+	 * Load here all the gui stuff
+	 *
+	 * @param nifty An instance of the nifty object
+	 * @param stateBasedGame A representation of the game
+	 */
 	@Override
 	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
-		//To change body of implemented methods use File | Settings | File Templates.
+		super.prepareNifty(nifty, stateBasedGame);
 	}
 
+	/**
+	 * Returns the current game container
+	 *
+	 * @return The current game container
+	 */
 	public GameContainer getContainer()
 	{
 		return container;

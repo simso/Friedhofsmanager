@@ -46,19 +46,6 @@ public class EndGameView extends View
 		initNifty(gameContainer, stateBasedGame);
 	}
 
-
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
@@ -69,11 +56,5 @@ public class EndGameView extends View
 	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
 		gameContainer.exit();
-	}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

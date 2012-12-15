@@ -30,9 +30,10 @@ import java.util.*;
  */
 public class GameOptionsView extends View implements ScreenController
 {
-	/** An instance of the nifty object given by the XML file */
+	/** An instance of the nifty object */
 	private Nifty nifty;
 
+	/** An instance of the screen */
 	private Screen screen;
 
 	/** An instance of the game */
@@ -72,12 +73,10 @@ public class GameOptionsView extends View implements ScreenController
 	 * Here you have to initialize all resources (images, fonts, sounds, ...)
 	 * which you want to use in this state. The method will be called by the ResourceView and
 	 * pre load all the stuff.
-	 *
 	 */
 	@Override
 	public void initResources()
 	{
-
 	}
 
 	/**
@@ -97,11 +96,6 @@ public class GameOptionsView extends View implements ScreenController
 		initNifty(gameContainer, stateBasedGame);
 	}
 
-	public void getResolutions()
-	{
-
-	}
-
 	/**
 	 * Load here all the gui stuff
 	 *
@@ -111,35 +105,8 @@ public class GameOptionsView extends View implements ScreenController
 	@Override
 	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
+		super.prepareNifty(nifty, stateBasedGame);
 		nifty.fromXml(GUI_PATH + "options.xml", "start", new GameOptionsView(stateBasedGame));
-	}
-
-	/**
-	 * Will be called if we enter this state.
-	 * You can call some nifty effects which will execute then.
-	 *
-	 * @param gameContainer The game container
-	 * @param stateBasedGame A representation of the game
-	 * @throws SlickException
-	 */
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	/**
-	 * Will be called if we leave the state.
-	 * You can call some nifty effects which will execute then.
-	 *
-	 * @param gameContainer The game container
-	 * @param stateBasedGame A representation of the game
-	 * @throws SlickException
-	 */
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	/**

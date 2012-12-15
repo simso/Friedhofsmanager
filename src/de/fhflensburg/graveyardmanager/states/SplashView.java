@@ -28,20 +28,14 @@ public class SplashView extends View
 	private int elapsedTime;
 
 	/**
-	 * Returns the id of the state
+	 * Called by Slick2D
 	 *
-	 * @return int id
+	 * @return The unique id of this state
 	 */
 	@Override
 	public int getID()
 	{
 		return GraveyardManagerGame.GameStates.SPLASH_SCREEN_STATE.ordinal();
-	}
-
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override
@@ -51,12 +45,6 @@ public class SplashView extends View
 		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
 		container = gameContainer;
 		game = (GraveyardManagerGame) stateBasedGame;
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override

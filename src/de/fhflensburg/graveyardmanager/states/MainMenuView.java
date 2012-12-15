@@ -3,7 +3,6 @@ package de.fhflensburg.graveyardmanager.states;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
-import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -22,7 +21,7 @@ public class MainMenuView extends View
 	Image backgroundImage;
 
 	/** Main menu options */
-	private String[] options = new String[] {"Neues Spiel", "Spiel laden", "Optionen", "Spiel beerdigen"};
+	private String[] options = new String[] {"Neues Spiel", "Optionen", "Spiel beerdigen"};
 
 	/**
 	 * Returns the id of this state
@@ -52,7 +51,6 @@ public class MainMenuView extends View
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
-		//super.render(gameContainer, stateBasedGame, g);
 		g.setColor(Color.black);
 
 		if (Configuration.isDebugMode())
@@ -78,34 +76,22 @@ public class MainMenuView extends View
 	{
 		if (key == Input.KEY_1)
 		{
-			game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal(), fot, fit);
 		}
+
+//		if (key == Input.KEY_2)
+//		{
+//			game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal(), fot, fit);
+//		}
 
 		if (key == Input.KEY_2)
-		{
-			game.enterState(GraveyardManagerGame.GameStates.SAVE_LOAD_GAME_STATE.ordinal(), fot, fit);
-		}
-
-		if (key == Input.KEY_3)
 		{
 			game.enterState(GraveyardManagerGame.GameStates.OPTION_MENU_STATE.ordinal(), fot, fit);
 		}
 
-		if (key == Input.KEY_4)
+		if (key == Input.KEY_3)
 		{
 			game.enterState(GraveyardManagerGame.GameStates.ENDGAME.ordinal(), fot, fit);
 		}
-	}
-
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

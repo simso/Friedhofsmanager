@@ -1,5 +1,6 @@
 package de.fhflensburg.graveyardmanager.core;
 
+import de.fhflensburg.graveyardmanager.core.map.Map;
 import de.fhflensburg.graveyardmanager.states.*;
 import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
@@ -31,6 +32,8 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 
 	private ArrayList<View> states;
 
+	private Map map;
+
 	/**
 	 * Generate game state ids
 	 */
@@ -56,8 +59,8 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	public GraveyardManagerGame(String pathToResourcesJar, String pathToConfigurationFile) throws IOException, SlickException
 	{
 		super(GAMETITLE);
-		Configuration.init(pathToConfigurationFile);
 		ResourceManager.init(pathToResourcesJar);
+		Configuration.init(pathToConfigurationFile);
 		states = new ArrayList<View>();
 	}
 
@@ -74,7 +77,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		addState(new LoadResourcesView(container));
 //		addState(new SaveLoadGameView());
 		addState(new MainMenuView());
-//		addState(new CreateGameView());
+		addState(new CreateGameView());
 		addState(new InGameView());
 		addState(new PauseView());
 		addState(new EndGameView());
@@ -139,5 +142,15 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	public void setCurrentConfiguration() throws IOException, SlickException
 	{
 		setCurrentConfiguration((AppGameContainer) this.getContainer());
+	}
+
+	public void setMap(String map)
+	{
+		this.map = ResourceManager.getMap(map);
+	}
+
+	public Map getMap()
+	{
+		return map;
 	}
 }

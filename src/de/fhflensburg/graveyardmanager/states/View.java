@@ -53,7 +53,7 @@ public abstract class View extends NiftyOverlayBasicGameState
 	protected LWJGLTimeProvider accurateTimer;
 
 	/** Path to xml files for Nifty GUI */
-	protected static final String GUI_PATH = "res/de/fhflensburg/graveyardmanager/gui/options/";
+	protected static final String GUI_PATH = "res/de/fhflensburg/graveyardmanager/gui/";
 
 	/**
 	 * This function must be called in initGameAndGUI methods of every state which
@@ -86,10 +86,42 @@ public abstract class View extends NiftyOverlayBasicGameState
 		//
 	}
 
+	/**
+	 * Load here all the gui stuff
+	 *
+	 * @param nifty An instance of the nifty object
+	 * @param stateBasedGame A representation of the game
+	 */
 	@Override
 	protected void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
 		//
+	}
+
+	/**
+	 * Will be called every time we enter this state
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame A representation of the game
+	 * @throws SlickException
+	 */
+	@Override
+	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
+
+	/**
+	 * Will be called every time we leave this state
+	 *
+	 * @param gameContainer The game container
+	 * @param stateBasedGame A representation of the game
+	 * @throws SlickException
+	 */
+	@Override
+	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
+		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	/**

@@ -28,18 +28,6 @@ public class PauseView extends View
 		backgroundImages = new Image[7];
 	}
 
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
 	/**
 	 * Returns the id of the state
 	 *
@@ -85,11 +73,5 @@ public class PauseView extends View
 		{
 			game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
 		}
-	}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 }

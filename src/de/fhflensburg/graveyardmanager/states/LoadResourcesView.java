@@ -45,9 +45,9 @@ public class LoadResourcesView extends View
 	}
 
 	/**
-	 * Returns the id of the state
+	 * Called by Slick2D
 	 *
-	 * @return int id
+	 * @return The unique id of this state
 	 */
 	@Override
 	public int getID()
@@ -79,18 +79,6 @@ public class LoadResourcesView extends View
 		super.initGUI(gameContainer, stateBasedGame);
 		initNifty(gameContainer, stateBasedGame, renderDevice, soundDevice, inputSystem, accurateTimer);
 
-	}
-
-	@Override
-	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
-	}
-
-	@Override
-	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override
@@ -133,12 +121,6 @@ public class LoadResourcesView extends View
 
 			timer.resetTime();
 		}
-	}
-
-	@Override
-	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-	{
-		//To change body of implemented methods use File | Settings | File Templates.
 	}
 
 	@Override
