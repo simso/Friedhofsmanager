@@ -25,7 +25,7 @@ public class PauseView extends View
 
 	public PauseView()
 	{
-		backgroundImages = new Image[7];
+		backgroundImages = new Image[22];
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class PauseView extends View
 	{
 		for (int i = 0; i < backgroundImages.length; i++)
 		{
-			backgroundImages[i] = ResourceManager.getImage("Kerze" + (i + 1));
+			backgroundImages[i] = ResourceManager.getImage("Kerze_" + i);
 		}
 
 		candleAnimation = new Animation(backgroundImages, 110);

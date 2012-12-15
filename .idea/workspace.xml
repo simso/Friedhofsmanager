@@ -16,7 +16,7 @@
     <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/resources.jar" afterPath="$PROJECT_DIR$/libs/resources.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
     </list>
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainMenuView.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java">
+      <file leaf-file-name="PauseView.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="60" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.781491">
+            <state line="46" column="66" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.50642675">
               <folding />
             </state>
           </provider>
@@ -158,7 +158,6 @@
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Configuration.java" />
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/SplashView.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/EndGameView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/CreateGameView.java" />
@@ -166,6 +165,7 @@
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/GameOptionsView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/LoadResourcesView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java" />
       </list>
     </option>
   </component>
@@ -946,11 +946,6 @@
         <state line="21" column="13" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="5" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../Slick/Dev/trunk/Slick/src/org/newdawn/slick/GameContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="645" column="0" selection-start="17758" selection-end="17758" vertical-scroll-proportion="0.33333334" />
@@ -1000,14 +995,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/EndGameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/MainMenuView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="60" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.781491">
+        <state line="64" column="60" selection-start="1752" selection-end="1752" vertical-scroll-proportion="0.5347044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/EndGameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="5" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/PauseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="66" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.50642675">
           <folding />
         </state>
       </provider>
