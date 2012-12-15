@@ -37,7 +37,7 @@ public class MainMenuView extends View
 	@Override
 	public void initResources()
 	{
-		backgroundImage = ResourceManager.getImage("menu_plain");
+		backgroundImage = ResourceManager.getImage("Fledermaus_16");
 	}
 
 	@Override
@@ -58,11 +58,11 @@ public class MainMenuView extends View
 			g.drawString(GraveyardManagerGame.VERSION, 5, container.getHeight() - 20);
 		}
 
-		g.drawString("Menu", 500f, 350f);
+		g.drawString("Menu", 500f, 430f);
 
 		for (int i = 0; i < options.length; i++)
 		{
-			g.drawString(i + 1 + ". " + options[i], 430f, 380 + (i * 30));
+			g.drawString(i + 1 + ". " + options[i], 430f, 460 + (i * 30));
 		}
 	}
 
