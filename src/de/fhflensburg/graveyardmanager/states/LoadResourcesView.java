@@ -4,7 +4,6 @@ import de.fhflensburg.graveyardmanager.core.GameMusic;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.util.Timer;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
-import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -23,7 +22,7 @@ public class LoadResourcesView extends View
 	public Image[] backgroundImages;
 
 	/** The animation of the candle */
-	public Animation candleAnimation;
+	public Animation startAnimation;
 
 	private static final int WAIT_TIME_BEFORE_NEXTRESOURCE = 100;
 
@@ -40,7 +39,7 @@ public class LoadResourcesView extends View
 	{
 		timer = new Timer(WAIT_TIME_BEFORE_NEXTRESOURCE);
 		this.container = container;
-		backgroundImages = new Image[7];
+		backgroundImages = new Image[27];
 		initResources();
 	}
 
@@ -63,10 +62,10 @@ public class LoadResourcesView extends View
 			GameMusic.loopMainTheme();
 			for (int i = 0; i < backgroundImages.length; i++)
 			{
-				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/kerze" + (i + 1) + ".png");
+				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/Fledermaus_" + i + ".png");
 			}
 
-			candleAnimation = new Animation(backgroundImages, 110);
+			startAnimation = new Animation(backgroundImages, 110);
 		} catch (SlickException e)
 		{
 			e.printStackTrace();
@@ -88,13 +87,13 @@ public class LoadResourcesView extends View
 		g.setColor(Color.red);
 		if (!finished)
 		{
-			g.drawString("Lade ... " + ResourceManager.getAdvancement() + "%", (container.getWidth() / 2) - 80, (container.getHeight() / 2) + 330);
-			backgroundImages[6].draw(0, 0, container.getWidth(), container.getHeight());
+			backgroundImages[0].draw((container.getWidth() / 2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
+			g.drawString("Lade ... " + ResourceManager.getAdvancement() + "%", (container.getWidth() / 2) - 80, (container.getHeight() / 2) + 300);
 		}
 		else
 		{
-			candleAnimation.draw(0, 0, container.getWidth(), container.getHeight());
-			g.drawString("Drücke eine Taste oder klick mit der Maus", (container.getWidth() / 2) - 200, (container.getHeight() / 2) + 330);
+			startAnimation.draw((container.getWidth() / 2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
+			g.drawString("Drücke eine Taste oder klick mit der Maus", (container.getWidth() / 2) - 200, (container.getHeight() / 2) + 300);
 		}
 	}
 
