@@ -1,6 +1,9 @@
 de.fhflensburg.graveyardmanager
 de.fhflensburg.graveyardmanager.core
+de.fhflensburg.graveyardmanager.core.layers.entities
+de.fhflensburg.graveyardmanager.core.layers.entities.buildings
 de.fhflensburg.graveyardmanager.core.map
+de.fhflensburg.graveyardmanager.core.music
 de.fhflensburg.graveyardmanager.states
-de.fhflensburg.graveyardmanager.util
+de.fhflensburg.graveyardmanager.states.controller
 de.fhflensburg.graveyardmanager.utils
