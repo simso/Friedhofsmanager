@@ -1,4 +1,4 @@
-package de.fhflensburg.graveyardmanager.util;
+package de.fhflensburg.graveyardmanager.utils;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -19,6 +19,7 @@ public class Timer
 	public Timer(int eventTime)
 	{
 		this.eventTime = eventTime;
+		resetTime();
 	}
 
 	public Timer(int eventTime, int limit)

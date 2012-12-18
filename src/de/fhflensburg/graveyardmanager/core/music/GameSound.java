@@ -1,4 +1,4 @@
-package de.fhflensburg.graveyardmanager.core;
+package de.fhflensburg.graveyardmanager.core.music;
 
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 
