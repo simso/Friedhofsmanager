@@ -1,10 +1,12 @@
 package de.fhflensburg.graveyardmanager.states;
 
-import de.fhflensburg.graveyardmanager.core.GameSound;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
 import de.fhflensburg.graveyardmanager.core.PlayerInput;
 import de.fhflensburg.graveyardmanager.core.map.Map;
+import de.fhflensburg.graveyardmanager.states.controller.InGameController;
+import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.lessvoid.nifty.Nifty;
+import de.lessvoid.nifty.screen.Screen;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Input;
@@ -25,7 +27,6 @@ public class InGameView extends View
 	// Configs and others
 	private static float DEFAULT_MOUSE_SCROLL_SPEED = 0.2f;
 	private static final int LIMIT_BEFORE_SCROLL = 20;
-	private static final int TIME_BEFORE_SEE_GAME = 5000;
 
 	private Map map;
 	private PlayerInput input;
@@ -34,14 +35,25 @@ public class InGameView extends View
 	private boolean mouseRightPressed;
 	private boolean mouseLeftPressed;
 	private float mouseScrollSpeed;
+	public boolean isMinimapEnabled;
+
+	private Nifty nifty;
+	private Screen screen;
+	View view;
+	InGameController gameController;
+
+	private Timer newOrderFlash;
 
 	/**
 	 * The default constructor
 	 */
 	public InGameView()
 	{
+		super();
 		input = new PlayerInput(this);
 		mouseScrollSpeed = DEFAULT_MOUSE_SCROLL_SPEED;
+		isMinimapEnabled = false;
+		newOrderFlash = new Timer(1000);
 	}
 
 	/**
@@ -70,6 +82,12 @@ public class InGameView extends View
 		super.enterState(gameContainer, stateBasedGame);
 		map = game.getMap();
 		map.init(this);
+		for (int i = 0; i < gameController.nonVisibleElementsAtStart.length; i++)
+		{
+			gameController.nonVisibleElementsAtStart[i].hide();
+		}
+		newOrderFlash.resetTime();
+		gameController.newOrdersNoticed = false;
 	}
 
 	/**
@@ -77,7 +95,6 @@ public class InGameView extends View
 	 * which you want to use in this state. The method will be called by the ResourceView and
 	 * pre load all the stuff.
 	 */
-	@Override
 	public void initResources()
 	{
 	}
@@ -91,8 +108,7 @@ public class InGameView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGUI(gameContainer, stateBasedGame);
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 	/**
@@ -106,7 +122,9 @@ public class InGameView extends View
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		map.render(gameContainer, g, -xScrollDecal, -yScrollDecal);
-		map.renderMiniMap(g, gameContainer.getWidth() - 200 + 25, 25, 150, 150, -xScrollDecal, -yScrollDecal);
+		if (isMinimapEnabled) {
+			map.renderMiniMap(g, gameContainer.getWidth() - 200 + 25, 25, 150, 150, -xScrollDecal, -yScrollDecal);
+		}
 	}
 
 	/**
@@ -122,16 +140,31 @@ public class InGameView extends View
 		int mx = gameContainer.getInput().getMouseX();
 		int my = gameContainer.getInput().getMouseY();
 
+		// sum up the time
+		newOrderFlash.update(delta);
+
+		if ((newOrderFlash.isTimeComplete()) && (!gameController.newOrdersNoticed))
+		{
+			newOrderFlash.resetTime();
+			gameController.changeOrderImage();
+		}
+		else if (gameController.newOrdersNoticed)
+		{
+			gameController.changeOrderImage();
+		}
+
+
+
 		mouseLeftPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON);
 		//mouseRightPressed = gameContainer.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON);
 
-		if (mouseLeftPressed)
-		{
-			GameSound.inGameMouseClick();
-		}
+//		if (mouseLeftPressed)
+//		{
+//			//GameSound.inGameMouseClick();
+//		}
 
 		// UPDATE SCROLL
-		if (/*!input.isPressedLeft() && */!container.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && map.isNeedScroll()) {
+		if (!container.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && map.isNeedScroll()) {
 			float s = (container.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON)) ? mouseScrollSpeed * delta * 2 : mouseScrollSpeed * delta;
 
 			xScrollDecal += (mx < LIMIT_BEFORE_SCROLL && xScrollDecal + s < 0) ? s : 0;
@@ -148,12 +181,6 @@ public class InGameView extends View
 				xScrollDecal = container.getWidth() - map.getWidthInPixel();
 			}
 		}
-
-		//gui.updateMouseEvent(container, delta);
-
-		// UPDATE MOUSE MOVE AND CLICK
-		//input.update(container, gui.isMouseOnGui(container, mx, my), mx, my, -xScrollDecal, -yScrollDecal);
-
 
 		if (container.getInput().isKeyPressed(Input.KEY_SPACE))
 		{
@@ -174,7 +201,11 @@ public class InGameView extends View
 	@Override
 	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
-		super.prepareNifty(nifty, stateBasedGame);
+//		nifty.loadStyleFile(GUI_PATH + "nifty-default-styles.xml");
+//		nifty.loadControlFile(GUI_PATH + "nifty-default-controls.xml");
+
+		gameController = new InGameController(stateBasedGame, this);
+		nifty.fromXml(GUI_PATH + "ingame.xml", "start", gameController);
 	}
 
 	/**
@@ -185,5 +216,35 @@ public class InGameView extends View
 	public GameContainer getContainer()
 	{
 		return container;
+	}
+
+	public int getMouseX()
+	{
+		return container.getInput().getMouseX() + (-xScrollDecal);
+	}
+
+	public int getMouseY()
+	{
+		return container.getInput().getMouseY() + (-yScrollDecal);
+	}
+
+	public int getXScrollDecal()
+	{
+		return xScrollDecal;
+	}
+
+	public int getYScrollDecal()
+	{
+		return yScrollDecal;
+	}
+
+	public boolean isMouseRightPressed()
+	{
+		return mouseRightPressed;
+	}
+
+	public boolean isMouseLeftPressed()
+	{
+		return mouseLeftPressed;
 	}
 }

@@ -34,7 +34,6 @@ public class MainMenuView extends View
 		return GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal();
 	}
 
-	@Override
 	public void initResources()
 	{
 		backgroundImage = ResourceManager.getImage("Fledermaus_16");
@@ -43,8 +42,7 @@ public class MainMenuView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGUI(gameContainer, stateBasedGame);
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 	@Override

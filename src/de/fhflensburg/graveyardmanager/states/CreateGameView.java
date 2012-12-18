@@ -74,7 +74,6 @@ public class CreateGameView extends View implements ScreenController
 	 * pre load all the stuff.
 	 *
 	 */
-	@Override
 	public void initResources()
 	{}
 

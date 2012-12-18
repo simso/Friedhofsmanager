@@ -74,7 +74,6 @@ public class GameOptionsView extends View implements ScreenController
 	 * which you want to use in this state. The method will be called by the ResourceView and
 	 * pre load all the stuff.
 	 */
-	@Override
 	public void initResources()
 	{
 	}
@@ -93,7 +92,7 @@ public class GameOptionsView extends View implements ScreenController
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 	/**

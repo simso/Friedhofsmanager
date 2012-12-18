@@ -52,8 +52,31 @@ public abstract class View extends NiftyOverlayBasicGameState
 	/** The time for the Nifty GUI */
 	protected LWJGLTimeProvider accurateTimer;
 
+	/** Path to the ressources folder */
+	protected static final String RESOURCES_PATH ="res/de/fhflensburg/graveyardmanager/";
+
 	/** Path to xml files for Nifty GUI */
-	protected static final String GUI_PATH = "res/de/fhflensburg/graveyardmanager/gui/";
+	public static final String GUI_PATH = RESOURCES_PATH + "gui/";
+
+	public static final String IMAGE_PATH = RESOURCES_PATH + "images/";
+
+	public static final String SPRITE_PATH = RESOURCES_PATH + "sprites/";
+
+
+
+
+	public View()
+	{
+		super();
+		fot = new FadeOutTransition(Color.black);
+		fit = new FadeInTransition(Color.black);
+	}
+
+	public View(StateBasedGame stateBasedGame)
+	{
+		this();
+		game = (GraveyardManagerGame) stateBasedGame;
+	}
 
 	/**
 	 * This function must be called in initGameAndGUI methods of every state which
@@ -64,26 +87,25 @@ public abstract class View extends NiftyOverlayBasicGameState
 	 */
 	public void initGUI(GameContainer gameContainer, StateBasedGame stateBasedGame)
 	{
+
+	}
+
+	protected void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+	{
 		container = gameContainer;
 		game = (GraveyardManagerGame) stateBasedGame;
-		fot = new FadeOutTransition(Color.black);
-		fit = new FadeInTransition(Color.black);
-		renderDevice =  new SlickRenderDevice(gameContainer);
-		soundDevice = new SlickSoundDevice();
-		inputSystem = new SlickSlickInputSystem(new PlainSlickInputSystem());
-		accurateTimer = new LWJGLTimeProvider();
+//		initNifty(gameContainer, stateBasedGame, renderDevice, soundDevice, inputSystem, accurateTimer);
+		initNifty(gameContainer, stateBasedGame);
 	}
 
-	@Override
 	protected void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
 	{
-		//
+
 	}
 
-	@Override
 	protected void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics graphics) throws SlickException
 	{
-		//
+
 	}
 
 	/**
@@ -92,10 +114,9 @@ public abstract class View extends NiftyOverlayBasicGameState
 	 * @param nifty An instance of the nifty object
 	 * @param stateBasedGame A representation of the game
 	 */
-	@Override
 	protected void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
-		//
+
 	}
 
 	/**
@@ -105,10 +126,9 @@ public abstract class View extends NiftyOverlayBasicGameState
 	 * @param stateBasedGame A representation of the game
 	 * @throws SlickException
 	 */
-	@Override
 	protected void enterState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		//To change body of implemented methods use File | Settings | File Templates.
+
 	}
 
 	/**
@@ -118,10 +138,9 @@ public abstract class View extends NiftyOverlayBasicGameState
 	 * @param stateBasedGame A representation of the game
 	 * @throws SlickException
 	 */
-	@Override
 	protected void leaveState(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		//To change body of implemented methods use File | Settings | File Templates.
+
 	}
 
 	/**

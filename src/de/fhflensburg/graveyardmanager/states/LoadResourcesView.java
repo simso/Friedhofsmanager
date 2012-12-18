@@ -1,8 +1,8 @@
 package de.fhflensburg.graveyardmanager.states;
 
-import de.fhflensburg.graveyardmanager.core.GameMusic;
+import de.fhflensburg.graveyardmanager.core.music.GameMusic;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-import de.fhflensburg.graveyardmanager.util.Timer;
+import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
@@ -54,7 +54,6 @@ public class LoadResourcesView extends View
 		return GraveyardManagerGame.GameStates.LOAD_RESOURCES_STATE.ordinal();
 	}
 
-	@Override
 	public void initResources()
 	{
 		try {
@@ -75,9 +74,7 @@ public class LoadResourcesView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGUI(gameContainer, stateBasedGame);
-		initNifty(gameContainer, stateBasedGame, renderDevice, soundDevice, inputSystem, accurateTimer);
-
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 	@Override

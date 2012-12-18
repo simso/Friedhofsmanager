@@ -24,6 +24,7 @@
       <root url="file://$PROJECT_DIR$/../../Nifty/nifty-core/src/main/java" />
       <root url="file://$PROJECT_DIR$/../../Nifty/nifty-renderer-slick/src/main/java" />
       <root url="file://$PROJECT_DIR$/../../Slick/Dev/trunk/Slick/src" />
+      <root url="file://$PROJECT_DIR$/../../Nifty/nifty-controls/src/main/java" />
     </SOURCES>
   </library>
 </component>

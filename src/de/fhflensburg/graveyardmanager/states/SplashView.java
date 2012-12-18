@@ -41,10 +41,9 @@ public class SplashView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
+
 		splash = new Image("de/fhflensburg/graveyardmanager/images/slick.png");
-		container = gameContainer;
-		game = (GraveyardManagerGame) stateBasedGame;
 	}
 
 	@Override
@@ -53,7 +52,6 @@ public class SplashView extends View
 		splash.draw((container.getWidth()/2) - (splash.getWidth()/2),(container.getHeight()/2) - (splash.getHeight()/2));
 	}
 
-	@Override
 	public void initResources()
 	{
 		//To change body of implemented methods use File | Settings | File Templates.

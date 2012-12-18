@@ -30,7 +30,6 @@ public class SaveLoadGameView extends BasicGameState
 	// The splash screen
 	Image loading;
 
-	@Override
 	public int getID()
 	{
 		return GraveyardManagerGame.GameStates.SAVE_LOAD_GAME_STATE.ordinal();

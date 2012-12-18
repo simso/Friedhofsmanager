@@ -35,7 +35,6 @@ public class EndGameView extends View
 		return GraveyardManagerGame.GameStates.ENDGAME.ordinal();
 	}
 
-	@Override
 	public void initResources()
 	{
 	}
@@ -43,7 +42,7 @@ public class EndGameView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 	@Override

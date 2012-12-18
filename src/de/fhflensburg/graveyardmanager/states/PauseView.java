@@ -33,13 +33,11 @@ public class PauseView extends View
 	 *
 	 * @return int id
 	 */
-	@Override
 	public int getID()
 	{
 		return GraveyardManagerGame.GameStates.PAUSE_STATE.ordinal();
 	}
 
-	@Override
 	public void initResources()
 	{
 		for (int i = 0; i < backgroundImages.length; i++)
@@ -53,8 +51,7 @@ public class PauseView extends View
 	@Override
 	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
 	{
-		super.initGUI(gameContainer, stateBasedGame);
-		initNifty(gameContainer, stateBasedGame);
+		super.initGameAndGUI(gameContainer, stateBasedGame);
 	}
 
 
