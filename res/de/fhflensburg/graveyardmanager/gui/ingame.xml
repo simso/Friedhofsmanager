@@ -8,14 +8,14 @@
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.controller.InGameController">
         <layer id="Hauptebene" childLayout="vertical">
             <panel id="north" childLayout="horizontal" height="7%" width="100%" >
-                <!--<image filename="mauer.png"  height="32px" width="32px" visibleToMouse="true">-->
-                    <!--<effect>-->
-                        <!--<onHover name="hint" hintText="Einstellungen" hintDelay="100" />-->
-                    <!--</effect>-->
-                    <!--&lt;!&ndash;<interact onClick="optionen()" />&ndash;&gt;-->
-                <!--</image>-->
-                <text id="money" text="${locallang.money}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
-                <text id="bodycount" text="${locallang.bodycount}" height="32px" width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
+                <image filename="res/de/fhflensburg/graveyardmanager/images/settings.png"  height="32px" width="32px" visibleToMouse="true">
+                    <interact onClick="goSettings()" />
+                    <effect>
+                        <onHover name="hint" hintText="Einstellungen" hintDelay="100" />
+                    </effect>
+                </image>
+                <text id="money" text="${locallang.money}${CALL.getCurrentMoney()}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
+                <text id="bodycount" text="${locallang.bodycount}${CALL.getCurrentBodies()}" height="32px" width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
                 <text id="time" text="${locallang.timeofday}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
             </panel>
             <panel id="middle" childLayout="center" height="78%" width="100%" x="47" y="25">
@@ -25,66 +25,66 @@
                 <panel childLayout="absolute">
                     <control id="window_BuildItems" name="window" childLayout="vertical"  hideOnClose="true" width="602px" height="178px" x="5%" y="5%" title="${locallang.build}">
                         <panel childLayout="absolute-inside" valign="top" width="602px" height="178px">
-                            <image id="buildItem_1" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" imageMode="sprite:64,64,0" height="64px" width="64px" marginTop="1%" valign="top" x="10px" y="0px">
+                            <image id="buildItem_1" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,1" height="64px" width="64px" marginTop="1%" valign="top" x="10px" y="0px">
+                                <interact onClick="buildItem(3)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Urne für die Seebestattung" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_2" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" imageMode="sprite:64,64,1" height="64px" width="64px" x="84px" y="0px">
+                            <image id="buildItem_2" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,2" height="64px" width="64px" x="84px" y="0px">
+                                <interact onClick="buildItem(4)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="einfaches Holzkreuz" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_3" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" imageMode="sprite:64,64,3" height="64px" width="64px" x="158px" y="0px">
+                            <image id="buildItem_3" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,3" height="64px" width="64px" x="158px" y="0px">
+                                <interact onClick="buildItem(6)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Grabstein (Granit)" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_4" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" imageMode="sprite:64,64,4" height="64px" width="64px" x="232px" y="0px">
+                            <image id="buildItem_4" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,4" height="64px" width="64px" x="232px" y="0px">
+                                <interact onClick="buildItem(5)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Grabstein (Sandstein)" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/sprites/Buildings.png" imageMode="sprite:321,320,3" height="64px" width="64px" x="306px" y="0px">
+                            <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/images/Kirche.png" height="64px" width="64px" x="306px" y="0px">
+                                <interact onClick="buildItem(0)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Kirche" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/sprites/Buildings.png" imageMode="sprite:321,320,2" height="64px" width="64px" x="380px" y="0px">
+                            <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,2" height="64px" width="64px" x="380px" y="0px">
+                                <interact onClick="buildItem(1)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Kapelle" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/sprites/Buildings.png" imageMode="sprite:321,320,1" height="64px" width="64px" x="454px" y="0px">
+                            <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,1" height="64px" width="64px" x="454px" y="0px">
+                                <interact onClick="buildItem(2)"/>
                                 <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
+                                    <onHover name="hint" hintText="Haus" hintDelay="100"/>
                                 </effect>
-                                <interact onClick="()"/>
                             </image>
-                            <image id="buildItem_8" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" height="64px" width="64px" x="528px" y="0px">
-                                <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
-                                </effect>
-                                <interact onClick="()"/>
-                            </image>
-                            <image id="buildItem_9" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" height="64px" width="64px" x="10px" y="74px">
-                                <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
-                                </effect>
-                                <interact onClick="()"/>
-                            </image>
-                            <image id="buildItem_10" filename="res/de/fhflensburg/graveyardmanager/sprites/Tombstones.png" height="64px" width="64px" x="84px" y="74px">
-                                <effect>
-                                    <onHover name="hint" hintText="" hintDelay="100"/>
-                                </effect>
-                                <interact onClick="()"/>
-                            </image>
+                            <!--<image id="buildItem_8" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="528px" y="0px">-->
+                                <!--<interact onClick="buildItem()"/>-->
+                                <!--<effect>-->
+                                    <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
+                                <!--</effect>-->
+                            <!--</image>-->
+                            <!--<image id="buildItem_9" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="10px" y="74px">-->
+                                <!--<interact onClick="buildItem()"/>-->
+                                <!--<effect>-->
+                                    <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
+                                <!--</effect>-->
+                            <!--</image>-->
+                            <!--<image id="buildItem_10" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="84px" y="74px">-->
+                                <!--<interact onClick="buildItem()"/>-->
+                                <!--<effect>-->
+                                    <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
+                                <!--</effect>-->
+                            <!--</image>-->
                         </panel>
                     </control>
                 </panel>
@@ -104,8 +104,7 @@
                 </panel>
                 <panel id="west" childLayout="vertical">
                     <control id="window_OrderList" name="window" title="${locallang.allOrders}" width="500px" height="400px" x="400px" hideOnClose="true">
-                        <text text="window_OrderList" style="base-font" color="#eeef" valign="center" width="100%" />
-                        <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
+                        <text wrap="true" text="Dein erster Auftrag lauet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll." style="base-font" color="#eeef" valign="center" width="100%" />
                     </control>
                     <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                         <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->

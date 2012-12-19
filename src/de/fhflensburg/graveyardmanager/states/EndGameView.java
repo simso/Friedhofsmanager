@@ -1,9 +1,12 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.utils.ResourceManager;
+import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.lessvoid.nifty.Nifty;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
 
@@ -18,11 +21,23 @@ import org.newdawn.slick.state.StateBasedGame;
  */
 public class EndGameView extends View
 {
+	Timer timer;
+
 	/** The game holding this state */
 	private StateBasedGame game;
 
 	/** Holds the window where the game lives in */
 	private GameContainer container;
+
+	private Image image;
+
+	/** Defines the duration in ms how long the splash screen will be shown */
+	private static final int DELAY = 10000;
+
+	public EndGameView()
+	{
+		timer = new Timer(DELAY);
+	}
 
 	/**
 	 * Returns the id of the state
@@ -37,6 +52,7 @@ public class EndGameView extends View
 
 	public void initResources()
 	{
+		image = ResourceManager.getImage("Credits");
 	}
 
 	@Override
@@ -48,12 +64,18 @@ public class EndGameView extends View
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
-		//To change body of implemented methods use File | Settings | File Templates.
+		image.draw((gameContainer.getWidth() / 2) - (image.getWidth() / 2), (gameContainer.getHeight() / 2) - (image.getHeight() / 2));
 	}
 
 	@Override
-	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int i) throws SlickException
+	public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
 	{
-		gameContainer.exit();
+		timer.update(delta);
+
+		if (timer.isTimeComplete())
+		{
+			timer.resetTime();
+			gameContainer.exit();
+		}
 	}
 }

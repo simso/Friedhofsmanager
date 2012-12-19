@@ -1,6 +1,9 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.core.Player;
+import de.fhflensburg.graveyardmanager.core.music.GameMusic;
+import de.fhflensburg.graveyardmanager.level.Level;
 import de.lessvoid.nifty.Nifty;
 import de.lessvoid.nifty.NiftyEventSubscriber;
 import de.lessvoid.nifty.controls.ButtonClickedEvent;
@@ -288,8 +291,12 @@ public class CreateGameView extends View implements ScreenController
 	@NiftyEventSubscriber(id = "startGameButton")
 	public void onStartGameButton(final String id, final ButtonClickedEvent event)
 	{
-		game.setMap(currentMapSelection);
+		Level level = new Level(currentMapSelection);
+		Player player = new Player(1, "Stefano", 0);
+		level.addPlayer(player);
+		game.getEngine().initGame(level);
 		game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
+
 	}
 
 	/**

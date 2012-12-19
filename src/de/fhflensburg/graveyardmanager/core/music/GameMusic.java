@@ -21,7 +21,7 @@ public class GameMusic
 	public static void initMainTheme()
 	{
 		try {
-			theme = new Music("res/de/fhflensburg/graveyardmanager/musics/main_theme.ogg");
+			theme = new Music("res/de/fhflensburg/graveyardmanager/musics/graveyard.ogg");
 		}
 		catch (SlickException e)
 		{
@@ -31,7 +31,7 @@ public class GameMusic
 
 	public static void initMusic()
 	{
-		ResourceManager.getMusic("name").addListener(new GameMusicListener(2));
+		ResourceManager.getMusic("ingame_1").addListener(new GameMusicListener(1));
 	}
 
 	public static void loopMainTheme()
@@ -42,12 +42,12 @@ public class GameMusic
 	public static void playMusic()
 	{
 		theme.stop();
-		ResourceManager.getMusic("name").play();
+		ResourceManager.getMusic("ingame_1").play();
 	}
 
 	public static void stopMusic()
 	{
-		ResourceManager.getMusic("name").stop();
+		ResourceManager.getMusic("ingame_1").stop();
 	}
 
 	private static class GameMusicListener implements MusicListener
@@ -62,7 +62,7 @@ public class GameMusic
 		@Override
 		public void musicEnded(Music music)
 		{
-			ResourceManager.getMusic("music_" + nextSong).play();
+			ResourceManager.getMusic("ingame_" + nextSong).play();
 		}
 
 		@Override

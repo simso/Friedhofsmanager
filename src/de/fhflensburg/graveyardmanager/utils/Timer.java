@@ -1,5 +1,7 @@
 package de.fhflensburg.graveyardmanager.utils;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
  * Casual Game im Kurs Game Design an der FH Flensburg
@@ -72,6 +74,16 @@ public class Timer
 	public float getPercentage()
 	{
 		return deltaStock / eventTime;
+	}
+
+	public float getEventTime()
+	{
+		return eventTime;
+	}
+
+	public String getTime()
+	{
+		return String.format("%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes((long) eventTime), TimeUnit.MILLISECONDS.toSeconds((long) eventTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) eventTime)));
 	}
 
 }

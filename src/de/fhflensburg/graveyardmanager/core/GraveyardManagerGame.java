@@ -12,6 +12,7 @@ import org.newdawn.slick.SlickException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -32,7 +33,9 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 
 	private ArrayList<View> states;
 
-	private Map map;
+	public ArrayList<Player> players;
+
+	private ArrayList<Order> orders;
 
 	/**
 	 * Generate game state ids
@@ -82,14 +85,14 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		addState(new PauseView());
 		addState(new EndGameView());
 		addState(new GameOptionsView());
-		if (!Configuration.isDebugMode())
-		{
-			enterState(GameStates.SPLASH_SCREEN_STATE.ordinal());
-		}
-		else
-		{
+//		if (!Configuration.isDebugMode())
+//		{
+//			enterState(GameStates.SPLASH_SCREEN_STATE.ordinal());
+//		}
+//		else
+//		{
 			enterState(GameStates.LOAD_RESOURCES_STATE.ordinal());
-		}
+//		}
 	}
 
 	@Override
@@ -144,13 +147,33 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		setCurrentConfiguration((AppGameContainer) this.getContainer());
 	}
 
-	public void setMap(String map)
+	public void addOrder(Order order)
 	{
-		this.map = ResourceManager.getMap(map);
+		orders.add(order);
 	}
 
-	public Map getMap()
+	public List<Order> getAllOrders()
 	{
-		return map;
+		return new ArrayList<Order>(orders);
+//		To call it:
+// 		List<Car> cars = c1.getAll();
+//		for (Car item : cars) {
+//			System.out.println(item.getMake() + " " + item.getReg());
+//		}
 	}
+
+	public Order getOrderByID(int id)
+	{
+		return orders.get(id);
+	}
+
+	/**
+	 * A cut to get the engine instance directly.
+	 *
+	 * @return The engine instance or null if the engine was not instantiated.
+	 */
+	public InGameView getEngine() {
+		return (InGameView) getState(GameStates.IN_GAME_STATE.ordinal());
+	}
+
 }

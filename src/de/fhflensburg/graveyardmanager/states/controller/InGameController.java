@@ -1,11 +1,16 @@
 package de.fhflensburg.graveyardmanager.states.controller;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.core.layers.entities.EntityData;
+import de.fhflensburg.graveyardmanager.core.layers.entities.EntityGenerator;
+import de.fhflensburg.graveyardmanager.core.layers.entities.buildings.Building;
 import de.fhflensburg.graveyardmanager.states.InGameView;
 import de.fhflensburg.graveyardmanager.states.View;
+import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.lessvoid.nifty.Nifty;
 import de.lessvoid.nifty.elements.Element;
 import de.lessvoid.nifty.elements.render.ImageRenderer;
+import de.lessvoid.nifty.elements.render.TextRenderer;
 import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
@@ -33,6 +38,8 @@ public class InGameController implements ScreenController
 	GraveyardManagerGame game;
 
 	InGameView view;
+
+	private Building building;
 
 	NiftyImage[] orderImages = new NiftyImage[2];
 
@@ -75,6 +82,20 @@ public class InGameController implements ScreenController
 		//buildItem_1.getRenderer(ImageRenderer.class).setImage(buildItems.setImageMode("sprite:w,h,index"));
 	}
 
+	public void render()
+	{
+		screen.findElementByName("money").getRenderer(TextRenderer.class).setText("Guthaben: " + view.getPlayer().getBalance());
+		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen:" + view.getPlayer().getScore());
+		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit:" + view.getGameTime());
+	}
+
+	public void update()
+	{
+		screen.findElementByName("money").getRenderer(TextRenderer.class).setText("Guthaben: " + view.getPlayer().getBalance());
+		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen:" + view.getPlayer().getScore());
+		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit:" + view.getGameTime());
+	}
+
 	@Override
 	public void onEndScreen()
 	{
@@ -96,8 +117,40 @@ public class InGameController implements ScreenController
 		{
 			nonVisibleElementsAtStart[0].show();
 		}
+	}
 
+	public String getCurrentMoney()
+	{
+//		return view.getPlayer().getBalance() + "";
+		return "20000";
+	}
 
+	public String getCurrentBodies()
+	{
+		return "0";
+	}
+
+	public String getTime()
+	{
+	 	return "";
+	}
+
+	/**
+	 * Will be called from ingame.xml by Nifty
+	 * @param id
+	 */
+	public void buildItem(String id)
+	{
+		building = (Building) EntityGenerator.createEntity(view, Integer.parseInt(id), view.getPlayer().getId());
+	}
+
+	/**
+	 * Will be called from ingame.xml by Nifty
+	 * @param id
+	 */
+	public String getItemName(String id)
+	{
+		return EntityData.NAMES[Integer.parseInt(id)];
 	}
 
 	public void changeOrderImage()
@@ -145,4 +198,16 @@ public class InGameController implements ScreenController
 			nonVisibleElementsAtStart[1].show();
 		}
 	}
+
+	public Building getBuilding()
+	{
+		return building;
+	}
+
+	public void resetBuilding()
+	{
+		building = null;
+	}
+
+
 }
