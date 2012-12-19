@@ -95,7 +95,7 @@
                             <onHover name="hint" hintText="${locallang.minimap}" hintDelay="300" />
                         </effect>
                     </image>
-                    <image filename="res/de/fhflensburg/graveyardmanager/images/Auftrag.png" height="64px" width="64px" marginTop="1%">
+                    <image filename="res/de/fhflensburg/graveyardmanager/images/alterAuftrag.png" height="64px" width="64px" marginTop="1%">
                         <interact onClick="currentOrder()" />
                         <effect>
                             <onHover name="hint" hintText="${locallang.activemisson}" hintDelay="300" />
