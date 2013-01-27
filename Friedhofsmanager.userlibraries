@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="libs">
+    <archive path="C:/Users/sim/graveyardmanager/libs/jinput.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/lwjgl.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/lwjgl_util.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/resources.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/jorbis-0.0.15.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/jogg-0.0.7.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/nifty-1.3.2.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/nifty-default-controls-1.3.2.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/nifty-slick-renderer-1.3.2.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/nifty-examples-1.3.2.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/eventbus-1.4.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/xmlpull-1.1.3.1.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/xpp3-1.1.3.4-RC8.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/slick-util.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/slick.jar" />
+    <archive path="C:/Users/sim/graveyardmanager/libs/nifty-style-black-1.4.0.jar" />
+  </library>
+</eclipse-userlibraries>
+

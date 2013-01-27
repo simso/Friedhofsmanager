@@ -23,7 +23,12 @@
                 <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                 <!--</control>-->
                 <panel childLayout="absolute">
-                    <control id="window_BuildItems" name="window" childLayout="vertical"  hideOnClose="true" width="602px" height="178px" x="5%" y="5%" title="${locallang.build}">
+                    <panel id="window_BuildItems" name="window" childLayout="vertical"  width="602px" height="178px" x="5%" y="5%" title="${locallang.build}" backgroundColor="#555555">
+                        <panel height="40px" width="100%" childLayout="vertical" backgroundColor="#800f">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/fileclose.png"  height="32px" width="32px" visibleToMouse="true" align="right" marginTop="1%">
+                                <effect><onClick name="hide" targetElement="window_BuildItems" /></effect>
+                            </image>
+                        </panel>
                         <panel childLayout="absolute-inside" valign="top" width="602px" height="178px">
                             <image id="buildItem_1" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,1" height="64px" width="64px" marginTop="1%" valign="top" x="10px" y="0px">
                                 <interact onClick="buildItem(3)"/>
@@ -86,7 +91,7 @@
                                 <!--</effect>-->
                             <!--</image>-->
                         </panel>
-                    </control>
+                    </panel>
                 </panel>
                 <panel id="east" align="right" childLayout="vertical" height="100%" width="64px">
                     <image id="mapToggleImage" filename="res/de/fhflensburg/graveyardmanager/images/Kompassrose.png"  height="64px" width="64px">
