@@ -8,12 +8,6 @@
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.controller.InGameController">
         <layer id="Hauptebene" childLayout="vertical">
             <panel id="north" childLayout="horizontal" height="7%" width="100%" >
-                <image filename="res/de/fhflensburg/graveyardmanager/images/settings.png"  height="32px" width="32px" visibleToMouse="true">
-                    <interact onClick="goSettings()" />
-                    <effect>
-                        <onHover name="hint" hintText="Einstellungen" hintDelay="100" />
-                    </effect>
-                </image>
                 <text id="money" text="${locallang.money}${CALL.getCurrentMoney()}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
                 <text id="bodycount" text="${locallang.bodycount}${CALL.getCurrentBodies()}" height="32px" width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
                 <text id="time" text="${locallang.timeofday}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
@@ -23,10 +17,13 @@
                 <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                 <!--</control>-->
                 <panel childLayout="absolute">
-                    <panel id="window_BuildItems" name="window" childLayout="vertical"  width="602px" height="178px" x="5%" y="5%" title="${locallang.build}" backgroundColor="#555555">
-                        <panel height="40px" width="100%" childLayout="vertical" backgroundColor="#800f">
-                            <image filename="res/de/fhflensburg/graveyardmanager/images/fileclose.png"  height="32px" width="32px" visibleToMouse="true" align="right" marginTop="1%">
-                                <effect><onClick name="hide" targetElement="window_BuildItems" /></effect>
+                    <panel id="window_BuildItems" name="window" childLayout="vertical"  width="602px" height="600px" x="5%" y="5%" title="${locallang.build}" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Brief.png">
+
+                        <panel height="40px" width="550px" childLayout="vertical" marginTop="20px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px" width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_BuildItems" />
+                                </effect>
                             </image>
                         </panel>
                         <panel childLayout="absolute-inside" valign="top" width="602px" height="178px">
@@ -100,24 +97,30 @@
                             <onHover name="hint" hintText="${locallang.minimap}" hintDelay="300" />
                         </effect>
                     </image>
-                    <image filename="res/de/fhflensburg/graveyardmanager/images/alterAuftrag.png" height="64px" width="64px" marginTop="1%">
-                        <interact onClick="currentOrder()" />
-                        <effect>
-                            <onHover name="hint" hintText="${locallang.activemisson}" hintDelay="300" />
-                        </effect>
-                    </image>
                 </panel>
-                <panel id="west" childLayout="vertical">
-                    <control id="window_OrderList" name="window" title="${locallang.allOrders}" width="500px" height="400px" x="400px" hideOnClose="true">
-                        <text wrap="true" text="Dein erster Auftrag lauet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll." style="base-font" color="#eeef" valign="center" width="100%" />
-                    </control>
+                <panel id="west" childLayout="vertical" width="100%">
+
+                    <panel id="window_OrderList" width="450px" height="600px" marginTop="100px" x="400px" childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Brief.png">
+                        <panel height="40px" width="400px" childLayout="vertical" marginTop="40px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px" width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_OrderList" />
+                                </effect>
+                            </image>
+                        </panel>
+                        <text wrap="true" text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll." style="base-font" color="#000000" valign="center" width="60%" marginLeft="80px" />
+                    </panel>
                     <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                         <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                     <!--</control>-->
                 </panel>
+
             </panel>
-            <panel id="south" align="center" childLayout="horizontal" height="64px" padding="20px" valign="bottom" width="60%">
-                <image id="orderList" filename="res/de/fhflensburg/graveyardmanager/images/Auftrag.png"  height="64px" width="64px" margin="1%">
+            <panel id="south" childLayout="horizontal" height="64px" valign="bottom" width="100%" align="center">
+                <panel childLayout="vertical" align="center" width="80%" marginLeft="10%">
+                    <panel childLayout="horizontal" align="center">
+
+                    <image id="orderList" filename="res/de/fhflensburg/graveyardmanager/images/Auftrag.png"  height="64px" width="64px" margin="1%">
                     <interact onClick="newOrder()" />
                     <effect>
                         <onHover name="hint" hintText="Auftrag" hintDelay="100" />
@@ -135,7 +138,7 @@
                         <onHover name="hint" hintText="${locallang.build}" hintDelay="300" />
                     </effect>
                 </image>
-                <image filename="res/de/fhflensburg/graveyardmanager/images/Dracula.png"  height="64px" width="64px" margin="1%">
+                <image filename="res/de/fhflensburg/graveyardmanager/images/Personal.png"  height="64px" width="64px" margin="1%">
                     <interact onClick="staff()" />
                     <effect>
                         <onHover name="hint" hintText="${locallang.staff}" hintDelay="300" />
@@ -147,12 +150,29 @@
                         <onHover name="hint" hintText="${locallang.phone}" hintDelay="300" />
                     </effect>
                 </image>
+                <image filename="res/de/fhflensburg/graveyardmanager/images/alterAuftrag.png" height="64px" width="64px" marginTop="1%">
+                    <interact onClick="currentOrder()" />
+                    <effect>
+                        <onHover name="hint" hintText="${locallang.activemisson}" hintDelay="300" />
+                    </effect>
+                </image>
                 <!--<image filename="res/de/fhflensburg/graveyardmanager/images/.png"  height="64px" width="64px" margin="1%" visibleToMouse="true">-->
                     <!--<interact onClick="charts()" />-->
                     <!--<effect>-->
                         <!--<onHover name="hint" hintText="Charts" hintDelay="300" />-->
                     <!--</effect>-->
                 <!--</image>-->
+            </panel>
+                    </panel>
+                <panel childLayout="vertical" width="10%" align="right">
+                    <image filename="res/de/fhflensburg/graveyardmanager/images/settings.png"  height="64px" width="64px" visibleToMouse="true" align="right">
+                        <interact onClick="goSettings()" />
+                        <effect>
+                            <onHover name="hint" hintText="Einstellungen" hintDelay="100" />
+                        </effect>
+                    </image>
+
+                </panel>
             </panel>
         </layer>
     </screen>

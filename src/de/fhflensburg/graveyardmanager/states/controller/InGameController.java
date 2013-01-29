@@ -6,7 +6,6 @@ import de.fhflensburg.graveyardmanager.core.layers.entities.EntityGenerator;
 import de.fhflensburg.graveyardmanager.core.layers.entities.buildings.Building;
 import de.fhflensburg.graveyardmanager.states.InGameView;
 import de.fhflensburg.graveyardmanager.states.View;
-import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.lessvoid.nifty.Nifty;
 import de.lessvoid.nifty.elements.Element;
 import de.lessvoid.nifty.elements.render.ImageRenderer;
@@ -43,7 +42,7 @@ public class InGameController implements ScreenController
 
 	NiftyImage[] orderImages = new NiftyImage[2];
 
-	private int currentOrderImage;
+	private int newOrderImage;
 
 	public boolean newOrdersNoticed;
 
@@ -76,7 +75,7 @@ public class InGameController implements ScreenController
 	{
 		Element orderList = screen.findElementByName("orderList");
 		orderList.getRenderer(ImageRenderer.class).setImage(orderImages[1]);
-		currentOrderImage = 1;
+		newOrderImage = 1;
 
 		//Element buildItem_1 = screen.findElementByName("buildItem_1");
 		//buildItem_1.getRenderer(ImageRenderer.class).setImage(buildItems.setImageMode("sprite:w,h,index"));
@@ -160,25 +159,26 @@ public class InGameController implements ScreenController
 		if (newOrdersNoticed)
 		{
 			element.getRenderer(ImageRenderer.class).setImage(orderImages[0]);
-			currentOrderImage = 0;
+			newOrderImage = 0;
+            
 		}
 		else
 		{
-			switch (currentOrderImage)
+			switch (newOrderImage)
 			{
 				case 0:
 					element.getRenderer(ImageRenderer.class).setImage(orderImages[1]);
-					currentOrderImage = 1;
+					newOrderImage = 1;
 					break;
 
 				case 1:
 					element.getRenderer(ImageRenderer.class).setImage(orderImages[0]);
-					currentOrderImage = 0;
+					newOrderImage = 0;
 					break;
 
 				default:
 					element.getRenderer(ImageRenderer.class).setImage(orderImages[0]);
-					currentOrderImage = 0;
+					newOrderImage = 0;
 					break;
 			}
 		}
@@ -198,6 +198,21 @@ public class InGameController implements ScreenController
 			nonVisibleElementsAtStart[1].show();
 		}
 	}
+
+    public void currentOrder()
+    {
+
+        if (nonVisibleElementsAtStart[1].isVisible())
+        {
+            nonVisibleElementsAtStart[1].hide();
+        }
+        else if (newOrdersNoticed == true)
+        {
+            nonVisibleElementsAtStart[1].show();
+        }
+    }
+
+
 
 	public Building getBuilding()
 	{

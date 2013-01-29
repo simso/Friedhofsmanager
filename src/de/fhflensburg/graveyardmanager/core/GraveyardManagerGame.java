@@ -85,6 +85,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		addState(new PauseView());
 		addState(new EndGameView());
 		addState(new GameOptionsView());
+        getContainer().setShowFPS(false);
 //		if (!Configuration.isDebugMode())
 //		{
 //			enterState(GameStates.SPLASH_SCREEN_STATE.ordinal());
