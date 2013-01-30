@@ -12,7 +12,7 @@
                 <text id="bodycount" text="${locallang.bodycount}${CALL.getCurrentBodies()}" height="32px" width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" valign="center" />
                 <text id="time" text="${locallang.timeofday}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" valign="center" />
             </panel>
-            <panel id="middle" childLayout="center" height="78%" width="100%" x="47" y="25">
+            <panel id="middle" childLayout="center" height="85%" width="100%" x="47" y="25">
                 <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                 <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                 <!--</control>-->
