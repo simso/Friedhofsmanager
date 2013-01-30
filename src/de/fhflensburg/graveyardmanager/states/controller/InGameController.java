@@ -106,6 +106,12 @@ public class InGameController implements ScreenController
 		view.isMinimapEnabled = !view.isMinimapEnabled;
 	}
 
+
+    public void goSettings()
+    {
+        game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
+    }
+
 	public void buildItems()
 	{
 		if (nonVisibleElementsAtStart[0].isVisible())
