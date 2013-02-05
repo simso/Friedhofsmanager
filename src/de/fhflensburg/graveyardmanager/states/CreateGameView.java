@@ -45,7 +45,7 @@ public class CreateGameView extends View implements ScreenController
 	 */
 	public CreateGameView()
 	{
-		currentMapSelection = "Sahara";
+		currentMapSelection = "Wiese";
 	}
 
 	/**

@@ -272,6 +272,10 @@ public class InGameView extends View
 				activeEntity.setLocation(x * getTileW(), y * getTileH());
 				addEntity(activeEntity);
 			}
+			else if(gameController.getBuilding() != null && !gameController.getBuilding().isValidLocation())
+            {
+                gameController.resetBuilding();
+            }
 
 			gameController.resetBuilding();
 		}

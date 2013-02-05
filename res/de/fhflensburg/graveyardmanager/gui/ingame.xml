@@ -7,7 +7,7 @@
 
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.controller.InGameController">
         <layer id="Hauptebene" childLayout="vertical">
-            <panel id="north" childLayout="horizontal" height="25px" width="100%" style="nifty-panel-simple">
+            <panel id="north" childLayout="horizontal" height="25px" width="100%" backgroundColor="#5555">
                 <text id="money" text="${locallang.money}${CALL.getCurrentMoney()}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" valign="center" />
                 <text id="bodycount" text="${locallang.bodycount}${CALL.getCurrentBodies()}" height="32px" width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" valign="center" />
                 <text id="time" text="${locallang.timeofday}" height="32px"  width="30%" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" valign="center" />
@@ -124,7 +124,7 @@
             </panel>
             <panel id="south" childLayout="horizontal" height="64px" valign="bottom" width="100%" align="center">
                 <panel childLayout="vertical" align="center" width="80%" marginLeft="10%">
-                    <panel style="nifty-panel-simple" childLayout="horizontal" align="center" paddingRight="32px">
+                    <panel backgroundColor="#5555" childLayout="horizontal" align="center" paddingRight="32px">
                         <image id="orderList" filename="res/de/fhflensburg/graveyardmanager/images/Auftrag.png"
                                height="64px" width="64px" margin="1%">
                             <effect>
@@ -177,7 +177,7 @@
             </panel>
                     </panel>
                 <panel childLayout="vertical" width="10%" align="right">
-                    <panel childLayout="vertical" style="nifty-panel-simple">
+                    <panel childLayout="vertical" backgroundColor="#5555">
                     <image filename="res/de/fhflensburg/graveyardmanager/images/settings.png"  height="64px" width="64px" visibleToMouse="true" align="right" id="setting">
                         <interact onClick="goSettings()" />
                         <effect>
