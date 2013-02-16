@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<builds>
+    <building>
+        <name>Kirche</name>
+        <value>500</value>
+    </building>
+    <building>
+        <name>Kapelle</name>
+        <value>500</value>
+    </building>
+    <building>
+        <name>Haus</name>
+        <value>500</value>
+    </building>
+    <tombstone>
+        <name>Seeurne</name>
+        <value>500</value>
+    </tombstone>
+    <tombstone>
+        <name>Holzkreuz</name>
+        <value>100</value>
+    </tombstone>
+    <tombstone>
+        <name>Grabstein (Sandstein)</name>
+        <value>500</value>
+    </tombstone>
+    <tombstone>
+        <name>Grabstein (Granit)</name>
+        <value>500</value>
+    </tombstone>
+
+</builds>

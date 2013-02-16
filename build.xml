@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Hodie mihi, Cras tibi - Der Friedhofsmanager">
+
+    <property file="build.properties">
+    </property>
+
+    <target name="jar-resources">
+        <delete file="libs/resources.jar" />
+        <jar destfile="libs/resources.jar" basedir="." includes="res/**" />
+    </target>
+
+    <target name="javadoc">
+        <delete dir="javadoc" />
+        <javadoc destdir="javadoc" sourcepath="src" classpath="${gm.classpath}">
+            <link href="http://java.sun.com/javase/6/docs/api/" />
+            <link href="http://slick.cokeandcode.com/javadoc/" />
+        </javadoc>
+    </target>
+
+</project>

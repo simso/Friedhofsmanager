@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/resources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-default-controls-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-slick-renderer-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-examples-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/eventbus-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/xmlpull-1.1.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/xpp3-1.1.3.4-RC8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slick-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/slick.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/nifty-style-black-1.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/../Nifty/nifty-core/src/main/java" />
+      <root url="file://D:/../Nifty/nifty-core/src/main/java" />
+      <root url="file://D:/../Nifty/nifty-renderer-slick/src/main/java" />
+      <root url="file://D:/../Slick/Dev/trunk/Slick/src" />
+      <root url="file://D:/../Nifty/nifty-controls/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
