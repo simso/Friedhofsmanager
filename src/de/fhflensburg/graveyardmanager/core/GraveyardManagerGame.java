@@ -44,6 +44,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		SPLASH_SCREEN_STATE,
 		LOAD_RESOURCES_STATE,
 		CREATE_GAME_STATE,
+        CREATE_MAP_STATE,
 		SAVE_LOAD_GAME_STATE,
 		MAIN_MENU_STATE,
 		IN_GAME_STATE,
@@ -81,6 +82,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 //		addState(new SaveLoadGameView());
 		addState(new MainMenuView());
 		addState(new CreateGameView());
+        addState(new CreateMapView());
 		addState(new InGameView());
 		addState(new PauseView());
 		addState(new EndGameView());
