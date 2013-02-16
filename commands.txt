@@ -1,0 +1,4 @@
+git status 
+git commit <datei> oder <-a> <"Message hinzufügen">
+ git branch -v
+then type :wq <Enter> or ZZ.
