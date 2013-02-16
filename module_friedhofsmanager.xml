@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_friedhofsmanager" default="compile.module.friedhofsmanager">
+  <dirname property="module.friedhofsmanager.basedir" file="${ant.file.module_friedhofsmanager}"/>
+  
+  <property name="module.jdk.home.friedhofsmanager" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.friedhofsmanager" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.friedhofsmanager" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.friedhofsmanager" value="${compiler.args}"/>
+  
+  <property name="friedhofsmanager.output.dir" value="${module.friedhofsmanager.basedir}/out/production/Friedhofsmanager"/>
+  <property name="friedhofsmanager.testoutput.dir" value="${module.friedhofsmanager.basedir}/out/test/Friedhofsmanager"/>
+  
+  <path id="friedhofsmanager.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="friedhofsmanager.module.production.classpath">
+    <path refid="${module.jdk.classpath.friedhofsmanager}"/>
+    <path refid="library.libs.classpath"/>
+  </path>
+  
+  <path id="friedhofsmanager.runtime.production.module.classpath">
+    <pathelement location="${friedhofsmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+  </path>
+  
+  <path id="friedhofsmanager.module.classpath">
+    <path refid="${module.jdk.classpath.friedhofsmanager}"/>
+    <pathelement location="${friedhofsmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+  </path>
+  
+  <path id="friedhofsmanager.runtime.module.classpath">
+    <pathelement location="${friedhofsmanager.testoutput.dir}"/>
+    <pathelement location="${friedhofsmanager.output.dir}"/>
+    <path refid="library.libs.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.friedhofsmanager">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.friedhofsmanager">
+    <patternset refid="excluded.from.module.friedhofsmanager"/>
+  </patternset>
+  
+  <path id="friedhofsmanager.module.sourcepath">
+    <dirset dir="${module.friedhofsmanager.basedir}">
+      <include name="src"/>
+      <include name="res"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.friedhofsmanager" depends="compile.module.friedhofsmanager.production,compile.module.friedhofsmanager.tests" description="Compile module Friedhofsmanager"/>
+  
+  <target name="compile.module.friedhofsmanager.production" depends="register.custom.compilers" description="Compile module Friedhofsmanager; production classes">
+    <mkdir dir="${friedhofsmanager.output.dir}"/>
+    <javac2 destdir="${friedhofsmanager.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.friedhofsmanager}/javac">
+      <compilerarg line="${compiler.args.friedhofsmanager}"/>
+      <bootclasspath refid="friedhofsmanager.module.bootclasspath"/>
+      <classpath refid="friedhofsmanager.module.production.classpath"/>
+      <src refid="friedhofsmanager.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.friedhofsmanager"/>
+    </javac2>
+    
+    <copy todir="${friedhofsmanager.output.dir}">
+      <fileset dir="${module.friedhofsmanager.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.friedhofsmanager.basedir}/res">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.friedhofsmanager.tests" depends="register.custom.compilers,compile.module.friedhofsmanager.production" description="compile module Friedhofsmanager; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.friedhofsmanager" description="cleanup module">
+    <delete dir="${friedhofsmanager.output.dir}"/>
+    <delete dir="${friedhofsmanager.testoutput.dir}"/>
+  </target>
+</project>

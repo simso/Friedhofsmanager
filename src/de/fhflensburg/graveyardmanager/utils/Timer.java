@@ -17,6 +17,9 @@ public class Timer
 	private float deltaStock;
 	private int limit;
 	private int limitCounter;
+    public long spielstunden = 0;
+    public long spieltage = 1;
+
 
 	public Timer(int eventTime)
 	{
@@ -83,7 +86,22 @@ public class Timer
 
 	public String getTime()
 	{
-		return String.format("%d min, %d sec", TimeUnit.MILLISECONDS.toMinutes((long) eventTime), TimeUnit.MILLISECONDS.toSeconds((long) eventTime) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) eventTime)));
+
+
+        if((((TimeUnit.MILLISECONDS.toSeconds((long)deltaStock)))) > 0)
+        /**
+         *  der deltaStock liefert die fps in Millisekunden zurück, daher müssen sie mit
+         *  24[fps]*25[Zeitfaktor]*60[Minuten] = 36000 berechnet werden         *
+          */
+            spielstunden++;
+
+            if (spielstunden == 36000*24)
+            {
+                spieltage++;
+                spielstunden=0;
+            }
+
+		return String.format("%d. Tag, %d Uhr", (long)spieltage, (long)spielstunden/36000);
 	}
 
 }

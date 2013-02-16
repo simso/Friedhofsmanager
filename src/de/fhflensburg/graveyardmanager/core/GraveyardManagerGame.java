@@ -86,6 +86,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		addState(new EndGameView());
 		addState(new GameOptionsView());
         getContainer().setShowFPS(false);
+
 //		if (!Configuration.isDebugMode())
 //		{
 //			enterState(GameStates.SPLASH_SCREEN_STATE.ordinal());
@@ -138,9 +139,10 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 		container.setVSync(Configuration.isVSync());
 		container.setMusicVolume(Configuration.getMusicVolume());
 		container.setSoundVolume(Configuration.getSoundVolume());
-		container.setShowFPS((Configuration.isDebugMode()) ? true : false);
+		//container.setShowFPS((Configuration.isDebugMode()) ? true : false);
 		container.setVerbose((Configuration.isDebugMode()) ? true :false);
 		container.setVSync(Configuration.isVSync());
+        container.setShowFPS(false);
 	}
 
 	public void setCurrentConfiguration() throws IOException, SlickException

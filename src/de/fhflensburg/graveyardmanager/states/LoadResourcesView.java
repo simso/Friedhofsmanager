@@ -24,6 +24,7 @@ public class LoadResourcesView extends View
 	/** The animation of the candle */
 	public Animation startAnimation;
 
+
 	private static final int WAIT_TIME_BEFORE_NEXTRESOURCE = 100;
 
 	private boolean finished;
@@ -39,7 +40,7 @@ public class LoadResourcesView extends View
 	{
 		timer = new Timer(WAIT_TIME_BEFORE_NEXTRESOURCE);
 		this.container = container;
-		backgroundImages = new Image[27];
+		backgroundImages = new Image[204];
 		initResources();
 	}
 
@@ -61,10 +62,10 @@ public class LoadResourcesView extends View
 			GameMusic.loopMainTheme();
 			for (int i = 0; i < backgroundImages.length; i++)
 			{
-				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/Fledermaus_" + i + ".png");
+				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/Load_" + i + ".png");
 			}
 
-			startAnimation = new Animation(backgroundImages, 110);
+			startAnimation = new Animation(backgroundImages, 24);
 		} catch (SlickException e)
 		{
 			e.printStackTrace();
@@ -80,18 +81,27 @@ public class LoadResourcesView extends View
 	@Override
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
-//		super.renderGame(gameContainer, stateBasedGame, g);
-		g.setColor(Color.red);
-		if (!finished)
+		super.renderGame(gameContainer, stateBasedGame, g);
+        g.setColor(Color.lightGray);
+        if (!finished)
 		{
-			backgroundImages[0].draw((container.getWidth() / 2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
-			g.drawString("Lade ... " + ResourceManager.getAdvancement() + "%", (container.getWidth() / 2) - 80, (container.getHeight() / 2) + 300);
-		}
-		else
-		{
-			startAnimation.draw((container.getWidth() / 2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
-			g.drawString("Drücke eine Taste oder klick mit der Maus", (container.getWidth() / 2) - 200, (container.getHeight() / 2) + 300);
-		}
+			//backgroundImages[0].draw((container.getWidth()/2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
+            backgroundImages[0].draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
+			g.drawString("Lade ... " + ResourceManager.getAdvancement() + "%", (container.getWidth() / 2) - 40, (container.getHeight() / 2) + 200);
+        }else
+        {
+            //startAnimation.draw((container.getWidth() / 2) - (backgroundImages[0].getWidth()/2), 80, backgroundImages[0].getWidth(), backgroundImages[0].getHeight());
+            //g.drawString("Drücke eine Taste oder klick mit der Maus", (container.getWidth() / 2) - 200, (container.getHeight() / 2) + 300);
+            if(startAnimation.getFrame() != 203)
+            {
+                startAnimation.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
+                startAnimation.getFrame();
+            }else
+            {
+                startAnimation.stopAt(204);
+                goToMenu();
+            }
+        }
 	}
 
 	@Override
@@ -108,18 +118,16 @@ public class LoadResourcesView extends View
 				for (int i = 2; i < stateBasedGame.getStateCount(); i++)
 				{
 					View view = ((GraveyardManagerGame) stateBasedGame).getStateById(i);
-					view.initResources();
+                    view.initResources();
 				}
-
 				// TODO: Init the music here
 				finished = true;
-			}
-
-			timer.resetTime();
+            }
+	    	timer.resetTime();
 		}
 	}
 
-	@Override
+    /**@Override
 	public void keyPressed(int key, char c)
 	{
 		super.keyPressed(key, c);
@@ -131,14 +139,15 @@ public class LoadResourcesView extends View
 	{
 		super.mousePressed(button, x, y);
 		goToMenu();
-	}
+	}**/
 
 	private void goToMenu()
 	{
-		if (finished)
-		{
+		//if (finished)
+		//{
 			container.setMouseGrabbed(false);
-			game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal(), fot, fit);
-		}
+			//game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal(), fot, fit);
+			game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
+		//}
 	}
 }

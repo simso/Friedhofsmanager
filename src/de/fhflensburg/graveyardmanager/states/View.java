@@ -28,7 +28,7 @@ import org.newdawn.slick.state.transition.FadeOutTransition;
 public abstract class View extends NiftyOverlayBasicGameState
 {
 
-	/** Holds the window where the game lives in */
+	/** Holds the window where the game lives iTn */
 	protected GameContainer container;
 
 	/** The game context */

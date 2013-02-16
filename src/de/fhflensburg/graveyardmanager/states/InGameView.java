@@ -195,7 +195,6 @@ public class InGameView extends View
 		if (gameController.getBuilding() != null)
 		{
 			gameController.getBuilding().renderLocationOnMap(g);
-
 		}
 
 		if (gameOver)
@@ -268,14 +267,18 @@ public class InGameView extends View
 			int y = getMouseY() / getTileH();
 			if (gameController.getBuilding() != null && gameController.getBuilding().isValidLocation())
 			{
-				ActiveEntity activeEntity = EntityGenerator.createEntity(this, gameController.getBuilding().getType(), getPlayer().getId());
-				activeEntity.setLocation(x * getTileW(), y * getTileH());
+
+//				ActiveEntity activeEntity = EntityGenerator.createEntity(this, gameController.getBuilding().getType(), getPlayer().getId());
+                ActiveEntity activeEntity = EntityGenerator.createEntity(this, gameController.getBuilding().getType(), getPlayer().getId());
+
+                activeEntity.setLocation(x*getTileW(),y*getTileH());
+
 				addEntity(activeEntity);
 			}
-			else if(gameController.getBuilding() != null && !gameController.getBuilding().isValidLocation())
-            {
-                gameController.resetBuilding();
-            }
+//			else if(gameController.getBuilding() != null && !gameController.getBuilding().isValidLocation())
+//            {
+//                gameController.resetBuilding();
+//            }
 
 			gameController.resetBuilding();
 		}

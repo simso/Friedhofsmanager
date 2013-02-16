@@ -84,15 +84,15 @@ public class InGameController implements ScreenController
 	public void render()
 	{
 		screen.findElementByName("money").getRenderer(TextRenderer.class).setText("Guthaben: " + view.getPlayer().getBalance());
-		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen:" + view.getPlayer().getScore());
-		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit:" + view.getGameTime());
+		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen: " + view.getPlayer().getScore());
+		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit: " + view.getGameTime());
 	}
 
 	public void update()
 	{
 		screen.findElementByName("money").getRenderer(TextRenderer.class).setText("Guthaben: " + view.getPlayer().getBalance());
-		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen:" + view.getPlayer().getScore());
-		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit:" + view.getGameTime());
+		screen.findElementByName("bodycount").getRenderer(TextRenderer.class).setText("Anzahl der Leichen: " + view.getPlayer().getScore());
+		screen.findElementByName("time").getRenderer(TextRenderer.class).setText("Zeit: " + view.getGameTime());
 	}
 
 	@Override

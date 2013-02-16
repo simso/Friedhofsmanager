@@ -34,6 +34,7 @@ public final class EntityData
 	public static boolean isTombstone(int type)
 	{
 		return type >= TOMBSTONE_WATER && type <= TOMBSTONE_GRANITE;
+
 	}
 
 	public static final String[] NAMES = new String[]

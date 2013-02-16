@@ -291,12 +291,15 @@ public class CreateGameView extends View implements ScreenController
 	@NiftyEventSubscriber(id = "startGameButton")
 	public void onStartGameButton(final String id, final ButtonClickedEvent event)
 	{
+        // Übergangslösung, da Sahara in dieser Version nicht auswählbar sein soll
+        currentMapSelection = "Wiese";
+
 		Level level = new Level(currentMapSelection);
 		Player player = new Player(1, "Stefano", 0);
 		level.addPlayer(player);
 		game.getEngine().initGame(level);
 		game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
-
+        game.getContainer().setShowFPS(false);
 	}
 
 	/**

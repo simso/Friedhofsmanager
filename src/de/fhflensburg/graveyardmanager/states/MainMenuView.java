@@ -36,7 +36,7 @@ public class MainMenuView extends View
 
 	public void initResources()
 	{
-		backgroundImage = ResourceManager.getImage("Fledermaus_16");
+		backgroundImage = ResourceManager.getImage("Load_203");
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class MainMenuView extends View
 	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
 	{
 		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
-		g.setColor(Color.black);
+		g.setColor(Color.lightGray);
 
 		if (Configuration.isDebugMode())
 		{
@@ -65,7 +65,7 @@ public class MainMenuView extends View
 	}
 
 	/**
-	 * Implements the method from BasicGameState to pass the input to the game
+	 * Implements the method fromF BasicGameState to pass the input to the game
 	 *
 	 * @param key
 	 * @param c

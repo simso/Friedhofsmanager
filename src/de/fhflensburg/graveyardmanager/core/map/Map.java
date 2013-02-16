@@ -268,6 +268,4 @@ public class Map extends TiledMap implements Comparable<Map>
 			}
 		}
 	}
-
-
 }
