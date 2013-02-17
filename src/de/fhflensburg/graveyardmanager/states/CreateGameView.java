@@ -37,15 +37,14 @@ public class CreateGameView extends View implements ScreenController
 	/** An instance of the game */
 	GraveyardManagerGame game;
 
-	/** Contains the name of the selected map */
-	private String currentMapSelection;
+
 
 	/**
 	 * The default constructor
 	 */
 	public CreateGameView()
 	{
-		currentMapSelection = "Wiese";
+
 	}
 
 	/**
@@ -103,7 +102,7 @@ public class CreateGameView extends View implements ScreenController
 	public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
 	{
 		super.prepareNifty(nifty, stateBasedGame);
-		nifty.fromXml(GUI_PATH + "creategame.xml", "start", new CreateGameView(stateBasedGame));
+		nifty.fromXml(GUI_PATH + "creategame.xml", "startchar", new CreateGameView(stateBasedGame));
 	}
 
 	/**
@@ -143,13 +142,13 @@ public class CreateGameView extends View implements ScreenController
 	 * @param id The elementId that has published the event
 	 * @param event The fired event object
 	 */
-	@NiftyEventSubscriber(id = "mapSelect")
-	public void onSwitchMapSelection(final String id, final ImageSelectSelectionChangedEvent event)
-	{
-		currentMapSelection = getMapName(event.getSelectedIndex());
-		Element textElement = screen.findElementByName("mapSelectLabel");
-		textElement.getRenderer(TextRenderer.class).setText(currentMapSelection);
-	}
+//	@NiftyEventSubscriber(id = "mapSelect")
+//	public void onSwitchMapSelection(final String id, final ImageSelectSelectionChangedEvent event)
+//	{
+//		currentMapSelection = getMapName(event.getSelectedIndex());
+//		Element textElement = screen.findElementByName("mapSelectLabel");
+//		textElement.getRenderer(TextRenderer.class).setText(currentMapSelection);
+//	}
 
 	/**
 	 * This method will be handled from Nifty through the annotation.
@@ -175,10 +174,10 @@ public class CreateGameView extends View implements ScreenController
 	 *
 	 * @return The current name of the map
 	 */
-	public String getMapName()
-	{
-		return getMapName(0);
-	}
+//	public String getMapName()
+//	{
+//		return getMapName(0);
+//	}
 
 	/**
 	 * This method will be called if the user select a map and will update the name of the map
@@ -187,27 +186,27 @@ public class CreateGameView extends View implements ScreenController
 	 * @param id The index of the map
 	 * @return The name of the selected map
 	 */
-	public String getMapName(int id)
-	{
-		String result;
-
-		switch (id)
-		{
-			case 0:
-				result = "Sahara";
-				break;
-
-			case 1:
-				result = "Wiese";
-				break;
-
-			default:
-				result = "Sahara";
-				break;
-		}
-
-		return result;
-	}
+//	public String getMapName(int id)
+//	{
+//		String result;
+//
+//		switch (id)
+//		{
+//			case 0:
+//				result = "Sahara";
+//				break;
+//
+//			case 1:
+//				result = "Wiese";
+//				break;
+//
+//			default:
+//				result = "Sahara";
+//				break;
+//		}
+//
+//		return result;
+//	}
 
 	/**
 	 * This method will be called from Nifty XML file
@@ -215,10 +214,10 @@ public class CreateGameView extends View implements ScreenController
 	 *
 	 * @return Comma separated string with map image locations
 	 */
-	public String getAllMaps()
-	{
-		return "res/de/fhflensburg/graveyardmanager/images/Sahara.png,res/de/fhflensburg/graveyardmanager/images/Wiese.png";
-	}
+//	public String getAllMaps()
+//	{
+//		return "res/de/fhflensburg/graveyardmanager/images/Sahara.png,res/de/fhflensburg/graveyardmanager/images/Wiese.png";
+//	}
 
 	/**
 	 * This method will be called from Nifty XML file
@@ -288,18 +287,18 @@ public class CreateGameView extends View implements ScreenController
 	 * @param id The elementId that has published the event
 	 * @param event The fired event object
 	 */
-	@NiftyEventSubscriber(id = "startGameButton")
+	@NiftyEventSubscriber(id = "gotoMapButton")
 	public void onStartGameButton(final String id, final ButtonClickedEvent event)
 	{
         // Übergangslösung, da Sahara in dieser Version nicht auswählbar sein soll
-        currentMapSelection = "Wiese";
-
-		Level level = new Level(currentMapSelection);
-		Player player = new Player(1, "Stefano", 0);
-		level.addPlayer(player);
-		game.getEngine().initGame(level);
-		game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
-        game.getContainer().setShowFPS(false);
+//        currentMapSelection = "Wiese";
+//
+//		Level level = new Level(currentMapSelection);
+//		Player player = new Player(1, "Stefano", 0);
+//		level.addPlayer(player);
+//		game.getEngine().initGame(level);
+		game.enterState(GraveyardManagerGame.GameStates.CREATE_MAP_STATE.ordinal());
+//        game.getContainer().setShowFPS(false);
 	}
 
 	/**

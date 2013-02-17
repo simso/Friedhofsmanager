@@ -1,0 +1,26 @@
+git status 
+git commit <datei> oder <-a> <"Message hinzufügen">
+git branch -v
+then type :wq <Enter> or ZZ.
+
+$ git log
+
+zeigt dir eine Liste der bisherigen Commits und deren SHA1 Hashwerte:
+
+commit 766f9881690d240ba334153047649b8b8f11c664
+Author: Bob <bob@example.com>
+Date:   Tue Mar 14 01:59:26 2000 -0800
+
+    Ersetze printf() mit write().
+
+commit 82f5ea346a2e651544956a8653c0f58dc151275c
+Author: Alice <alice@example.com>
+Date:   Thu Jan 1 00:00:00 1970 +0000
+
+    Initial commit.
+
+Die ersten paar Zeichen eines Hashwert reichen aus um einen Commit zu identifizieren; alternativ benutze kopieren und einfügen für den kompletten Hashwert. Gib ein:
+
+$ git reset --hard 766f
+
+git stash save "update" << name für die Pinwand geben
