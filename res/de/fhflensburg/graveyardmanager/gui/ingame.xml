@@ -16,7 +16,7 @@
 
                 <panel childLayout="absolute">
                     <panel id="window_BuildItems" name="window" childLayout="vertical"   width="800px" height="700px"  y="5%" title="${locallang.build}" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Katalog.png">
-                        <panel height="40px" width="670px" childLayout="vertical" marginTop="128px" marginLeft="0px">
+                        <panel height="40px" width="670px" childLayout="vertical" marginTop="128px" marginLeft="0px" marginBottom="30px">
                             <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px" width="32px" visibleToMouse="true" align="right" id="closeBuild">
                                 <effect>
                                     <onClick name="fade" start="#a8" end="#a8" targetElement="closeBuild" />
@@ -76,9 +76,9 @@
                                 </image>
                                 <text text="500" style="base-font" color="#000000" align="center" />
                             </panel>
-                            <panel childLayout="vertical" x="490px">
+                            <panel childLayout="vertical" x="470px">
 
-                                          <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,2" height="64px" width="64px" x="380px" y="0px">
+                                          <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/images/Haus.png" height="64px" width="64px" x="380px" y="0px">
                                               <effect>
                                                   <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_6" />
                                                   <onHover name="hint" hintText="Kapelle" hintDelay="100"/>
@@ -86,11 +86,11 @@
                                               <interact onClick="buildItem(1)"/>
                                           </image>
                                 </panel>
-                            <panel childLayout="vertical" x="580px">
-                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,1" height="64px" width="64px" x="454px" y="0px">
+                            <panel childLayout="vertical" x="650px">
+                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/images/Florist.png" height="64px" width="64px" x="454px" y="0px">
                                               <effect>
                                                   <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_7" />
-                                                  <onHover name="hint" hintText="Haus" hintDelay="100"/>
+                                                  <onHover name="hint" hintText="Florist" hintDelay="100"/>
                                               </effect>
                                               <interact onClick="buildItem(2)"/>
                                           </image>
@@ -135,7 +135,7 @@
                                 </effect>
                             </image>
                         </panel>
-                        <text wrap="true" text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll." font="fonts/Orienta-Regular.ttf" color="#000000" valign="center" width="60%" marginLeft="80px" />
+                        <text wrap="true" text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll." font="fonts/Orienta-Regular.ttf" color="#000000" valign="center" width="60%" marginLeft="80px" marginTop="100px" />
                     </panel>
                     <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                     <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->

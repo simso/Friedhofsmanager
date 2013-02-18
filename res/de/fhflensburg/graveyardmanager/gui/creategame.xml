@@ -5,7 +5,7 @@
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="startchar" controller="de.fhflensburg.graveyardmanager.states.CreateGameView">
-        <layer childLayout="vertical">
+        <layer childLayout="vertical" backgroundImage="">
                       <text text="Wähle Deinen Charakter aus:" textHAlign="center" align="center"
                   font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="2%"/>
             <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">
