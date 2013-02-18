@@ -151,4 +151,5 @@ public abstract class View extends NiftyOverlayBasicGameState
 	 */
 	public abstract void initResources();
 
+
 }

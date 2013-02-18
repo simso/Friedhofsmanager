@@ -23,7 +23,7 @@ public abstract class Building extends ActiveEntity implements IBigEntity
 	private static final int DEFAULT_DISTANCE_MAX_BETWEEN_BUILDINGS = 100;
 	protected static final Color FADE_RED = new Color(255, 0, 0, 100);
 	protected static final Color FADE_GREEN = new Color(0, 255, 0, 100);
-//    public int falszaehler;
+    public int falszaehler;
 
 	private boolean block;
 
@@ -58,7 +58,7 @@ public abstract class Building extends ActiveEntity implements IBigEntity
 		x = engine.getMouseX();
 		y = engine.getMouseY();
 
-//       falszaehler = 0;
+       falszaehler = 0;
 
 		int lx = (int) (x / engine.getTileW());
 		int ly = (int) (y / engine.getTileH());
@@ -74,10 +74,10 @@ public abstract class Building extends ActiveEntity implements IBigEntity
 			}
 		}
 		g.translate(-engine.getXScrollDecal(), -engine.getYScrollDecal());
-        /*if(falszaehler>0)
-            validLocation=false;
+    if(falszaehler>0)
+           validLocation=false;
         else
-            validLocation=true;*/
+           validLocation=true;
 	}
 
 	public boolean isValidLocation() {
@@ -85,14 +85,14 @@ public abstract class Building extends ActiveEntity implements IBigEntity
 	}
 
 	protected void checkValidLocation(Graphics g, int x, int y) {
-		if (/*engine.getMap().isEntityOccupy(x, y) ||*/ engine.getMap().isBlocked(x, y) || engine.getMap().isWater(x, y)) {
+		if (engine.getMap().isEntityOccupy(x, y) || engine.getMap().isBlocked(x, y) || engine.getMap().isWater(x, y)) {
 			g.setColor(FADE_RED);
-			validLocation = false;
+//			validLocation = false;
 
-//            falszaehler++;
+            falszaehler++;
 
 		} else {
-			validLocation = true;
+//			validLocation = true;
 			g.setColor(FADE_GREEN);
 		}
 	}
@@ -101,13 +101,13 @@ public abstract class Building extends ActiveEntity implements IBigEntity
 	public void setLocation(float x, float y) {
 		super.setLocation(x, y);
 
-		int lx = (int) (x / engine.getTileW());
-		int ly = (int) (y / engine.getTileH());
+        int lx = (int) (x / engine.getTileW());
+        int ly = (int) (y / engine.getTileH());
 
-		for (int i = 0; i < width / 20; i++) {
-			for (int j = 0; j < height / 20; j++) {
-				engine.getMap().addEntityLocation(this, block, lx + i, ly + j);
-			}
+        for (int i = 0; i < width / 64; i++) {
+            for (int j = 0; j < height / 64; j++) {
+                 engine.getMap().addEntityLocation(this, block, lx + i, ly + j);
+            }
 		}
 	}
 
