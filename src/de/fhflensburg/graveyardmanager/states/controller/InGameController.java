@@ -63,7 +63,7 @@ public class InGameController implements ScreenController
 		this.nifty = nifty;
 		this.screen = screen;
 		orderImages[0] = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Auftrag.png", false);
-		orderImages[1] = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Auftrag2.png", false);
+		orderImages[1] = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Auftrag_neu.png", false);
 		nonVisibleElementsAtStart[0] = screen.findElementByName("window_BuildItems");
 		nonVisibleElementsAtStart[1] = screen.findElementByName("window_OrderList");
 //		buildItems = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Tombstones.png", false);

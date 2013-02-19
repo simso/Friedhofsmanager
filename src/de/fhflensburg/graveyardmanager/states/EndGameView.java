@@ -32,7 +32,7 @@ public class EndGameView extends View
 	private Image image;
 
 	/** Defines the duration in ms how long the splash screen will be shown */
-	private static final int DELAY = 10000;
+	private static final int DELAY = 1000;
 
 	public EndGameView()
 	{

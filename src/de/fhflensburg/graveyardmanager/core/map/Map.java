@@ -63,6 +63,7 @@ public class Map extends TiledMap implements Comparable<Map>
 	{
 		needScroll = (getWidthInPixel() > engine.getContainer().getWidth() || getHeightInPixel() > engine.getContainer().getHeight());
 
+        // Reset ents location
 		for (int i = 0; i < entitiesLocations.length; i++) {
 			for (int j = 0; j < entitiesLocations[i].length; j++) {
 				entitiesLocations[i][j].clear();
@@ -181,7 +182,16 @@ public class Map extends TiledMap implements Comparable<Map>
 		public int y;
 	}
 
-	private static class EntityLocation
+
+    public boolean isEntityOccupy(int x, int y) {
+        if (x >= 0 && x < width && y >= 0 && y < height)
+            return entitiesLocations[x][y].isOccupy();
+        else
+            return true;
+    }
+
+
+    private static class EntityLocation
 	{
 	 	private ArrayList<Entity> entities;
 
