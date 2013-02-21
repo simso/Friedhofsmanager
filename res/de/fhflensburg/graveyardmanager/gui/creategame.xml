@@ -17,7 +17,7 @@
             </panel>
             <panel childLayout="horizontal" align="center" marginTop="2%">
                 <control id="gotoMapButton" name="button" valign="top" label="Weiter" />
-                <control id="backToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+                <control id="ToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
             </panel>
         </layer>
     </screen>

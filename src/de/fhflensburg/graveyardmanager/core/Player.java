@@ -23,6 +23,8 @@ public class Player {
 
 	private Order order;
 
+
+
 	private Player()
 	{
 		balance = 10000;
