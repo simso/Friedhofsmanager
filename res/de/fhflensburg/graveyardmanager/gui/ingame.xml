@@ -44,7 +44,7 @@
                                     </effect>
                                     <interact onClick="buildItem(4)"/>
                                 </image>
-                                <text text="500" style="base-font" color="#000000" align="center" />
+                                <text text="100" style="base-font" color="#000000" align="center" />
                             </panel>
                             <panel childLayout="vertical" x="190px">
                                 <image id="buildItem_3" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,3" height="64px" width="64px" x="158px" y="0px">
@@ -74,7 +74,7 @@
                                     </effect>
                                     <interact onClick="buildItem(0)"/>
                                 </image>
-                                <text text="500" style="base-font" color="#000000" align="center" />
+                                <text text="10.000" style="base-font" color="#000000" align="center" />
                             </panel>
                             <panel childLayout="vertical" x="490px">
 
@@ -85,6 +85,7 @@
                                               </effect>
                                               <interact onClick="buildItem(1)"/>
                                           </image>
+                                    <text text="5.000" style="base-font" color="#000000" align="center" />
                                 </panel>
                             <panel childLayout="vertical" x="580px">
                                 <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,1" height="64px" width="64px" x="454px" y="0px">
@@ -94,6 +95,7 @@
                                               </effect>
                                               <interact onClick="buildItem(2)"/>
                                           </image>
+                                    <text text="2.500" style="base-font" color="#000000" align="center" />
                                 </panel>
                             <!--<image id="buildItem_8" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="528px" y="0px">-->
                             <!--<interact onClick="buildItem()"/>-->

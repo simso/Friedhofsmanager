@@ -1,6 +1,7 @@
 package de.fhflensburg.graveyardmanager.states.controller;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
+import de.fhflensburg.graveyardmanager.core.Player;
 import de.fhflensburg.graveyardmanager.core.layers.entities.EntityData;
 import de.fhflensburg.graveyardmanager.core.layers.entities.EntityGenerator;
 import de.fhflensburg.graveyardmanager.core.layers.entities.buildings.Building;
@@ -14,6 +15,8 @@ import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
 import org.newdawn.slick.state.StateBasedGame;
+import java.lang.Integer;
+import java.*;
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -40,6 +43,8 @@ public class InGameController implements ScreenController
 
 	private Building building;
 
+    Player player;
+
 	NiftyImage[] orderImages = new NiftyImage[2];
 
 	private int newOrderImage;
@@ -53,7 +58,7 @@ public class InGameController implements ScreenController
 	public InGameController(StateBasedGame stateBasedGame, InGameView view)
 	{
 		game = (GraveyardManagerGame) stateBasedGame;
-		this.view = view;
+        this.view = view;
 		newOrdersNoticed = false;
 	}
 
@@ -126,8 +131,9 @@ public class InGameController implements ScreenController
 
 	public String getCurrentMoney()
 	{
-//		return view.getPlayer().getBalance() + "";
-		return "20000";
+
+        return view.getPlayer().getBalance() + "";
+
 	}
 
 	public String getCurrentBodies()
