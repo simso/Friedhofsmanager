@@ -1,15 +1,15 @@
 package de.fhflensburg.graveyardmanager.states;
 
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-<<<<<<< HEAD
+
 //import de.fhflensburg.graveyardmanager.core.Player;
 //import de.fhflensburg.graveyardmanager.core.music.GameMusic;
 //import de.fhflensburg.graveyardmanager.level.Level;
-=======
+
 import de.fhflensburg.graveyardmanager.core.Player;
 import de.fhflensburg.graveyardmanager.core.music.GameMusic;
 import de.fhflensburg.graveyardmanager.level.Level;
->>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
+
 import de.lessvoid.nifty.Nifty;
 import de.lessvoid.nifty.NiftyEventSubscriber;
 import de.lessvoid.nifty.controls.ButtonClickedEvent;
@@ -314,17 +314,12 @@ public class CreateGameView extends View implements ScreenController
 	 * @param id The elementId that has published the event
 	 * @param event The fired event object
 	 */
-<<<<<<< HEAD
+
     @NiftyEventSubscriber(id = "ToMainMenuButton")
     public void onToMainMenuButton(final String id, final ButtonClickedEvent event)
     {
         game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
     }
-=======
-	@NiftyEventSubscriber(id = "backToMainMenuButton")
-	public void onBackButtonClick(final String id, final ButtonClickedEvent event)
-	{
-		game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
-	}
->>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
+
+
 }

@@ -23,20 +23,14 @@ public class Player {
 
 	private Order order;
 
-<<<<<<< HEAD
+
 
 	private Player()
 	{
 		balance = 20000;
 		score = 0;
     }
-=======
-	private Player()
-	{
-		balance = 10000;
-		score = 0;
-	}
->>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
+
 
 	public Player(String name, int type)
 	{
@@ -164,8 +158,5 @@ public class Player {
 		this.order = order;
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
 }
