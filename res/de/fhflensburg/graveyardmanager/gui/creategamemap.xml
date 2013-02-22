@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <useStyles filename="nifty-default-styles.xml"/>
+    <useControls filename="nifty-default-controls.xml"/>
+
+    <screen id="start" controller="de.fhflensburg.graveyardmanager.states.CreateMapView">
+        <layer childLayout="vertical">
+            <text text="Wähle Deine Karte aus:" textHAlign="center" align="center"
+                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="2%"/>
+            <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">
+                <text id="mapSelectLabel" color="#ffff" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt"
+                      width="150px" text="${CALL.getMapName()}" valign="center"/>
+                <control id="mapSelect" name="imageSelect" width="250px" imageHeight="250px"
+                         imageList="${CALL.getAllMaps()}"/>
+            </panel>
+            <panel childLayout="horizontal" align="center" marginTop="2%">
+                <control id="startGameButton" name="button" valign="top" label="Starten" />
+                <control id="ToMapMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+            </panel>
+        </layer>
+    </screen>
+</nifty>
