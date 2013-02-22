@@ -5,18 +5,18 @@
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.CreateMapView">
-        <layer childLayout="vertical">
+        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Karte.png">
             <text text="Wähle Deine Karte aus:" textHAlign="center" align="center"
-                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="2%"/>
-            <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">
-                <text id="mapSelectLabel" color="#ffff" font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt"
-                      width="150px" text="${CALL.getMapName()}" valign="center"/>
+                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="30%"/>
+          <!--  <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%"> -->
+                <text id="mapSelectLabel" color="#ffff" font="fonts/Orienta-Regular.ttf"
+                      width="150px" text="${CALL.getMapName()}" valign="center" align="center"/>
                 <control id="mapSelect" name="imageSelect" width="250px" imageHeight="250px"
-                         imageList="${CALL.getAllMaps()}"/>
-            </panel>
+                         imageList="${CALL.getAllMaps()}" marginTop="1%"/>
+            <!-- </panel>  -->
             <panel childLayout="horizontal" align="center" marginTop="2%">
-                <control id="startGameButton" name="button" valign="top" label="Starten" />
-                <control id="ToCreateMapButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+                <control id="ToCreateMapButton" name="button" valign="top" label="Zurück" marginLeft="-10%"/>
+                <control id="startGameButton" name="button" valign="top" label="Starten" marginLeft="20%" />
             </panel>
         </layer>
     </screen>
