@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Manifest-Version: 1.0
 Main-Class: de.fhflensburg.graveyardmanager.Start
 
+=======
+Manifest-Version: 1.0
+Main-Class: de.fhflensburg.graveyardmanager.Start
+
+>>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506

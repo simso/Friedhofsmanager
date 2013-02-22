@@ -16,7 +16,11 @@
             </panel>
             <panel childLayout="horizontal" align="center" marginTop="2%">
                 <control id="startGameButton" name="button" valign="top" label="Starten" />
+<<<<<<< HEAD
                 <control id="ToMapMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+=======
+                <control id="backToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+>>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
             </panel>
         </layer>
     </screen>

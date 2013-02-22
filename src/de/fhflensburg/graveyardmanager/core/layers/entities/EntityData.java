@@ -51,6 +51,7 @@ public final class EntityData
 	public static final int[] PRICE = new int[]
 	{
 		// Buildings
+<<<<<<< HEAD
 		10000, //Kirche
 		5000,  //Kapelle
 		2500,  //Haus
@@ -59,6 +60,16 @@ public final class EntityData
 		100,  //Holzkreuz
 		250, //Grabstein (Sandstein)
 		500,  //Grabstein (Granit)
+=======
+		500,
+		500,
+		500,
+		// Tombstones
+		500,
+		500,
+		500,
+		500,
+>>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
 		// Ways
 
 		// Fences
