@@ -13,7 +13,220 @@
     <list id="fa726cf2-8ce3-49a0-b234-4c575ba7fd4a" name="Default" comment="" />
     <list id="b4d64b4e-d9c0-4d1a-a114-d71869d26c1b" name="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein." comment="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein.&#10;" />
     <list id="9f7688c4-49d2-4ecf-afcd-259a4b5fbc9c" name="GWIGD-21 - Sound hinzufügen" comment="GWIGD-21 - Sound hinzufügen&#10;" />
-    <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;" />
+    <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Auftrag_neu.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Auftrag_neu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Brief.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Brief.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Katalog.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Katalog.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_0.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_1.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_10.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_100.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_101.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_101.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_102.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_102.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_103.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_103.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_104.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_104.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_105.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_105.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_106.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_106.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_107.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_107.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_108.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_108.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_109.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_109.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_11.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_110.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_110.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_111.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_111.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_112.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_112.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_113.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_113.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_114.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_114.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_115.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_115.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_116.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_116.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_117.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_117.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_118.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_118.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_119.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_119.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_12.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_120.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_120.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_121.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_121.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_122.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_122.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_123.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_123.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_124.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_124.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_125.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_125.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_126.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_126.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_127.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_127.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_128.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_128.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_129.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_129.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_13.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_130.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_130.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_131.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_131.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_132.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_132.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_133.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_133.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_134.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_134.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_135.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_135.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_136.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_136.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_137.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_137.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_138.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_138.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_139.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_139.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_14.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_140.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_140.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_141.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_141.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_142.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_142.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_143.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_143.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_144.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_144.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_145.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_145.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_146.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_146.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_147.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_147.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_148.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_148.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_149.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_149.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_15.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_150.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_150.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_151.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_151.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_152.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_152.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_153.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_153.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_154.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_154.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_155.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_155.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_156.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_156.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_157.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_157.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_158.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_158.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_159.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_159.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_16.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_160.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_160.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_161.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_161.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_162.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_162.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_163.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_163.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_164.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_164.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_165.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_165.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_166.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_166.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_167.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_167.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_168.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_168.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_169.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_169.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_17.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_170.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_170.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_171.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_171.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_172.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_172.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_173.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_173.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_174.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_174.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_175.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_175.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_176.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_176.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_177.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_177.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_178.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_178.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_179.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_179.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_18.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_180.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_180.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_181.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_181.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_182.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_182.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_183.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_183.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_184.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_184.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_185.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_185.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_186.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_186.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_187.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_187.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_188.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_188.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_189.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_189.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_19.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_190.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_190.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_191.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_191.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_192.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_192.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_193.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_193.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_194.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_194.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_195.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_195.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_196.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_196.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_197.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_197.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_198.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_198.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_199.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_199.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_2.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_20.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_200.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_200.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_201.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_201.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_202.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_202.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_203.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_203.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_21.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_22.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_23.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_24.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_25.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_25.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_26.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_26.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_27.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_27.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_28.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_28.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_29.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_29.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_3.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_30.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_30.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_31.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_31.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_32.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_32.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_33.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_33.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_34.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_34.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_35.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_35.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_36.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_36.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_37.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_37.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_38.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_38.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_39.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_39.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_4.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_40.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_41.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_41.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_42.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_42.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_43.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_43.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_44.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_44.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_45.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_45.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_46.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_46.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_47.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_47.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_48.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_48.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_49.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_49.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_5.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_50.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_51.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_51.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_52.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_52.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_53.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_53.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_54.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_54.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_55.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_55.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_56.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_56.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_57.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_58.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_58.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_59.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_59.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_6.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_60.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_61.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_61.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_62.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_62.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_63.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_63.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_64.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_64.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_65.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_65.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_66.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_66.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_67.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_67.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_68.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_68.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_69.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_69.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_7.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_70.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_70.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_71.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_71.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_72.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_73.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_73.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_74.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_74.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_75.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_75.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_76.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_77.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_77.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_78.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_78.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_79.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_79.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_8.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_80.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_80.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_81.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_81.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_82.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_82.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_83.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_83.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_84.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_84.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_85.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_85.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_86.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_86.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_87.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_87.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_88.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_88.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_89.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_89.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_9.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_90.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_90.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_91.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_91.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_92.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_92.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_93.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_93.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_94.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_94.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_95.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_95.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_96.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_96.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_97.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_97.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_98.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_98.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_99.png" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Load_99.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/resources.jar" afterPath="$PROJECT_DIR$/libs/resources.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/game.properties" afterPath="$PROJECT_DIR$/config/game.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" />
+    </list>
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/options.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797962158" ignored="false" />
@@ -63,10 +276,10 @@
     <file path="/CreateGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797410295" ignored="false" />
     <file path="/InGameController.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1359449771807" ignored="false" />
     <file path="/a.dummy" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360801029792" ignored="false" />
-    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360923218580" ignored="false" />
+    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550864743" ignored="false" />
     <file path="/fragment.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342423195" ignored="false" />
-    <file path="/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360938613078" ignored="false" />
-    <file path="/Dummy.txt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360938034166" ignored="false" />
+    <file path="/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550805981" ignored="false" />
+    <file path="/Dummy.txt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361549614568" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,45 +294,13 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" />
-    <breakpoint_any default_suspend_policy="SuspendAll">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/controller/InGameController.java" line="0" class="InGameController.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="true" />
@@ -129,6 +310,41 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -141,16 +357,16 @@
       <file leaf-file-name="InGameView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="274" column="36" selection-start="8518" selection-end="8525" vertical-scroll-proportion="0.0">
+            <state line="267" column="36" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ingame.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ingame.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="51" selection-start="8505" selection-end="8505" vertical-scroll-proportion="0.0">
+            <state line="26" column="80" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.73593074">
               <folding />
             </state>
           </provider>
@@ -159,17 +375,22 @@
       <file leaf-file-name="InGameController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/controller/InGameController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="62" selection-start="4081" selection-end="4081" vertical-scroll-proportion="0.0">
+            <state line="127" column="62" selection-start="3994" selection-end="3994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="30" selection-start="1313" selection-end="1313" vertical-scroll-proportion="1.21843">
-              <folding />
+            <state line="97" column="11" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1361501858607" expanded="true" signature="986:1010" placeholder="{...}" />
+                <marker date="1361501858607" expanded="true" signature="1037:1061" placeholder="{...}" />
+                <marker date="1361501858607" expanded="true" signature="1108:1148" placeholder="{...}" />
+                <marker date="1361501858607" expanded="true" signature="1195:1337" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,6 +423,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -219,16 +445,16 @@
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/controller/InGameController.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/layers/entities/EntityData.java" />
-        <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Player.java" />
+        <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="width" value="1376" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -312,6 +538,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -319,12 +595,12 @@
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="friedhofsmanager" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -341,8 +617,8 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -365,17 +641,17 @@
       <recent name="de.fhflensburg.graveyardmanager.states" />
       <recent name="de.fhflensburg.graveyardmanager" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
-      <recent name="de.fhflensburg.graveyardmanager" />
-      <recent name="de.fhflensburg.games.graveyardmanager" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vadim\Desktop\Fh\5-WS12\GAME DESIGN\CasualGame\Hodie Mihi Cras Tibi\fonts" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\maps" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\images" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
+      <recent name="de.fhflensburg.graveyardmanager" />
+      <recent name="de.fhflensburg.games.graveyardmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
@@ -407,34 +683,7 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -455,12 +704,24 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method />
     </configuration>
     <configuration default="true" type="GriffonRunConfigurationType" factoryName="Griffon">
       <module name="" />
@@ -469,10 +730,7 @@
       <setting name="depsClasspath" value="true" />
       <setting name="passParentEnv" value="true" />
       <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -481,11 +739,36 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
@@ -512,51 +795,7 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" />
-      <option name="myWorkingDirectory" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="" />
@@ -570,12 +809,7 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="" />
@@ -595,12 +829,7 @@
       </option>
       <envs />
       <patterns />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -615,16 +844,16 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
+      <method />
     </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Start" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Start" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -681,8 +910,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,12 +921,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38292012" sideWeight="0.62646747" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13875598" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25975358" sideWeight="0.22328548" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16835916" sideWeight="0.6931567" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30612245" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17732115" sideWeight="0.83891547" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16108453" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6707504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Details" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.49675325" order="9" side_tool="false" content_ui="tabs" />
@@ -710,7 +940,6 @@
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30905077" sideWeight="0.48960498" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14238411" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -737,7 +966,6 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
@@ -747,9 +975,11 @@
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -899,11 +1129,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/SplashView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="581" selection-end="581" vertical-scroll-proportion="0.33913043" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/Graphics.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="21" selection-start="2597" selection-end="2597" vertical-scroll-proportion="2.0954862" />
@@ -951,28 +1176,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="36" selection-start="8518" selection-end="8525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="51" selection-start="8505" selection-end="8505" vertical-scroll-proportion="0.0">
+        <state line="267" column="36" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/controller/InGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="62" selection-start="4081" selection-end="4081" vertical-scroll-proportion="0.0">
+        <state line="127" column="62" selection-start="3994" selection-end="3994" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0" />
+        <state line="17" column="16" selection-start="364" selection-end="364" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/layers/entities/EntityData.java">
@@ -984,7 +1204,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="30" selection-start="1313" selection-end="1313" vertical-scroll-proportion="1.21843">
+        <state line="97" column="11" selection-start="1338" selection-end="1338" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1361501858607" expanded="true" signature="986:1010" placeholder="{...}" />
+            <marker date="1361501858607" expanded="true" signature="1037:1061" placeholder="{...}" />
+            <marker date="1361501858607" expanded="true" signature="1108:1148" placeholder="{...}" />
+            <marker date="1361501858607" expanded="true" signature="1195:1337" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Character.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="80" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.73593074">
           <folding />
         </state>
       </provider>
