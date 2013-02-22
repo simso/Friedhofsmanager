@@ -309,10 +309,8 @@ public class CreateMapView extends View implements ScreenController
      * @param id The elementId that has published the event
      * @param event The fired event object
      */
-
-    @NiftyEventSubscriber(id = "ToMapMenuButton")
-    public void onToMapMenuButton(final String id, final ButtonClickedEvent event)
-
+    @NiftyEventSubscriber(id = "ToCreateMapButton")
+    public void onToCreateMapButton(final String id, final ButtonClickedEvent event)
     {
         game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal());
     }

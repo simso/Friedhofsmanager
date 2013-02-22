@@ -15,15 +15,7 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
-<<<<<<< HEAD
     <annotationProcessing enabled="false" useClasspath="true" />
-=======
-    <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-    </annotationProcessing>
->>>>>>> 6cf063c3574ff0c51e0ed88bf2e0e2e11447a506
   </component>
 </project>
 

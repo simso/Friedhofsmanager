@@ -23,14 +23,11 @@ public class Player {
 
 	private Order order;
 
-
-
 	private Player()
 	{
 		balance = 20000;
 		score = 0;
-    }
-
+	}
 
 	public Player(String name, int type)
 	{
@@ -94,6 +91,7 @@ public class Player {
 		}
 		else
 		{
+            balance -= amount;
 			return false;
 		}
 	}
@@ -157,6 +155,5 @@ public class Player {
 	{
 		this.order = order;
 	}
-
 
 }

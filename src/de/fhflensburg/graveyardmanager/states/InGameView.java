@@ -8,11 +8,11 @@ import de.fhflensburg.graveyardmanager.core.layers.entities.ActiveEntity;
 import de.fhflensburg.graveyardmanager.core.layers.entities.EntityGenerator;
 import de.fhflensburg.graveyardmanager.core.layers.entities.IEntity;
 import de.fhflensburg.graveyardmanager.core.layers.entities.buildings.Building;
+import de.fhflensburg.graveyardmanager.core.layers.entities.EntityData;
 import de.fhflensburg.graveyardmanager.core.map.Map;
 import de.fhflensburg.graveyardmanager.core.music.GameMusic;
 import de.fhflensburg.graveyardmanager.core.music.GameSound;
 import de.fhflensburg.graveyardmanager.level.Level;
-import de.fhflensburg.graveyardmanager.core.layers.entities.EntityData;
 import de.fhflensburg.graveyardmanager.states.controller.InGameController;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.fhflensburg.graveyardmanager.utils.Timer;
@@ -229,17 +229,7 @@ public class InGameView extends View
 		mouseLeftPressed = gameContainer.getInput().isMousePressed(Input.MOUSE_LEFT_BUTTON);
 		mouseRightPressed = gameContainer.getInput().isMousePressed(Input.MOUSE_RIGHT_BUTTON);
 
-
-        //GameOverCheck if Money <=0
-//        if(getPlayer().getBalance()<=0)
-//        {
-//            gameOver=true;
-//        }
-
-//		sum up the time
-
-
-
+		// sum up the time
 		newOrderFlash.update(delta);
 
 		gameTime.update(delta);
@@ -282,10 +272,7 @@ public class InGameView extends View
                 ActiveEntity activeEntity = EntityGenerator.createEntity(this, gameController.getBuilding().getType(), getPlayer().getId());
                 activeEntity.setLocation(x*getTileW(),y*getTileH());
                 addEntity(activeEntity);
-
                 getPlayer().decreaseBalance(EntityData.PRICE[gameController.getBuilding().getType()]);
-
-
 
 			}
 			else if(gameController.getBuilding() != null && !gameController.getBuilding().isValidLocation())
@@ -321,7 +308,6 @@ public class InGameView extends View
 		if (gameOver || gameWin)
 		{
 			exit();
-
 		}
 	}
 
