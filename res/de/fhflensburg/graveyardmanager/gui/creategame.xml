@@ -5,19 +5,19 @@
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="startchar" controller="de.fhflensburg.graveyardmanager.states.CreateGameView">
-        <layer childLayout="vertical">
+        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Character.png">
                       <text text="Wähle Deinen Charakter aus:" textHAlign="center" align="center"
-                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="2%"/>
-            <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">
-                <text id="charSelectLabel" color="#ffff"
-                      font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" width="150px"
-                      text="${CALL.getCharacterName()}" valign="center"/>
-                <control id="charSelect" name="imageSelect" width="250px" imageHeight="250px"
-                         imageList="${CALL.getAllCharacterImages()}"/>
-            </panel>
+                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="30%"/>
+            <!--     <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">-->
+            <text id="charSelectLabel" color="#ffff"
+                  font="fonts/Orienta-Regular.ttf" width="150px"
+                  text="${CALL.getCharacterName()}" valign="center" align="center" />
+            <control id="charSelect" name="imageSelect" width="250px" imageHeight="250px"
+                     imageList="${CALL.getAllCharacterImages()}" marginTop="1%"/>
+            <!--   </panel>-->
             <panel childLayout="horizontal" align="center" marginTop="2%">
-                <control id="gotoMapButton" name="button" valign="top" label="Weiter" />
-                <control id="ToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="20%"/>
+                <control id="ToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="-10%"/>
+                <control id="gotoMapButton" name="button" valign="top" label="Weiter" marginLeft="20%" />
             </panel>
         </layer>
     </screen>
