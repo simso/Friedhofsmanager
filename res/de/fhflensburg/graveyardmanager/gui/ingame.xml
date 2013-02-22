@@ -25,7 +25,7 @@
                                 </effect>
                             </image>
                         </panel>
-                        <panel childLayout="absolute-inside" valign="top" width="602px" height="178px" marginTop="30px">
+                        <panel childLayout="absolute-inside" valign="top" width="602px" height="178px" marginTop="20px">
                             <!--    <panel childLayout="vertical" x="100px">
                                 <image id="buildItem_1" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" imageMode="sprite:64,64,1" height="64px" width="64px" marginTop="1%" valign="top" x="100px" y="0px" align="center">
                                     <effect>
