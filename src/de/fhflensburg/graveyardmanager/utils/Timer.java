@@ -101,7 +101,9 @@ public class Timer
                 spielstunden=0;
             }
 
-		return String.format("%d. Tag, %d Uhr", (long)spieltage, (long)spielstunden/36000);
+
+
+		return String.format("%d. Tag %d Uhr",spieltage, spielstunden/36000);
 	}
 
 }

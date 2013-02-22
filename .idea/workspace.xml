@@ -14,10 +14,45 @@
     <list id="b4d64b4e-d9c0-4d1a-a114-d71869d26c1b" name="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein." comment="GWIGD-22 - Füge die Kerzeanimation in den Pausebildschirm ein.&#10;" />
     <list id="9f7688c4-49d2-4ecf-afcd-259a4b5fbc9c" name="GWIGD-21 - Sound hinzufügen" comment="GWIGD-21 - Sound hinzufügen&#10;" />
     <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;">
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\barbi.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\barbi_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\barbie.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\barbie_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\biffi.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\biffi_0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\biffo.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\biffo_0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\bifi.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\bifi_0.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chick.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chick_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken2.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken2_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken_full.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\chicken_full_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\emilio.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\emilio2.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\emilio2_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\emilio_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht2.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht2_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht3.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht3_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht4.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht4_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht5.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht5_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht6.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht6_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht7.fnt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht7_00.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\sim\graveyardmanager\fonts\frucht_00.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fonts/edosz_Guthaben.ttf" afterPath="$PROJECT_DIR$/fonts/edosz_Guthaben.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/resources.jar" afterPath="$PROJECT_DIR$/libs/resources.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" afterPath="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java" afterPath="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java" />
     </list>
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,7 +92,7 @@
     <file path="$USER_HOME$/IdeaProjects/XmlTest/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360340647112" ignored="false" />
     <file path="/EntityGenerator.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360274784145" ignored="false" />
     <file path="/GraveyardManagerGame.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360186081611" ignored="false" />
-    <file path="/Timer.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360185248704" ignored="false" />
+    <file path="/Timer.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361565573699" ignored="false" />
     <file path="/View.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153718608" ignored="false" />
     <file path="/Map.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360149396229" ignored="false" />
     <file path="$USER_HOME$/Dropbox/Game Design Projekt/MS 6/graveyardmanager/res/de/fhflensburg/graveyardmanager/maps/Wiese.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360095108548" ignored="false" />
@@ -67,7 +102,7 @@
     <file path="/Building.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153621586" ignored="false" />
     <file path="/CreateGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797410295" ignored="false" />
     <file path="/InGameController.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1359449771807" ignored="false" />
-    <file path="/a.dummy" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360801029792" ignored="false" />
+    <file path="/a.dummy" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361560585222" ignored="false" />
     <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550864743" ignored="false" />
     <file path="/fragment.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342423195" ignored="false" />
     <file path="/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550805981" ignored="false" />
@@ -159,19 +194,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ingame.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ingame.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="49" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.0">
+            <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.63432837">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="creategamemap.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="locallang_de.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang_de.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="24" selection-start="232" selection-end="232" vertical-scroll-proportion="-7.48">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Timer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creategamemap.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="70" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53724605">
+            <state line="17" column="28" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,7 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" />
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/options.xml" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/GraveyardManagerGame.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/View.java" />
@@ -261,14 +316,15 @@
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" />
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" />
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1278" />
-    <option name="height" value="718" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="736" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -466,16 +522,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\gui" />
+      <recent name="C:\Users\sim\graveyardmanager\fonts" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\images" />
       <recent name="C:\Users\sim\graveyardmanager\src\de\fhflensburg\graveyardmanager\states" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\fonts" />
-      <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\maps" />
-      <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.fhflensburg.graveyardmanager.core.layers.entities" />
       <recent name="de.fhflensburg.graveyardmanager.states" />
       <recent name="de.fhflensburg.graveyardmanager" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
+      <recent name="de.fhflensburg.graveyardmanager" />
+      <recent name="de.fhflensburg.games.graveyardmanager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vadim\Desktop\Fh\5-WS12\GAME DESIGN\CasualGame\Hodie Mihi Cras Tibi\fonts" />
@@ -483,11 +544,6 @@
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\images" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
-      <recent name="de.fhflensburg.graveyardmanager" />
-      <recent name="de.fhflensburg.games.graveyardmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
@@ -746,24 +802,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1278" height="718" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1296" height="736" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3083779" sideWeight="0.48960498" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.8309179" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.340388" sideWeight="0.4958932" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38292012" sideWeight="0.62646747" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13547237" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13190731" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25975358" sideWeight="0.22328548" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17816092" sideWeight="0.82542694" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16399287" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17504051" sideWeight="0.84110534" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15889464" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6707504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Details" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.49675325" order="9" side_tool="false" content_ui="tabs" />
@@ -775,7 +832,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30905077" sideWeight="0.48960498" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -965,16 +1021,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/slick.jar!/org/newdawn/slick/Graphics.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="21" selection-start="2597" selection-end="2597" vertical-scroll-proportion="2.0954862" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/map/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="0" selection-start="5042" selection-end="5042" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/layers/entities/buildings/Building.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="93" column="42" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0" />
@@ -1040,13 +1086,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="49" selection-start="1785" selection-end="1785" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/images/Character.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1061,7 +1100,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="70" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.53724605">
+        <state line="17" column="28" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang_de.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="232" selection-end="232" vertical-scroll-proportion="-7.48">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.63432837">
           <folding />
         </state>
       </provider>
