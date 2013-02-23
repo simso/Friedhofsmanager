@@ -199,14 +199,14 @@ public class InGameView extends View
 
 		}
 
-        if (gameOver)
-		{
-			g.drawImage(gameOverImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
-		}
-		else if (gameWin)
-		{
-			g.drawImage(gameWinImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
-		}
+//        if (gameOver)
+//		{
+//			g.drawImage(gameOverImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
+//		}
+//		else if (gameWin)
+//		{
+//			g.drawImage(gameWinImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
+//		}
 
 		gameController.render();
 	}
@@ -233,6 +233,9 @@ public class InGameView extends View
 		newOrderFlash.update(delta);
 
 		gameTime.update(delta);
+
+        if(getPlayer().getBalance()<=0)
+            gameOver=true;
 
 		if ((newOrderFlash.isTimeComplete()) && (!gameController.newOrdersNoticed))
 		{

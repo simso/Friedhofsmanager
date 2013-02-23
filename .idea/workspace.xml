@@ -16,61 +16,61 @@
     <list default="true" id="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" name="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI" comment="GWIGD-14 - Einbinden des GUI Frameworks Nifty GUI&#10;" />
     <ignored path="Friedhofsmanager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559889093" ignored="false" />
-    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559889093" ignored="false" />
-    <file path="/creategame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559529595" ignored="false" />
-    <file path="/creategamemap.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559727001" ignored="false" />
-    <file path="/Dummy.txt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361558323155" ignored="false" />
-    <file path="/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550805981" ignored="false" />
-    <file path="/fragment.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342423195" ignored="false" />
-    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550864743" ignored="false" />
-    <file path="/a.dummy" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361560585222" ignored="false" />
-    <file path="/InGameController.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1359449771807" ignored="false" />
-    <file path="/CreateGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797410295" ignored="false" />
-    <file path="/Building.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153621586" ignored="false" />
-    <file path="/InGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360311933239" ignored="false" />
-    <file path="/Wiese.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360081759469" ignored="false" />
-    <file path="/Wiese_alt.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360082761511" ignored="false" />
-    <file path="$USER_HOME$/Dropbox/Game Design Projekt/MS 6/graveyardmanager/res/de/fhflensburg/graveyardmanager/maps/Wiese.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360095108548" ignored="false" />
-    <file path="/Map.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360149396229" ignored="false" />
-    <file path="/View.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153718608" ignored="false" />
-    <file path="/Timer.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361565573699" ignored="false" />
-    <file path="/GraveyardManagerGame.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360186081611" ignored="false" />
-    <file path="/EntityGenerator.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360274784145" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/XmlTest/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360340647112" ignored="false" />
-    <file path="/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460162433" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/XmlTest/src/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360340483974" ignored="false" />
-    <file path="/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360341839553" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360341844251" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342103387" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342170617" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342159330" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342093983" ignored="false" />
-    <file path="/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342093983" ignored="false" />
-    <file path="/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342102145" ignored="false" />
-    <file path="/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459675089" ignored="false" />
-    <file path="/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459499426" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342284023" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLListerature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342356144" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342393195" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342436982" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342509488" ignored="false" />
-    <file path="/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342463479" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460312859" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342863294" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460303000" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459860991" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460314979" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/literature.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360343367144" ignored="false" />
-    <file path="/Lavender.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360455826493" ignored="false" />
-    <file path="/EntityData.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360458759393" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Builds.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460301218" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Building.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460299310" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/literature.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460301218" ignored="false" />
-    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460165584" ignored="false" />
-    <file path="/test3.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360712595447" ignored="false" />
-    <file path="/courrier16b.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360713400808" ignored="false" />
     <file path="/options.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797962158" ignored="false" />
+    <file path="/courrier16b.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360713400808" ignored="false" />
+    <file path="/test3.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360712595447" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460165584" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/literature.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460301218" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Building.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460299310" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Builds.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460301218" ignored="false" />
+    <file path="/EntityData.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360458759393" ignored="false" />
+    <file path="/Lavender.fnt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360455826493" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/literature.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360343367144" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460314979" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459860991" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/model/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460303000" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342863294" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled2/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460312859" ignored="false" />
+    <file path="/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342463479" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342509488" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342436982" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/XMLLiterature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342393195" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLListerature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342356144" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/dataStorage/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342284023" ignored="false" />
+    <file path="/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459499426" ignored="false" />
+    <file path="/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360459675089" ignored="false" />
+    <file path="/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342102145" ignored="false" />
+    <file path="/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342093983" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/XMLinObject.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342093983" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Literature.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342159330" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Book.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342170617" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/src/Author.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342103387" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/untitled1/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360341844251" ignored="false" />
+    <file path="/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360341839553" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/XmlTest/src/Test.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360340483974" ignored="false" />
+    <file path="/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360460162433" ignored="false" />
+    <file path="$USER_HOME$/IdeaProjects/XmlTest/src/Main.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360340647112" ignored="false" />
+    <file path="/EntityGenerator.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360274784145" ignored="false" />
+    <file path="/GraveyardManagerGame.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360186081611" ignored="false" />
+    <file path="/Timer.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361565573699" ignored="false" />
+    <file path="/View.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153718608" ignored="false" />
+    <file path="/Map.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360149396229" ignored="false" />
+    <file path="$USER_HOME$/Dropbox/Game Design Projekt/MS 6/graveyardmanager/res/de/fhflensburg/graveyardmanager/maps/Wiese.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360095108548" ignored="false" />
+    <file path="/Wiese_alt.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360082761511" ignored="false" />
+    <file path="/Wiese.tmx" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360081759469" ignored="false" />
+    <file path="/InGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360311933239" ignored="false" />
+    <file path="/Building.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360153621586" ignored="false" />
+    <file path="/CreateGameView.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360797410295" ignored="false" />
+    <file path="/InGameController.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1359449771807" ignored="false" />
+    <file path="/a.dummy" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361560585222" ignored="false" />
+    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550864743" ignored="false" />
+    <file path="/fragment.java" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1360342423195" ignored="false" />
+    <file path="/ingame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361550805981" ignored="false" />
+    <file path="/Dummy.txt" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361558323155" ignored="false" />
+    <file path="/creategamemap.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559727001" ignored="false" />
+    <file path="/creategame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559529595" ignored="false" />
+    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559889093" ignored="false" />
+    <file path="$PROJECT_DIR$/libs/resources.jar!/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" changelist="702e48c3-12ed-426b-a2c1-6d06d72cb7f0" time="1361559889093" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,19 +142,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="InGameView.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="InGameView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="267" column="36" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
+            <state line="60" column="50" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-5.7233334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ingame.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ingame.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.019630484">
+            <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,13 +162,13 @@
       </file>
       <file leaf-file-name="locallang_de.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang_de.properties">
+          <provider editor-type-id="ResourceBundle">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="24" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle">
-            <state />
           </provider>
         </entry>
       </file>
@@ -256,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/layers/entities/buildings/Building.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/CreateGameView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/CreateMapView.java" />
-        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/controller/InGameController.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/layers/entities/EntityData.java" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/core/Player.java" />
@@ -264,6 +263,7 @@
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategamemap.xml" />
         <option value="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/creategame.xml" />
         <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java" />
+        <option value="$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java" />
       </list>
     </option>
   </component>
@@ -323,6 +323,30 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Friedhofsmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,7 +411,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graveyardmanager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -401,32 +429,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemId" value="graveyardmanager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Friedhofsmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -436,12 +448,12 @@
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="friedhofsmanager" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
@@ -458,8 +470,8 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -471,21 +483,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Gittest3\libs" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\gui" />
       <recent name="C:\Users\sim\graveyardmanager\fonts" />
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\images" />
       <recent name="C:\Users\sim\graveyardmanager\src\de\fhflensburg\graveyardmanager\states" />
-      <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\fonts" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="de.fhflensburg.graveyardmanager.core.layers.entities" />
       <recent name="de.fhflensburg.graveyardmanager.states" />
       <recent name="de.fhflensburg.graveyardmanager" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
-      <recent name="de.fhflensburg.graveyardmanager" />
-      <recent name="de.fhflensburg.games.graveyardmanager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Vadim\Desktop\Fh\5-WS12\GAME DESIGN\CasualGame\Hodie Mihi Cras Tibi\fonts" />
@@ -493,6 +500,11 @@
       <recent name="C:\Users\sim\graveyardmanager\res\de\fhflensburg\graveyardmanager\images" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui" />
       <recent name="$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="de.fhflensburg.graveyardmanager.core.layers" />
+      <recent name="de.fhflensburg.graveyardmanager" />
+      <recent name="de.fhflensburg.games.graveyardmanager" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Start">
@@ -531,6 +543,28 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -554,28 +588,6 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -604,45 +616,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" />
-      <option name="myWorkingDirectory" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -668,6 +641,45 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -798,24 +810,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3083779" sideWeight="0.48960498" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.307947" sideWeight="0.48960498" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.8309179" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.340388" sideWeight="0.4958932" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38292012" sideWeight="0.62646747" order="15" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13134658" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25975358" sideWeight="0.22328548" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17477284" sideWeight="0.84110534" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15789473" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17477284" sideWeight="0.69205296" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15783665" sideWeight="0.36979723" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6707504" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Kahlua" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ArgoUML Details" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.49675325" order="9" side_tool="false" content_ui="tabs" />
@@ -827,7 +840,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13190731" sideWeight="0.3815368" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1046,21 +1058,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="36" selection-start="8084" selection-end="8084" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang_de.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="24" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/utils/Timer.java">
@@ -1110,7 +1115,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/de/fhflensburg/graveyardmanager/gui/ingame.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.019630484">
+        <state line="15" column="68" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/fhflensburg/graveyardmanager/states/InGameView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="50" selection-start="2178" selection-end="2178" vertical-scroll-proportion="-5.7233334">
           <folding />
         </state>
       </provider>
