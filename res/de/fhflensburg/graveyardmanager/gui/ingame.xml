@@ -42,6 +42,7 @@
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_2" />
                                         <onHover name="hint" hintText="einfaches Holzkreuz" hintDelay="100"/>
                                         <onHover name="border" border="1px" color="#ffffff" />
+                                        <onClick name="hide" targetElement="window_BuildItems" />
                                     </effect>
                                     <interact onClick="buildItem(4)"/>
                                 </image>
@@ -53,6 +54,7 @@
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_3" />
                                         <onHover name="hint" hintText="Grabstein (Granit)" hintDelay="100"/>
                                         <onHover name="border" border="1px" color="#ffffff" />
+                                        <onClick name="hide" targetElement="window_BuildItems" />
                                     </effect>
                                     <interact onClick="buildItem(6)"/>
                                 </image>
@@ -65,17 +67,19 @@
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_4" />
                                         <onHover name="hint" hintText="Grabstein (Sandstein)" hintDelay="100"/>
                                         <onHover name="border" border="1px" color="#ffffff" />
+                                        <onClick name="hide" targetElement="window_BuildItems" />
                                     </effect>
                                     <interact onClick="buildItem(5)"/>
                                 </image>
                                 <text text="250" style="base-font" color="#000000" align="center" />
                             </panel>
                             <panel childLayout="vertical" x="400px">
-                                <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/images/Kirche.png" height="64px" width="64px" x="306px" y="0px">
+                                <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,3" height="64px" width="64px" x="306px" y="0px">
                                     <effect>
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_5" />
                                         <onHover name="hint" hintText="Kirche" hintDelay="100"/>
                                         <onHover name="border" border="1px" color="#ffffff" />
+                                        <onClick name="hide" targetElement="window_BuildItems" />
                                     </effect>
                                     <interact onClick="buildItem(0)"/>
                                 </image>
@@ -83,22 +87,24 @@
                             </panel>
                             <panel childLayout="vertical" x="490px">
 
-                                          <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/images/Florist.png" height="64px" width="64px" x="380px" y="0px">
+                                          <image id="buildItem_6" filename="res/de/fhflensburg/graveyardmanager/images/Florist.png" imageMode="sprite:320,320,2" height="64px" width="64px" x="380px" y="0px">
                                               <effect>
                                                   <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_6" />
                                                   <onHover name="hint" hintText="Florist" hintDelay="100"/>
                                                   <onHover name="border" border="1px" color="#ffffff" />
+                                                  <onClick name="hide" targetElement="window_BuildItems" />
                                               </effect>
                                               <interact onClick="buildItem(1)"/>
                                           </image>
                                         <text text="5.000" style="base-font" color="#000000" align="center" />
                                 </panel>
                             <panel childLayout="vertical" x="580px">
-                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/images/Haus.png" height="64px" width="64px" x="446px" y="0px">
+                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/sprites/320_320_Buildings.png" imageMode="sprite:320,320,1"  height="64px" width="64px" x="446px" y="0px">
                                               <effect>
                                                   <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_7" />
                                                   <onHover name="hint" hintText="Kapelle" hintDelay="100"/>
                                                   <onHover name="border" border="1px" color="#ffffff" />
+                                                  <onClick name="hide" targetElement="window_BuildItems" />
                                               </effect>
                                               <interact onClick="buildItem(2)"/>
                                           </image>
@@ -153,7 +159,7 @@
             </panel>
             <panel id="south" childLayout="horizontal" height="64px" valign="bottom" width="100%" align="center">
                 <panel childLayout="vertical" align="center" width="80%" marginLeft="10%">
-                    <panel backgroundColor="#5555" childLayout="horizontal" align="center" paddingRight="32px">
+                    <panel childLayout="horizontal" align="center" paddingRight="32px">
                         <image id="orderList" filename="res/de/fhflensburg/graveyardmanager/images/Auftrag.png"
                                height="64px" width="64px" margin="1%">
                             <effect>
