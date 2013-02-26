@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <useStyles filename="nifty-default-styles.xml"/>
+    <useControls filename="nifty-default-controls.xml"/>
+
+
+    <!--Neues Spiel x= 169 y=288 /// Höhe 48px Breite 161px -->
+    <!--Optionen x= 224 y=444 /// Höhe 38px Breite 130px -->
+    <!--Spiel fortsetzen x= 110 y=566 /// Höhe 103px Breite 148px -->
+    <!--Spiel beerdigen x= 419 y=616 /// Höhe 90px Breite 139px -->
+
+    <screen id="gomain" controller="de.fhflensburg.graveyardmanager.states.MainMenuView">
+        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Load_203.png">
+            <panel childLayout="absolute"  height="48px" width="161px" >
+                    <image id="neuesspiel" filename="res/de/fhflensburg/graveyardmanager/images/neuesspiel.png"  x="169px" y="300px">
+                    <interact onClick="goNeuesSpiel()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/neuesspielmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/neuesspiel.png" />
+                    </effect>
+                </image>
+             </panel>
+
+            <panel childLayout="absolute"  height="38px" width="130px" >
+                <image id="optionen" filename="res/de/fhflensburg/graveyardmanager/images/optionen.png"  x="224px" y="410px">
+                    <interact onClick="goOptionen()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/optionenmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/optionen.png" />
+                    </effect>
+                </image>
+            </panel>
+
+            <panel childLayout="absolute"  height="103px" width="148px" >
+                <image id="spielfortsetzen" filename="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png"  x="110px" y="500px">
+                    <interact onClick="goSpielFortsetzen()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielfortsetzenmosueover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png" />
+                    </effect>
+                </image>
+            </panel>
+
+            <panel childLayout="absolute"  height="90px" width="139px" >
+                <image id="spielbeerdigen" filename="res/de/fhflensburg/graveyardmanager/images/spielbeerdigen.png"  x="425px" y="460px">
+                    <interact onClick="goSpielBeerdigen()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielbeerdigenmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielbeerdigen.png" />
+                    </effect>
+                </image>
+            </panel>
+
+        </layer>
+    </screen>
+</nifty>
