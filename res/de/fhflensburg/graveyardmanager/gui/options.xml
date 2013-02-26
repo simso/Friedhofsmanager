@@ -33,7 +33,7 @@
                             <control id="resolutions" name="dropDown" width="200px" align="right" valign="center" />
                         </panel>
                         <panel childLayout="horizontal" height="*" width="*">
-                            <control id="exitButton" name="button" label="zurück" valign="bottom" align="left" />
+                            <control id="applyButton" name="button" label="zurück" valign="bottom" align="left" />
                          <!--   <control id="applyButton" name="button" label="Anwenden" valign="bottom" align="right" />-->
                         </panel>
                     </panel>

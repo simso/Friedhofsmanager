@@ -26,6 +26,7 @@ public class Chapel extends Building
 	{
 		super(engine, EntityData.BUILDING_CHAPEL, true, playerId);
 		image = ResourceManager.getSpriteSheet("Buildings");
+
 		width = image.getSprite(0, 0).getWidth();
 		height = image.getSprite(0, 0).getHeight();
 	}
