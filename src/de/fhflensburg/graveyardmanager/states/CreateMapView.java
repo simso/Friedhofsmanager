@@ -100,11 +100,11 @@ public class CreateMapView extends View implements ScreenController
      * @param stateBasedGame A representation of the game
      */
     @Override
-    public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-    {
-        super.prepareNifty(nifty, stateBasedGame);
-        nifty.fromXml(GUI_PATH + "creategamemap.xml", "start", new CreateMapView(stateBasedGame));
-    }
+     public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+{
+    super.prepareNifty(nifty, stateBasedGame);
+    nifty.fromXml(GUI_PATH + "creategamemap.xml", "start", new CreateMapView(stateBasedGame));
+}
 
     /**
      *

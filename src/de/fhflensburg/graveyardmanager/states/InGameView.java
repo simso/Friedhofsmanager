@@ -51,6 +51,7 @@ public class InGameView extends View
 	private Image gameWinImage;
 	private boolean gameOver;
 	private boolean gameWin;
+    public boolean gamehasstartedonce;
 	private ArrayList<Layer> layers;
 	private Level level;
 
@@ -83,6 +84,7 @@ public class InGameView extends View
 		mouseScrollSpeed = DEFAULT_MOUSE_SCROLL_SPEED;
 		isMinimapEnabled = false;
 		newOrderFlash = new Timer(1000);
+        gamehasstartedonce=true;
 		gameTime = new Timer(30000);
 		layers = new ArrayList<Layer>();
 		for (int i = 0; i < 5; i++)
@@ -125,6 +127,7 @@ public class InGameView extends View
 		resetEntsCount();
 		gameOver = false;
 		gameWin = false;
+        gamehasstartedonce=true;
 		mouseLeftPressed = false;
 		mouseRightPressed = false;
 		container.getInput().clearMousePressedRecord();
