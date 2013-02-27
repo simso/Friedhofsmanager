@@ -46,7 +46,7 @@ public class InGameController implements ScreenController
 
 	public boolean newOrdersNoticed;
 
-	public Element[] nonVisibleElementsAtStart = new Element[2];
+	public Element[] nonVisibleElementsAtStart = new Element[3];
 
 	private NiftyImage buildItems;
 
@@ -55,6 +55,7 @@ public class InGameController implements ScreenController
 		game = (GraveyardManagerGame) stateBasedGame;
 		this.view = view;
 		newOrdersNoticed = false;
+
 	}
 
 	@Override
@@ -66,6 +67,7 @@ public class InGameController implements ScreenController
 		orderImages[1] = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Auftrag_neu.png", false);
 		nonVisibleElementsAtStart[0] = screen.findElementByName("window_BuildItems");
 		nonVisibleElementsAtStart[1] = screen.findElementByName("window_OrderList");
+        nonVisibleElementsAtStart[2] = screen.findElementByName("window_OrderList2");
 //		buildItems = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Tombstones.png", false);
 
 	}
@@ -188,22 +190,21 @@ public class InGameController implements ScreenController
 					break;
 			}
 		}
-
-
 	}
 
-	public void newOrder()
-	{
-		newOrdersNoticed = true;
-		if (nonVisibleElementsAtStart[1].isVisible())
-		{
-			nonVisibleElementsAtStart[1].hide();
-		}
-		else
-		{
-			nonVisibleElementsAtStart[1].show();
-		}
-	}
+    public void newOrder() {
+
+        if (nonVisibleElementsAtStart[1].isVisible() || nonVisibleElementsAtStart[2].isVisible()) {
+            nonVisibleElementsAtStart[1].hide();
+            nonVisibleElementsAtStart[2].hide();
+        } else {
+            if (newOrdersNoticed) {
+                nonVisibleElementsAtStart[1].hide();
+                nonVisibleElementsAtStart[2].show();
+            } else nonVisibleElementsAtStart[1].show();
+        }
+        newOrdersNoticed = true;
+    }
 
     public void currentOrder()
     {

@@ -16,7 +16,7 @@
                 <text id="time" text="${locallang.timeofday}" height="32px" width="30%" font="fonts/edosz_Guthaben.ttf"
                       valign="center" color="#e6e6e6"/>
             </panel>
-            <panel id="middle" childLayout="center" height="85%" width="100%" x="47" y="25">
+            <panel id="middle" childLayout="center" height="85%" width="100%" x="47px" y="25px">
 
                 <panel childLayout="absolute">
                     <panel id="window_BuildItems" name="window" childLayout="vertical" width="800px" height="700px"
@@ -129,24 +129,7 @@
                                 </image>
                                 <text text="2.500" font="fonts/Orienta-Regular.ttf" color="#4c4a40" align="center"/>
                             </panel>
-                            <!--<image id="buildItem_8" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="528px" y="0px">-->
-                            <!--<interact onClick="buildItem()"/>-->
-                            <!--<effect>-->
-                            <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
-                            <!--</effect>-->
-                            <!--</image>-->
-                            <!--<image id="buildItem_9" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="10px" y="74px">-->
-                            <!--<interact onClick="buildItem()"/>-->
-                            <!--<effect>-->
-                            <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
-                            <!--</effect>-->
-                            <!--</image>-->
-                            <!--<image id="buildItem_10" filename="res/de/fhflensburg/graveyardmanager/sprites/64_64_Tombstones.png" height="64px" width="64px" x="84px" y="74px">-->
-                            <!--<interact onClick="buildItem()"/>-->
-                            <!--<effect>-->
-                            <!--<onHover name="hint" hintText="" hintDelay="100"/>-->
-                            <!--</effect>-->
-                            <!--</image>-->
+
                         </panel>
                     </panel>
                 </panel>
@@ -161,8 +144,8 @@
                         <interact onClick="toggleMiniMap()"/>
                     </image>
                 </panel>
-                <panel id="west" childLayout="vertical" width="100%">
-                    <panel id="window_OrderList" width="400px" height="600px" marginTop="100px" x="400px"
+                <panel id="west" childLayout="absolute" width="100%" x="47px" y="25px">
+                    <panel id="window_OrderList" width="400px" height="600px" marginTop="100px"
                            childLayout="vertical"
                            backgroundImage="res/de/fhflensburg/graveyardmanager/images/Brief.png">
                         <panel height="40px" width="350px" childLayout="vertical" marginTop="40px">
@@ -180,11 +163,9 @@
                               text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll."
                               font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
                               marginLeft="80px" marginTop="100px" color="#4c4a40" />
-                      <!--  <text wrap="true"
-                              text="Keine neuen Aufträge vorhanden" font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
-                              marginLeft="80px" marginTop="100px" color="#4c4a40" />-->
+
                     </panel>
-                  <!--  <panel id="window_OrderList2" width="400px" height="600px" x="400px"
+                    <panel id="window_OrderList2" width="400px" height="600px"
                            childLayout="vertical"
                            backgroundImage="res/de/fhflensburg/graveyardmanager/images/alter_Brief.png">
                         <panel height="40px" width="350px" childLayout="vertical" marginTop="40px">
@@ -202,7 +183,7 @@
                               text="Kein neuer Auftrag vorhanden"
                               font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
                               marginLeft="80px" marginTop="100px" color="#4c4a40" />
-                    </panel>   -->
+                    </panel>
                     <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                     <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                     <!--</control>-->
