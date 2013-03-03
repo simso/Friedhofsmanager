@@ -5,7 +5,7 @@
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="startchar" controller="de.fhflensburg.graveyardmanager.states.CreateGameView">
-        <layer childLayout="vertical">
+        <layer childLayout="vertical" id="backgroundimage" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Character_Gevatter.png">
             <panel childLayout="absolute" width="38px" height="49px"  >
                 <image id="pfeilrechts" filename="res/de/fhflensburg/graveyardmanager/images/pfeilrechts.png"  x="670px" y="341px">
                     <interact onClick="goNextChar()" />
@@ -23,10 +23,10 @@
                 </image>
             </panel>
             <panel childLayout="absolute" width="109px" height="31px"  >
-                <image id="MainMenuButton" filename="res/de/fhflensburg/graveyardmanager/images/charzrück.png"  x="80px" y="590px">
+                <image id="MainMenuButton" filename="res/de/fhflensburg/graveyardmanager/images/charzrueck.png"  x="80px" y="590px">
                     <interact onClick="goToMainMenu()" />
                     <effect>
-                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurückmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzrück.png" />
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurueckmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzrueck.png" />
                     </effect>
                 </image>
             </panel>

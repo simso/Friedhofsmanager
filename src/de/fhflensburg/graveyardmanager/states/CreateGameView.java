@@ -1,14 +1,10 @@
 package de.fhflensburg.graveyardmanager.states;
-
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-
-import de.fhflensburg.graveyardmanager.core.music.GameMusic;
-import de.fhflensburg.graveyardmanager.utils.ResourceManager;
-import de.lessvoid.nifty.Nifty;
-import de.lessvoid.nifty.NiftyEventSubscriber;
-import de.lessvoid.nifty.controls.ButtonClickedEvent;
-
+import de.lessvoid.nifty.elements.Element;
+import de.lessvoid.nifty.elements.render.ImageRenderer;
+import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
+import de.lessvoid.nifty.Nifty;
 import de.lessvoid.nifty.screen.ScreenController;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
@@ -25,12 +21,11 @@ import org.newdawn.slick.state.StateBasedGame;
  */
 public class CreateGameView extends View implements ScreenController
 {
-    public Image[] backgroundImages;
+
 	/** An instance of the nifty object */
 	private Nifty nifty;
-    private int toggle;
-    private boolean goprevchargotklicked;
-    private boolean gonextchargotklicked;
+    private boolean toggle;
+
 
 
 	/** An instance of the screen */
@@ -45,20 +40,18 @@ public class CreateGameView extends View implements ScreenController
 
     public CreateGameView()
     {
-       backgroundImages = new Image[2];
+
        initResources();
-       toggle=0;
-        gonextchargotklicked=false;
-        goprevchargotklicked=false;
+       toggle=false;
+
     }
 
 	public CreateGameView(StateBasedGame stateBasedGame)
 	{
         this();
         this.game = (GraveyardManagerGame) stateBasedGame;
-        toggle=0;
-        gonextchargotklicked=false;
-        goprevchargotklicked=false;
+        toggle=false;
+
 
 	}
 
@@ -91,18 +84,7 @@ public class CreateGameView extends View implements ScreenController
 	 */
     public void initResources()
     {
-        try
-        {
-            toggle=0;
-            gonextchargotklicked=false;
-            goprevchargotklicked=false;
-            backgroundImages[0] = new Image("res/de/fhflensburg/graveyardmanager/images/Character_Gevatter.png");
-            backgroundImages[1] = new Image("res/de/fhflensburg/graveyardmanager/images/Character_Hugo.png");
 
-        } catch (SlickException e)
-        {
-            e.printStackTrace();
-        }
     }
 
 	/**
@@ -123,41 +105,11 @@ public class CreateGameView extends View implements ScreenController
     public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
     {
 
-
-
-
-            switch(toggle)
-            {
-                case 0:
-                    backgroundImages[0].draw(0, 0, (float) gameContainer.getWidth(), (float) gameContainer.getHeight());
-                    break;
-
-                case 1:
-                    backgroundImages[1].draw(0, 0, (float) gameContainer.getWidth(), (float) gameContainer.getHeight());
-                    break;
-
-                default:
-                    backgroundImages[0].draw(0, 0, (float) gameContainer.getWidth(), (float) gameContainer.getHeight());
-                    break;
-            }
-
-
-
-
-
     }
 
     @Override
     public void updateGame(GameContainer gameContainer, StateBasedGame stateBasedGame, int delta) throws SlickException
     {
-        if(gonextchargotklicked || goprevchargotklicked)
-        {
-            if(toggle==0) {  toggle=1;  }
-            if(toggle==1) {  toggle=0;  }
-            gonextchargotklicked=false;
-            goprevchargotklicked=false;
-        }
-
 
     }
 
@@ -221,11 +173,52 @@ public class CreateGameView extends View implements ScreenController
 
     public void goPrevChar()
     {
-       goprevchargotklicked=true;
+
+        // first load the new image
+        NiftyImage newImage = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Character_Hugo.png", false);
+        NiftyImage newImage1 = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Character_Gevatter.png", false);
+
+        // find the element with it's id
+        Element element = screen.findElementByName("backgroundimage");
+
+        if(!toggle)
+        {
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(newImage);
+            toggle=!toggle;
+
+
+        }else
+        {
+
+            element.getRenderer(ImageRenderer.class).setImage(newImage1);
+            toggle=!toggle;
+
+        }
     }
 
     public void goNextChar()
     {
-        gonextchargotklicked=true;
+        // first load the new image
+        NiftyImage newImage = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Character_Hugo.png", false);
+        NiftyImage newImage1 = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Character_Gevatter.png", false);
+
+        // find the element with it's id
+        Element element = screen.findElementByName("backgroundimage");
+
+        if(!toggle)
+        {
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(newImage);
+            toggle=!toggle;
+
+
+        }else
+        {
+
+            element.getRenderer(ImageRenderer.class).setImage(newImage1);
+            toggle=!toggle;
+
+        }
     }
 }
