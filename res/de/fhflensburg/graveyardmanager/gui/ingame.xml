@@ -18,7 +18,7 @@
             </panel>
             <panel id="middle" childLayout="center" height="85%" width="100%" x="47px" y="25px">
 
-                <panel childLayout="absolute">
+                <panel childLayout="absolute-inside">
                     <panel id="window_BuildItems" name="window" childLayout="vertical" width="800px" height="700px"
                            y="5%" title="${locallang.build}"
                            backgroundImage="res/de/fhflensburg/graveyardmanager/images/Katalog.png">
