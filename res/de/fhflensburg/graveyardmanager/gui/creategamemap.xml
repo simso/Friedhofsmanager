@@ -7,18 +7,18 @@
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.CreateMapView">
         <layer childLayout="vertical" id="backgroundimage" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Karte_Wiese.png">
             <panel childLayout="absolute" width="38px" height="49px"  >
-                <image id="pfeilrechts" filename="res/de/fhflensburg/graveyardmanager/images/pfeilrechts.png"  x="670px" y="341px">
+                <image id="pfeilrechts" filename="res/de/fhflensburg/graveyardmanager/images/karte-r.png"  x="670px" y="400px">
                     <interact onClick="goNextMap()" />
                     <effect>
-                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/pfeilrechtsmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/pfeilrechts.png" />
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/karte-r-hover.png" inactive="res/de/fhflensburg/graveyardmanager/images/karte-r.png" />
                     </effect>
                 </image>
             </panel>
             <panel childLayout="absolute" width="38px" height="49px"  >
-                <image id="pfeillinks" filename="res/de/fhflensburg/graveyardmanager/images/pfeillinks.png"  x="330px" y="390px">
+                <image id="pfeillinks" filename="res/de/fhflensburg/graveyardmanager/images/karte-l.png"  x="330px" y="300px">
                     <interact onClick="goPrevMap()" />
                     <effect>
-                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/pfeillinksmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/pfeillinks.png" />
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/karte-l-hover.png" inactive="res/de/fhflensburg/graveyardmanager/images/karte-l.png" />
                     </effect>
                 </image>
             </panel>

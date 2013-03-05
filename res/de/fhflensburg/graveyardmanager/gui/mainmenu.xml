@@ -31,7 +31,7 @@
             </panel>
 
             <panel childLayout="absolute"  height="103px" width="148px" >
-                <image id="spielfortsetzen" filename="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png"  x="110px" y="500px">
+                <image id="spielfortsetzen" filename="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png"  x="140px" y="488px">
                     <interact onClick="goSpielFortsetzen()" />
                     <effect>
                         <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielfortsetzenmosueover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png" />
@@ -40,7 +40,7 @@
             </panel>
 
             <panel childLayout="absolute"  height="90px" width="139px" >
-                <image id="spielbeerdigen" filename="res/de/fhflensburg/graveyardmanager/images/spielbeerdigen.png"  x="425px" y="460px">
+                <image id="spielbeerdigen" filename="res/de/fhflensburg/graveyardmanager/images/spielbeerdigen.png"  x="435px" y="450px">
                     <interact onClick="goSpielBeerdigen()" />
                     <effect>
                         <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielbeerdigenmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielbeerdigen.png" />
