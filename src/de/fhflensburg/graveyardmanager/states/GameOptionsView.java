@@ -8,6 +8,9 @@ import de.lessvoid.nifty.controls.ButtonClickedEvent;
 import de.lessvoid.nifty.controls.CheckBoxStateChangedEvent;
 import de.lessvoid.nifty.controls.DropDown;
 import de.lessvoid.nifty.controls.SliderChangedEvent;
+import de.lessvoid.nifty.elements.Element;
+import de.lessvoid.nifty.elements.render.ImageRenderer;
+import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
 import org.lwjgl.opengl.Display;
@@ -121,7 +124,7 @@ public class GameOptionsView extends View implements ScreenController
 		this.screen = screen;
 
 		// get all resolutions available into the resolutions drop down
-		fillResolutionDropDown(screen);
+//		fillResolutionDropDown(screen);
 	}
 
 	/**
@@ -152,129 +155,248 @@ public class GameOptionsView extends View implements ScreenController
 		return Configuration.isFullScreen() ? "true" : "false";
 	}
 
-	public String isVSync()
-	{
-		return Configuration.isVSync() ? "true" : "false";
-	}
 
+
+    public void FullscreenToggle()
+    {
+        // first load the new image
+        NiftyImage ein = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/ein.png", false);
+        NiftyImage aus = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/aus.png", false);
+
+        // find the element with it's id
+        Element element = screen.findElementByName("fullscreenimage");
+
+        if(isFullscreen()=="true")
+        {
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(aus);
+            Configuration.toggleFullScreen(false);
+
+
+        }else
+        {
+
+            element.getRenderer(ImageRenderer.class).setImage(ein);
+            Configuration.toggleFullScreen(true);
+
+        }
+
+        try
+        {
+            Configuration.saveNewConfig();
+            game.setCurrentConfiguration();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        catch (SlickException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public void MusikToggle()
+    {
+        // first load the new image
+        NiftyImage ein = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/ein.png", false);
+        NiftyImage aus = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/aus.png", false);
+
+        // find the element with it's id
+        Element element = screen.findElementByName("musikimage");
+
+        if(Configuration.getMusicVolume()==1)
+        {
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(aus);
+            Configuration.setMusicVolume(0);
+
+
+        }else
+        {
+
+            element.getRenderer(ImageRenderer.class).setImage(ein);
+            Configuration.setMusicVolume(1);
+
+        }
+
+		try {
+			Configuration.saveNewConfig();
+			game.setCurrentConfiguration();
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+		catch (SlickException e)
+		{
+			e.printStackTrace();
+		}
+
+
+    }
+
+    public void goToMainMenu()
+    {
+        game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    @NiftyEventSubscriber(id = "fullscreen")
+//    public void onToggleFullscreenCheckbox(final String id, final CheckBoxStateChangedEvent event)
+//    {
+//        Configuration.toggleFullScreen(event.isChecked());
+//    }
+
+
+//
+//
+//	public String isVSync()
+//	{
+//		return Configuration.isVSync() ? "true" : "false";
+//	}
+//
 	public float getMusicVolume()
 	{
 		return Configuration.getMusicVolume();
 	}
-
-	public String getSoundVolume()
-	{
-		return Configuration.getSoundVolume() + "";
-	}
-
-	@NiftyEventSubscriber(id = "fullscreen")
-	public void onToggleFullscreenCheckbox(final String id, final CheckBoxStateChangedEvent event)
-	{
-		Configuration.toggleFullScreen(event.isChecked());
-	}
-
-	@NiftyEventSubscriber(id = "vsync")
-	public void onToggleVSyncCheckbox(final String id, final CheckBoxStateChangedEvent event)
-	{
-		Configuration.setVSync(event.isChecked());
-	}
-
-	@NiftyEventSubscriber(id = "music")
-	public void onMusicVolumeSlider(final String id, final SliderChangedEvent event)
-	{
-		Configuration.setMusicVolume(event.getValue());
-		try {
-			Configuration.saveNewConfig();
-			game.setCurrentConfiguration();
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-		catch (SlickException e)
-		{
-			e.printStackTrace();
-		}
-	}
-
-	@NiftyEventSubscriber(id = "sound")
-	public void onSoundVolumeSlider(final String id, final SliderChangedEvent event)
-	{
-		Configuration.setSoundVolume(event.getValue());
-	}
-
-	@NiftyEventSubscriber(id = "applyButton")
-	public void onApplyButton(final String id, final ButtonClickedEvent event)
-	{
-		try {
-			Configuration.saveNewConfig();
-			game.setCurrentConfiguration();
-			game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-		catch (SlickException e)
-		{
-			e.printStackTrace();
-		}
-	}
-
-	@NiftyEventSubscriber(id = "exitButton")
-	public void onExitButton(final String id, final ButtonClickedEvent event)
-	{
-		game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
-	}
-
-	/**
-	 * Get all LWJGL DisplayModes into the DropDown
-	 * @param screen
-	 */
-	private void fillResolutionDropDown(final Screen screen)
-	{
-		try
-		{
-			DisplayMode currentMode = Display.getDisplayMode();
-			List<DisplayMode> sorted = new ArrayList<DisplayMode>();
-
-			DisplayMode[] modes = Display.getAvailableDisplayModes();
-			for (int i=0; i<modes.length; i++) {
-				DisplayMode mode = modes[i];
-				if (mode.getBitsPerPixel() == 32 && mode.getFrequency() == currentMode.getFrequency())
-				{
-					sorted.add(mode);
-				}
-			}
-
-			Collections.sort(sorted, new Comparator<DisplayMode>()
-			{
-				@Override
-				public int compare(DisplayMode o1, DisplayMode o2)
-				{
-					int widthCompare = Integer.valueOf(o1.getWidth()).compareTo(Integer.valueOf(o2.getWidth()));
-					if (widthCompare != 0)
-					{
-						return widthCompare;
-					}
-
-					int heightCompare = Integer.valueOf(o1.getHeight()).compareTo(Integer.valueOf(o2.getHeight()));
-					if (heightCompare != 0)
-					{
-						return heightCompare;
-					}
-
-					return o1.toString().compareTo(o2.toString());
-				}
-			});
-
-			DropDown dropDown = screen.findNiftyControl("resolutions", DropDown.class);
-			for (DisplayMode mode : sorted)
-			{
-				dropDown.addItem(mode);
-			}
-		}
-		catch (Exception e)
-		{}
-	}
+//
+//	public String getSoundVolume()
+//	{
+//		return Configuration.getSoundVolume() + "";
+//	}
+//
+//
+//
+//	@NiftyEventSubscriber(id = "vsync")
+//	public void onToggleVSyncCheckbox(final String id, final CheckBoxStateChangedEvent event)
+//	{
+//		Configuration.setVSync(event.isChecked());
+//	}
+//
+//	@NiftyEventSubscriber(id = "music")
+//	public void onMusicVolumeSlider(final String id, final SliderChangedEvent event)
+//	{
+//		Configuration.setMusicVolume(event.getValue());
+//		try {
+//			Configuration.saveNewConfig();
+//			game.setCurrentConfiguration();
+//		}
+//		catch (IOException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		catch (SlickException e)
+//		{
+//			e.printStackTrace();
+//		}
+//	}
+//
+//	@NiftyEventSubscriber(id = "sound")
+//	public void onSoundVolumeSlider(final String id, final SliderChangedEvent event)
+//	{
+//		Configuration.setSoundVolume(event.getValue());
+//	}
+//
+//	@NiftyEventSubscriber(id = "applyButton")
+//	public void onApplyButton(final String id, final ButtonClickedEvent event)
+//	{
+//		try {
+//			Configuration.saveNewConfig();
+//			game.setCurrentConfiguration();
+//			game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
+//		}
+//		catch (IOException e)
+//		{
+//			e.printStackTrace();
+//		}
+//		catch (SlickException e)
+//		{
+//			e.printStackTrace();
+//		}
+//	}
+//
+//	@NiftyEventSubscriber(id = "exitButton")
+//	public void onExitButton(final String id, final ButtonClickedEvent event)
+//	{
+//		game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal());
+//	}
+//
+//	/**
+//	 * Get all LWJGL DisplayModes into the DropDown
+//	 * @param screen
+//	 */
+//	private void fillResolutionDropDown(final Screen screen)
+//	{
+//		try
+//		{
+//			DisplayMode currentMode = Display.getDisplayMode();
+//			List<DisplayMode> sorted = new ArrayList<DisplayMode>();
+//
+//			DisplayMode[] modes = Display.getAvailableDisplayModes();
+//			for (int i=0; i<modes.length; i++) {
+//				DisplayMode mode = modes[i];
+//				if (mode.getBitsPerPixel() == 32 && mode.getFrequency() == currentMode.getFrequency())
+//				{
+//					sorted.add(mode);
+//				}
+//			}
+//
+//			Collections.sort(sorted, new Comparator<DisplayMode>()
+//			{
+//				@Override
+//				public int compare(DisplayMode o1, DisplayMode o2)
+//				{
+//					int widthCompare = Integer.valueOf(o1.getWidth()).compareTo(Integer.valueOf(o2.getWidth()));
+//					if (widthCompare != 0)
+//					{
+//						return widthCompare;
+//					}
+//
+//					int heightCompare = Integer.valueOf(o1.getHeight()).compareTo(Integer.valueOf(o2.getHeight()));
+//					if (heightCompare != 0)
+//					{
+//						return heightCompare;
+//					}
+//
+//					return o1.toString().compareTo(o2.toString());
+//				}
+//			});
+//
+//			DropDown dropDown = screen.findNiftyControl("resolutions", DropDown.class);
+//			for (DisplayMode mode : sorted)
+//			{
+//				dropDown.addItem(mode);
+//			}
+//		}
+//		catch (Exception e)
+//		{}
+//	}
 }

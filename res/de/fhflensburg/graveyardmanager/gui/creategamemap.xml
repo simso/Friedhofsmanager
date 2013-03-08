@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Simon Hagen, Dirk Renner -->
 <nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
     <useStyles filename="nifty-default-styles.xml"/>
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.CreateMapView">
-        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Karte.png">
-            <text text="Wähle Deine Karte aus:" textHAlign="center" align="center"
-                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="30%"/>
-          <!--  <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%"> -->
-                <text id="mapSelectLabel" color="#ffff" font="fonts/Orienta-Regular.ttf"
-                      width="150px" text="${CALL.getMapName()}" valign="center" align="center"/>
-                <control id="mapSelect" name="imageSelect" width="250px" imageHeight="250px"
-                         imageList="${CALL.getAllMaps()}" marginTop="1%"/>
-            <!-- </panel>  -->
-            <panel childLayout="horizontal" align="center" marginTop="2%">
-                <control id="ToCreateMapButton" name="button" valign="top" label="Zurück" marginLeft="-10%"/>
-                <control id="startGameButton" name="button" valign="top" label="Starten" marginLeft="20%" />
+        <layer childLayout="vertical" id="backgroundimage" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Karte_Wiese.png">
+            <panel childLayout="absolute" width="38px" height="49px"  >
+                <image id="pfeilrechts" filename="res/de/fhflensburg/graveyardmanager/images/karte-r.png"  x="670px" y="400px">
+                    <interact onClick="goNextMap()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/karte-r-hover.png" inactive="res/de/fhflensburg/graveyardmanager/images/karte-r.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="38px" height="49px"  >
+                <image id="pfeillinks" filename="res/de/fhflensburg/graveyardmanager/images/karte-l.png"  x="330px" y="300px">
+                    <interact onClick="goPrevMap()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/karte-l-hover.png" inactive="res/de/fhflensburg/graveyardmanager/images/karte-l.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="109px" height="31px"  >
+                <image id="BacktoCharMenueButton" filename="res/de/fhflensburg/graveyardmanager/images/charzrueck.png"  x="80px" y="590px">
+                    <interact onClick="goToCharMenue()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurueckmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzrueck.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="109px" height="31px"  >
+                <image id="toGameButton" filename="res/de/fhflensburg/graveyardmanager/images/charweiter.png"  x="860px" y="560px">
+                    <interact onClick="gotoGame()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charweitermouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charweiter.png" />
+                    </effect>
+                </image>
             </panel>
         </layer>
     </screen>

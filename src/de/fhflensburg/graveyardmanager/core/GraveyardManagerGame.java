@@ -31,7 +31,7 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	/** The current version of the game */
 	public static final String VERSION = "1.0.0-Alpha";
 
-	private ArrayList<View> states;
+    private ArrayList<View> states;
 
 	public ArrayList<Player> players;
 
@@ -138,12 +138,12 @@ public class GraveyardManagerGame extends NiftyStateBasedGame
 	{
 		Configuration.updateConfigFile();
 		container.setDisplayMode(Configuration.getWidth(), Configuration.getHeight(), Configuration.isFullScreen());
-		container.setVSync(Configuration.isVSync());
+//		container.setVSync(Configuration.isVSync());
 		container.setMusicVolume(Configuration.getMusicVolume());
-		container.setSoundVolume(Configuration.getSoundVolume());
+//		container.setSoundVolume(Configuration.getSoundVolume());
 		//container.setShowFPS((Configuration.isDebugMode()) ? true : false);
-		container.setVerbose((Configuration.isDebugMode()) ? true :false);
-		container.setVSync(Configuration.isVSync());
+//		container.setVerbose((Configuration.isDebugMode()) ? true :false);
+//		container.setVSync(Configuration.isVSync());
         container.setShowFPS(false);
 	}
 

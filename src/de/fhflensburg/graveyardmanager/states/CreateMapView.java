@@ -9,7 +9,9 @@ import de.lessvoid.nifty.NiftyEventSubscriber;
 import de.lessvoid.nifty.controls.ButtonClickedEvent;
 import de.lessvoid.nifty.controls.ImageSelectSelectionChangedEvent;
 import de.lessvoid.nifty.elements.Element;
+import de.lessvoid.nifty.elements.render.ImageRenderer;
 import de.lessvoid.nifty.elements.render.TextRenderer;
+import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
 import de.lessvoid.nifty.screen.ScreenController;
 import org.newdawn.slick.GameContainer;
@@ -40,12 +42,15 @@ public class CreateMapView extends View implements ScreenController
     /** Contains the name of the selected map */
     private String currentMapSelection;
 
+    private boolean toggle;
+
     /**
      * The default constructor
      */
     public CreateMapView()
     {
         currentMapSelection = "Wiese";
+        toggle=false;
     }
 
     /**
@@ -58,6 +63,7 @@ public class CreateMapView extends View implements ScreenController
     {
         this();
         this.game = (GraveyardManagerGame) stateBasedGame;
+        toggle=false;
     }
 
     /**
@@ -100,11 +106,11 @@ public class CreateMapView extends View implements ScreenController
      * @param stateBasedGame A representation of the game
      */
     @Override
-    public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
-    {
-        super.prepareNifty(nifty, stateBasedGame);
-        nifty.fromXml(GUI_PATH + "creategamemap.xml", "start", new CreateMapView(stateBasedGame));
-    }
+     public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+{
+    super.prepareNifty(nifty, stateBasedGame);
+    nifty.fromXml(GUI_PATH + "creategamemap.xml", "start", new CreateMapView(stateBasedGame));
+}
 
     /**
      *
@@ -136,160 +142,58 @@ public class CreateMapView extends View implements ScreenController
     }
 
 
-    /**
-     * This method will be handled from Nifty through the annotation.
-     * It will be called when the user select a map from the imageSelect.
-     *
-     * @param id The elementId that has published the event
-     * @param event The fired event object
-     */
-	@NiftyEventSubscriber(id = "mapSelect")
-	public void onSwitchMapSelection(final String id, final ImageSelectSelectionChangedEvent event)
-	{
-		currentMapSelection = getMapName(event.getSelectedIndex());
-		Element textElement = screen.findElementByName("mapSelectLabel");
-		textElement.getRenderer(TextRenderer.class).setText(currentMapSelection);
-	}
-
-    /**
-     * This method will be handled from Nifty through the annotation.
-     * It will be called when the user select a character from the imageSelect.
-     *   Note: Something strange happens here. If this method was written in between the methods getAllMaps()
-     *   and getCharacterName() the functions ${CALL.getMapName()} and ${CALL.getCharacterName()} within the
-     *   creategame.xml won't be executed.
-     *
-     * @param id The elementId that has published the event
-     * @param event The fired event object
-     */
-//    @NiftyEventSubscriber(id = "charSelect")
-//    public void onSwitchCharacterSelection(final String id, final ImageSelectSelectionChangedEvent event)
-//    {
-//        Element textElement = screen.findElementByName("charSelectLabel");
-//        textElement.getRenderer(TextRenderer.class).setText(getCharacterName(event.getSelectedIndex()));
-//    }
-
-
-    /**
-     * This method will be called from Nifty XML file
-     * to set the name of the map at runtime
-     *
-     * @return The current name of the map
-     */
-	public String getMapName()
-	{
-		return getMapName(0);
-	}
-
-    /**
-     * This method will be called if the user select a map and will update the name of the map
-     * to display it and to load the selected map.
-     *
-     * @param id The index of the map
-     * @return The name of the selected map
-     */
-	public String getMapName(int id)
-	{
-		String result;
-
-		switch (id)
-		{
-			case 0:
-				result = "Sahara";
-				break;
-
-			case 1:
-				result = "Wiese";
-				break;
-
-			default:
-				result = "Sahara";
-				break;
-		}
-
-		return result;
-	}
-
-    /**
-     * This method will be called from Nifty XML file
-     * to set the images of all available maps at runtime
-     *
-     * @return Comma separated string with map image locations
-     */
-	public String getAllMaps()
-	{
-		return "res/de/fhflensburg/graveyardmanager/images/Sahara.png,res/de/fhflensburg/graveyardmanager/images/Wiese.png";
-	}
-
-    /**
-     * This method will be called from Nifty XML file
-     * to set the names of all characters at runtime
-     *
-     * @return The name of the selected character
-     */
-    public String getCharacterName()
+    public void goPrevMap()
     {
-        return getCharacterName(0);
-    }
 
-    /**
-     * This method will be called if the user select a character and will update the name of the Character
-     * to display it.
-     *
-     * TODO: Connect the selected character with the player
-     *
-     * @param id The index of the character
-     * @return The name of the selected character
-     */
-    public String getCharacterName(int id)
-    {
-        String result;
+        // first load the new image
+        NiftyImage newImage = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Karte_Wiese.png", false);
+        NiftyImage newImage1 = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Karte_Wueste.png", false);
 
-        switch (id)
+        // find the element with it's id
+        Element element = screen.findElementByName("backgroundimage");
+
+        if(!toggle)
         {
-            case 0:
-                result = "Gevatter";
-                break;
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(newImage);
+            toggle=!toggle;
 
-            case 1:
-                result = "Engeli";
-                break;
 
-            case 2:
-                result = "Dracula";
-                break;
+        }else
+        {
 
-            case 3:
-                result = "Hugo";
-                break;
+            element.getRenderer(ImageRenderer.class).setImage(newImage1);
+            toggle=!toggle;
 
-            default:
-                result = "Gevatter";
-                break;
         }
-
-        return result;
     }
 
-    /**
-     * This method will be called from Nifty XML file
-     * to set the images of all available characters at runtime
-     *
-     * @return Comma separated string with character image locations
-     */
-//    public String getAllCharacterImages()
-//    {
-//        return "res/de/fhflensburg/graveyardmanager/images/Gevatter.png,res/de/fhflensburg/graveyardmanager/images/Engeli.png,res/de/fhflensburg/graveyardmanager/images/Dracula.png,res/de/fhflensburg/graveyardmanager/images/Hugo.png";
-//    }
+    public void goNextMap()
+    {
+        // first load the new image
+        NiftyImage newImage = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Karte_Wiese.png", false);
+        NiftyImage newImage1 = nifty.getRenderEngine().createImage("res/de/fhflensburg/graveyardmanager/images/Karte_Wueste.png", false);
 
-    /**
-     * This method will be handled from Nifty through the annotation.
-     * It will be called when the user hit the "Start" button
-     *
-     * @param id The elementId that has published the event
-     * @param event The fired event object
-     */
-    @NiftyEventSubscriber(id = "startGameButton")
-    public void onStartGameButton(final String id, final ButtonClickedEvent event)
+        // find the element with it's id
+        Element element = screen.findElementByName("backgroundimage");
+
+        if(!toggle)
+        {
+            // change the image with the ImageRenderer
+            element.getRenderer(ImageRenderer.class).setImage(newImage);
+            toggle=!toggle;
+
+
+        }else
+        {
+
+            element.getRenderer(ImageRenderer.class).setImage(newImage1);
+            toggle=!toggle;
+
+        }
+    }
+
+    public void gotoGame()
     {
         //Übergangslösung, da Sahara in dieser Version nicht auswählbar sein soll
         currentMapSelection = "Wiese";
@@ -302,15 +206,7 @@ public class CreateMapView extends View implements ScreenController
         game.getContainer().setShowFPS(false);
     }
 
-    /**
-     * This method will be handled from Nifty through the annotation.
-     * It will be called when the user hit the "Zurück" button
-     *
-     * @param id The elementId that has published the event
-     * @param event The fired event object
-     */
-    @NiftyEventSubscriber(id = "ToCreateMapButton")
-    public void onToCreateMapButton(final String id, final ButtonClickedEvent event)
+    public void goToCharMenue()
     {
         game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal());
     }

@@ -60,9 +60,9 @@ public class LoadResourcesView extends View
 		try {
 			GameMusic.initMainTheme();
 			GameMusic.loopMainTheme();
-			for (int i = 0; i < backgroundImages.length; i++)
+			for (int i = 1; i < backgroundImages.length+1; i++)
 			{
-				backgroundImages[i] = new Image("res/de/fhflensburg/graveyardmanager/images/Load_" + i + ".png");
+				backgroundImages[i-1] = new Image("res/de/fhflensburg/graveyardmanager/images/Laden" + i + ".png");
 			}
 
 			startAnimation = new Animation(backgroundImages, 24);

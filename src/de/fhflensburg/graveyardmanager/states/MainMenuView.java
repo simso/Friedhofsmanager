@@ -1,10 +1,14 @@
 package de.fhflensburg.graveyardmanager.states;
 
+import de.fhflensburg.graveyardmanager.states.InGameView;
 import de.fhflensburg.graveyardmanager.core.GraveyardManagerGame;
-import de.fhflensburg.graveyardmanager.utils.Configuration;
-import de.fhflensburg.graveyardmanager.utils.ResourceManager;
-import org.newdawn.slick.*;
+import de.lessvoid.nifty.Nifty;
+import de.lessvoid.nifty.screen.Screen;
+import de.lessvoid.nifty.screen.ScreenController;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
+
 
 /**
  * Hodie mihi, Cras tibi - Der Friedhofsmanager
@@ -12,84 +16,138 @@ import org.newdawn.slick.state.StateBasedGame;
  *
  * Created with IntelliJ IDEA.
  * Author: Stefano Kowalke
- * Date: 28.11.12
- * Time: 00:48
+ * Date: 14.12.12
+ * Time: 15:57
  */
-public class MainMenuView extends View
+public class MainMenuView extends View implements ScreenController
 {
-	/** Background image of the main menu */
-	Image backgroundImage;
+    /** An instance of the nifty object */
+    private Nifty nifty;
 
-	/** Main menu options */
-	private String[] options = new String[] {"Neues Spiel", "Optionen", "Spiel beerdigen"};
+    /** An instance of the screen */
+    private Screen screen;
 
-	/**
-	 * Returns the id of this state
-	 *
-	 * @return int id
-	 */
-	@Override
-	public int getID()
-	{
-		return GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal();
-	}
+    /** An instance of the game */
+    GraveyardManagerGame game;
 
-	public void initResources()
-	{
-		backgroundImage = ResourceManager.getImage("Load_203");
-	}
+    InGameView view;
 
-	@Override
-	public void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
-	{
-		super.initGameAndGUI(gameContainer, stateBasedGame);
-	}
+    /**
+     * The default constructor
+     */
+    public MainMenuView()
+    {
 
-	@Override
-	public void renderGame(GameContainer gameContainer, StateBasedGame stateBasedGame, Graphics g) throws SlickException
-	{
-		backgroundImage.draw(0, 0, (float) container.getWidth(), (float) container.getHeight());
-		g.setColor(Color.lightGray);
+    }
 
-		if (Configuration.isDebugMode())
-		{
-			g.drawString(GraveyardManagerGame.VERSION, 5, container.getHeight() - 20);
-		}
+    /**
+     * Set a pointer to the game instance.
+     * We have to call this constructor inside the fromXml() method.
+     *
+     * @param stateBasedGame A representation of the game
+     */
+    public MainMenuView(StateBasedGame stateBasedGame)
+    {
+        this();
+        this.game = (GraveyardManagerGame) stateBasedGame;
+    }
 
-		g.drawString("Menu", 500f, 430f);
+    /**
+     * Called by Slick2D
+     *
+     * @return The unique id of this state
+     */
+    @Override
+    public int getID()
+    {
+        return GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal();
+    }
 
-		for (int i = 0; i < options.length; i++)
-		{
-			g.drawString(i + 1 + ". " + options[i], 430f, 460 + (i * 30));
-		}
-	}
+    /**
+     * Here you have to initialize all resources (images, fonts, sounds, ...)
+     * which you want to use in this state. The method will be called by the ResourceView and
+     * pre load all the stuff.
+     *
+     */
+    public void initResources()
+    {}
 
-	/**
-	 * Implements the method fromF BasicGameState to pass the input to the game
-	 *
-	 * @param key
-	 * @param c
-	 */
-	public void keyReleased(int key, char c)
-	{
-		if (key == Input.KEY_1)
-		{
-			game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal(), fot, fit);
-		}
+    /**
+     * Bind this ScreenController class to the screen defined in XML file
+     *
+     * @param nifty The main nifty instance
+     * @param screen The representation of the active screen
+     */
+    @Override
+    public void bind(Nifty nifty, Screen screen)
+    {
+        this.nifty = nifty;
+        this.screen = screen;
+    }
 
-//		if (key == Input.KEY_2)
-//		{
-//			game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal(), fot, fit);
-//		}
+    /**
+     * Load here all the gui stuff
+     *
+     * @param nifty An instance of the nifty object
+     * @param stateBasedGame A representation of the game
+     */
+    @Override
+    public void prepareNifty(Nifty nifty, StateBasedGame stateBasedGame)
+    {
+        super.prepareNifty(nifty, stateBasedGame);
+        nifty.fromXml(GUI_PATH + "mainmenu.xml", "gomain", new MainMenuView(stateBasedGame));
+    }
 
-		if (key == Input.KEY_2)
-		{
-			game.enterState(GraveyardManagerGame.GameStates.OPTION_MENU_STATE.ordinal(), fot, fit);
-		}
+    /**
+     *
+     * @param gameContainer
+     * @param stateBasedGame A representation of the game
+     * @throws SlickException
+     */
+    @Override
+    protected void initGameAndGUI(GameContainer gameContainer, StateBasedGame stateBasedGame) throws SlickException
+    {
+        initNifty(gameContainer, stateBasedGame);
+    }
 
-		if (key == Input.KEY_3)
-		{
-			game.enterState(GraveyardManagerGame.GameStates.ENDGAME.ordinal(), fot, fit);
-		}
-	}
+    /**
+     *
+     */
+    @Override
+    public void onStartScreen()
+    {
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void onEndScreen()
+    {
+        //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void goNeuesSpiel()
+    {
+        game.enterState(GraveyardManagerGame.GameStates.CREATE_GAME_STATE.ordinal());
+    }
+
+    public void goOptionen()
+    {
+        game.enterState(GraveyardManagerGame.GameStates.OPTION_MENU_STATE.ordinal());
+    }
+
+    public void goSpielFortsetzen()
+    {
+        if(view.gamehasstartedonce)
+            game.enterState(GraveyardManagerGame.GameStates.IN_GAME_STATE.ordinal());
+        else
+        {}
+    }
+
+    public void goSpielBeerdigen()
+    {
+        game.enterState(GraveyardManagerGame.GameStates.ENDGAME.ordinal());
+    }
+
 }

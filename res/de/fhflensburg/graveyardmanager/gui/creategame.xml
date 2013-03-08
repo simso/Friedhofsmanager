@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
+        <!-- Author: Simon Hagen, Dirk Renner -->
 <nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
     <useStyles filename="nifty-default-styles.xml"/>
     <useControls filename="nifty-default-controls.xml"/>
 
     <screen id="startchar" controller="de.fhflensburg.graveyardmanager.states.CreateGameView">
-        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Character.png">
-                      <text text="Wähle Deinen Charakter aus:" textHAlign="center" align="center"
-                  font="res/de/fhflensburg/graveyardmanager/fonts/courrier16b.fnt" marginTop="30%"/>
-            <!--     <panel childLayout="horizontal" align="center" marginTop="2%" marginBottom="5%">-->
-            <text id="charSelectLabel" color="#ffff"
-                  font="fonts/Orienta-Regular.ttf" width="150px"
-                  text="${CALL.getCharacterName()}" valign="center" align="center" />
-            <control id="charSelect" name="imageSelect" width="250px" imageHeight="250px"
-                     imageList="${CALL.getAllCharacterImages()}" marginTop="1%"/>
-            <!--   </panel>-->
-            <panel childLayout="horizontal" align="center" marginTop="2%">
-                <control id="ToMainMenuButton" name="button" valign="top" label="Zurück" marginLeft="-10%"/>
-                <control id="gotoMapButton" name="button" valign="top" label="Weiter" marginLeft="20%" />
+        <layer childLayout="vertical" id="backgroundimage" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Character_Gevatter.png">
+            <panel childLayout="absolute" width="38px" height="49px"  >
+                <image id="pfeilrechts" filename="res/de/fhflensburg/graveyardmanager/images/pfeilrechts.png"  x="670px" y="341px">
+                    <interact onClick="goNextChar()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/pfeilrechtsmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/pfeilrechts.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="38px" height="49px"  >
+                <image id="pfeillinks" filename="res/de/fhflensburg/graveyardmanager/images/pfeillinks.png"  x="330px" y="390px">
+                    <interact onClick="goPrevChar()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/pfeillinksmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/pfeillinks.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="109px" height="31px"  >
+                <image id="MainMenuButton" filename="res/de/fhflensburg/graveyardmanager/images/charzrueck.png"  x="80px" y="590px">
+                    <interact onClick="goToMainMenu()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurueckmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzrueck.png" />
+                    </effect>
+                </image>
+            </panel>
+            <panel childLayout="absolute" width="109px" height="31px"  >
+                <image id="toMapButton" filename="res/de/fhflensburg/graveyardmanager/images/charweiter.png"  x="860px" y="560px">
+                    <interact onClick="gotoMap()" />
+                    <effect>
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charweitermouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charweiter.png" />
+                    </effect>
+                </image>
             </panel>
         </layer>
     </screen>

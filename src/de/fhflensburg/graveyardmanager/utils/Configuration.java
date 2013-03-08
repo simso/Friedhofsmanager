@@ -95,7 +95,7 @@ public class Configuration
 
 	public static float getMusicVolume()
 	{
-		return Float.parseFloat(configurationFile.getProperty("musicVolume", "1"));
+		return Float.parseFloat(configurationFile.getProperty("musicVolume", "0.0"));
 	}
 
 	public static void setMusicVolume(float volume)
@@ -105,7 +105,7 @@ public class Configuration
 
 	public static float getSoundVolume()
 	{
-		return Float.parseFloat(configurationFile.getProperty("soundVolume", "1"));
+		return Float.parseFloat(configurationFile.getProperty("soundVolume", "0.0"));
 	}
 
 	public static void setSoundVolume(float volume)
