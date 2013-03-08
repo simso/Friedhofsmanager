@@ -12,7 +12,7 @@
     <!--Spiel beerdigen x= 419 y=616 /// Höhe 90px Breite 139px -->
 
     <screen id="gomain" controller="de.fhflensburg.graveyardmanager.states.MainMenuView">
-        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Load_203.png">
+        <layer childLayout="vertical" backgroundImage="res/de/fhflensburg/graveyardmanager/images/Laden204.png">
             <panel childLayout="absolute"  height="48px" width="161px" >
                     <image id="neuesspiel" filename="res/de/fhflensburg/graveyardmanager/images/neuesspiel.png"  x="169px" y="300px">
                     <interact onClick="goNeuesSpiel()" />
