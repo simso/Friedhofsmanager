@@ -24,10 +24,10 @@
                 </image>
             </panel>
             <panel childLayout="absolute" width="109px" height="31px"  >
-                <image id="MainMenuButton" filename="res/de/fhflensburg/graveyardmanager/images/charzrueck.png"  x="80px" y="590px">
+                <image id="MainMenuButton" filename="res/de/fhflensburg/graveyardmanager/images/charzurueck.png"  x="80px" y="590px">
                     <interact onClick="goToMainMenu()" />
                     <effect>
-                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurueckmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzrueck.png" />
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/charzurueckmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/charzurueck.png" />
                     </effect>
                 </image>
             </panel>

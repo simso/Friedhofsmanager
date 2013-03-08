@@ -155,13 +155,13 @@ public class InGameController implements ScreenController
     }
     public void fon()
     {
-        if (nonVisibleElementsAtStart[4].isVisible())
+        if (nonVisibleElementsAtStart[5].isVisible())
         {
-            nonVisibleElementsAtStart[4].hide();
+            nonVisibleElementsAtStart[5].hide();
         }
         else
         {
-            nonVisibleElementsAtStart[4].show();
+            nonVisibleElementsAtStart[5].show();
         }
     }
 
