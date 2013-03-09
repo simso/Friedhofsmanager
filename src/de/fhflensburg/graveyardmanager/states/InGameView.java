@@ -67,10 +67,12 @@ public class InGameView extends View
 
 	/** Game Timer */
 	private Timer gameTime;
+    Timer timer;
+
+    private static final int DELAY = 1000;
 
 
-
-	// To count the ents
+    // To count the ents
 	private int[] entsCount;
 
 	/**
@@ -313,8 +315,16 @@ public class InGameView extends View
 
 		if (gameOver || gameWin)
 		{
+            timer = new Timer(DELAY);
+            timer.update(delta);
+
+            if (timer.isTimeComplete())
+            {
+                timer.resetTime();
+            //    gameContainer.exit();
 			exit();
 		}
+        }
 	}
 
 	/**
