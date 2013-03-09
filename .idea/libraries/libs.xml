@@ -19,12 +19,6 @@
       <root url="jar://$PROJECT_DIR$/libs/nifty-style-black-1.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file://D:/../Nifty/nifty-core/src/main/java" />
-      <root url="file://D:/../Nifty/nifty-core/src/main/java" />
-      <root url="file://D:/../Nifty/nifty-renderer-slick/src/main/java" />
-      <root url="file://D:/../Slick/Dev/trunk/Slick/src" />
-      <root url="file://D:/../Nifty/nifty-controls/src/main/java" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>

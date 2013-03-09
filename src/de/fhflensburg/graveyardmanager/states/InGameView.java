@@ -14,13 +14,18 @@ import de.fhflensburg.graveyardmanager.core.music.GameMusic;
 import de.fhflensburg.graveyardmanager.core.music.GameSound;
 import de.fhflensburg.graveyardmanager.level.Level;
 import de.fhflensburg.graveyardmanager.states.controller.InGameController;
+import de.fhflensburg.graveyardmanager.utils.Configuration;
 import de.fhflensburg.graveyardmanager.utils.ResourceManager;
 import de.fhflensburg.graveyardmanager.utils.Timer;
 import de.lessvoid.nifty.Nifty;
+import de.lessvoid.nifty.elements.Element;
+import de.lessvoid.nifty.elements.render.ImageRenderer;
 import de.lessvoid.nifty.elements.render.TextRenderer;
+import de.lessvoid.nifty.render.NiftyImage;
 import de.lessvoid.nifty.screen.Screen;
 import org.newdawn.slick.*;
 import org.newdawn.slick.state.StateBasedGame;
+import sun.java2d.pipe.DrawImage;
 
 import java.util.ArrayList;
 
@@ -47,13 +52,16 @@ public class InGameView extends View
 	private boolean mouseLeftPressed;
 	private float mouseScrollSpeed;
 	public boolean isMinimapEnabled;
-	private Image gameOverImage;
+	public Image gameOverImage;
+    private String gameOverImagefile="de.fhflensburg.gaveyardmanager.images.GameOver.png";
 	private Image gameWinImage;
 	private boolean gameOver;
 	private boolean gameWin;
+    private int grabsteinzaehler;
     public boolean gamehasstartedonce;
 	private ArrayList<Layer> layers;
 	private Level level;
+
 
 	private Nifty nifty;
 	private Screen screen;
@@ -68,6 +76,7 @@ public class InGameView extends View
 	/** Game Timer */
 	private Timer gameTime;
     Timer timer;
+    Timer gameover;
 
     private static final int DELAY = 1000;
 
@@ -86,8 +95,12 @@ public class InGameView extends View
 		mouseScrollSpeed = DEFAULT_MOUSE_SCROLL_SPEED;
 		isMinimapEnabled = false;
 		newOrderFlash = new Timer(1000);
+        grabsteinzaehler=0;
+        gameover= new Timer(6000);
         gamehasstartedonce=true;
 		gameTime = new Timer(30000);
+
+
 		layers = new ArrayList<Layer>();
 		for (int i = 0; i < 5; i++)
 		{
@@ -155,7 +168,8 @@ public class InGameView extends View
 	 */
 	public void initResources()
 	{
-		gameWinImage = ResourceManager.getImage("Winner");
+		gameOverImage = ResourceManager.getImage("GameOverBild");
+
 	}
 
 	/**
@@ -204,14 +218,14 @@ public class InGameView extends View
 
 		}
 
-//        if (gameOver)
-//		{
-//			g.drawImage(gameOverImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
-//		}
-//		else if (gameWin)
-//		{
-//			g.drawImage(gameWinImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
-//		}
+        if (gameOver)
+		{
+			g.drawImage(gameOverImage, 0, 0);
+		}
+		else if (gameWin)
+		{
+
+		}
 
 		gameController.render();
 	}
@@ -236,9 +250,10 @@ public class InGameView extends View
 
 		// sum up the time
 		newOrderFlash.update(delta);
+  		gameTime.update(delta);
 
-		gameTime.update(delta);
 
+        //Wenn Geld 0 dann Gameover gleich true
         if(getPlayer().getBalance()<=0)
             gameOver=true;
 
@@ -253,7 +268,8 @@ public class InGameView extends View
 		}
 
 		// update scrolling
-		if (!gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && getMap().isNeedScroll()) {
+		if (!gameContainer.getInput().isMouseButtonDown(Input.MOUSE_LEFT_BUTTON) && getMap().isNeedScroll())
+        {
 			float s = (gameContainer.getInput().isMouseButtonDown(Input.MOUSE_RIGHT_BUTTON)) ? mouseScrollSpeed * delta * 2 : mouseScrollSpeed * delta;
 
 			xScrollDecal += (mx < LIMIT_BEFORE_SCROLL && xScrollDecal + s < 0) ? s : 0;
@@ -282,6 +298,16 @@ public class InGameView extends View
                 addEntity(activeEntity);
                 getPlayer().decreaseBalance(EntityData.PRICE[gameController.getBuilding().getType()]);
 
+                if(gameController.getBuilding().getType()== 4 || gameController.getBuilding().getType()== 5 || gameController.getBuilding().getType()== 6 )
+                {
+                    grabsteinzaehler++;
+                    if(grabsteinzaehler==1)
+                    {
+                        gameWin=true;
+                        getPlayer().increaseBalance(5000);
+                        gameController.nonVisibleElementsAtStart[6].show();
+                    }
+                }
 			}
 			else if(gameController.getBuilding() != null && !gameController.getBuilding().isValidLocation())
             {
@@ -313,17 +339,24 @@ public class InGameView extends View
 
 		gameController.update();
 
-		if (gameOver || gameWin)
+		if (gameOver)
 		{
+
+
             timer = new Timer(DELAY);
             timer.update(delta);
+            gameover.update(delta);
 
             if (timer.isTimeComplete())
             {
                 timer.resetTime();
             //    gameContainer.exit();
+            }
 			exit();
 		}
+        if (gameWin)
+        {
+            exit();
         }
 	}
 
@@ -380,9 +413,18 @@ public class InGameView extends View
 
 	public void exit()
 	{
-		GameMusic.stopMusic();
-		GameMusic.loopMainTheme();
-		game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal(), fot, fit);
+//		GameMusic.stopMusic();
+//		GameMusic.loopMainTheme();
+
+        if (gameover.isTimeComplete())
+        {
+//            Graphics x=new Graphics(800,600);
+//            gameover.resetTime();
+//            x.drawImage(gameOverImage, (container.getWidth() / 2) - 240, (container.getHeight() / 2) - 27);
+            GameMusic.stopMusic();
+            GameMusic.loopMainTheme();
+            game.enterState(GraveyardManagerGame.GameStates.MAIN_MENU_STATE.ordinal(), fot, fit);
+        }
 	}
 
 	// count the entities
