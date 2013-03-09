@@ -35,7 +35,7 @@
                 <image id="spielfortsetzen" filename="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png"  x="140px" y="488px">
                     <interact onClick="goSpielFortsetzen()" />
                     <effect>
-                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielfortsetzenmosueover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png" />
+                        <onHover name="changeImage" active="res/de/fhflensburg/graveyardmanager/images/spielfortsetzenmouseover.png" inactive="res/de/fhflensburg/graveyardmanager/images/spielfortsetzen.png" />
                     </effect>
                 </image>
             </panel>

@@ -20,16 +20,16 @@
 
                 <panel childLayout="absolute-inside">
                     <panel id="window_BuildItems" name="window" childLayout="vertical" width="800px" height="700px"
-                           y="5%" title="${locallang.build}"
-                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/Katalog.png">
+                           y="5%" title="Bauen"
+                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/katalog.png">
                         <panel height="40px" width="670px" childLayout="vertical" marginTop="128px" marginLeft="0px">
-                            <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px"
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
                                    width="32px" visibleToMouse="true" align="right" id="closeBuild">
                                 <effect>
                                     <onClick name="fade" start="#a8" end="#a8" targetElement="closeBuild"/>
                                     <onHover name="changeImage"
-                                             active="res/de/fhflensburg/graveyardmanager/images/Kreuz_gedrueckt.png"
-                                             inactive="res/de/fhflensburg/graveyardmanager/images/Kreuz.png"/>
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
                                     <onClick name="hide" targetElement="window_BuildItems"/>
                                 </effect>
                             </image>
@@ -89,7 +89,7 @@
                                 <text text="250" font="fonts/Orienta-Regular.ttf" color="#4c4a40" align="center"/>
                             </panel>
                             <panel childLayout="vertical" x="400px">
-                                <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/images/Kirche.png"
+                                <image id="buildItem_5" filename="res/de/fhflensburg/graveyardmanager/images/kirche.png"
                                        height="64px" width="64px" x="306px" y="0px">
                                     <effect>
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_5"/>
@@ -104,7 +104,7 @@
                             <panel childLayout="vertical" x="490px">
 
                                 <image id="buildItem_6"
-                                       filename="res/de/fhflensburg/graveyardmanager/images/Florist.png" height="64px"
+                                       filename="res/de/fhflensburg/graveyardmanager/images/florist.png" height="64px"
                                        width="64px" x="380px" y="0px">
                                     <effect>
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_6"/>
@@ -117,7 +117,7 @@
                                 <text text="5.000" font="fonts/Orienta-Regular.ttf" color="#4c4a40" align="center"/>
                             </panel>
                             <panel childLayout="vertical" x="580px">
-                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/images/Haus.png"
+                                <image id="buildItem_7" filename="res/de/fhflensburg/graveyardmanager/images/haus.png"
                                        height="64px" width="64px" x="446px" y="0px">
                                     <effect>
                                         <onClick name="fade" start="#a8" end="#a8" targetElement="buildItem_7"/>
@@ -132,50 +132,17 @@
 
                         </panel>
                     </panel>
-                </panel>
-                <panel id="east" align="right" childLayout="vertical" height="100%" width="64px" marginTop="20%"
-                       marginRight="2%">
-                    <image id="mapToggleImage" filename="res/de/fhflensburg/graveyardmanager/images/Kompassrose.png"
-                           height="64px" width="64px">
-                        <effect>
-                            <onClick name="fade" start="#a8" end="#a8" targetElement="mapToggleImage"/>
-                            <onHover name="hint" hintText="${locallang.minimap}" hintDelay="300"/>
-                        </effect>
-                        <interact onClick="toggleMiniMap()"/>
-                    </image>
-                </panel>
-                <panel id="west" childLayout="absolute" width="100%" x="47px" y="25px">
-                    <panel id="window_OrderList" width="400px" height="600px" marginTop="100px"
+                    <panel id="window_OrderList2" width="400px" height="600px"  y="5%"
                            childLayout="vertical"
-                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/Brief.png">
+                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/alter_brief.png">
                         <panel height="40px" width="350px" childLayout="vertical" marginTop="40px">
-                            <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px"
-                                   width="32px" visibleToMouse="true" align="right">
-                                <effect>
-                                    <onClick name="hide" targetElement="window_OrderList"/>
-                                    <onHover name="changeImage"
-                                             active="res/de/fhflensburg/graveyardmanager/images/Kreuz_gedrueckt.png"
-                                             inactive="res/de/fhflensburg/graveyardmanager/images/Kreuz.png"/>
-                                </effect>
-                            </image>
-                        </panel>
-                        <text wrap="true"
-                              text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll."
-                              font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
-                              marginLeft="80px" marginTop="100px" color="#4c4a40" />
-
-                    </panel>
-                    <panel id="window_OrderList2" width="400px" height="600px"
-                           childLayout="vertical"
-                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/alter_Brief.png">
-                        <panel height="40px" width="350px" childLayout="vertical" marginTop="40px">
-                            <image filename="res/de/fhflensburg/graveyardmanager/images/Kreuz.png" height="32px"
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
                                    width="32px" visibleToMouse="true" align="right">
                                 <effect>
                                     <onClick name="hide" targetElement="window_OrderList2"/>
                                     <onHover name="changeImage"
-                                             active="res/de/fhflensburg/graveyardmanager/images/Kreuz_gedrueckt.png"
-                                             inactive="res/de/fhflensburg/graveyardmanager/images/Kreuz.png"/>
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
                                 </effect>
                             </image>
                         </panel>
@@ -184,10 +151,109 @@
                               font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
                               marginLeft="80px" marginTop="100px" color="#4c4a40" />
                     </panel>
+                    <panel id="window_OrderList" width="400px" height="600px" marginTop="100px"  y="5%"
+                           childLayout="vertical"
+                           backgroundImage="res/de/fhflensburg/graveyardmanager/images/brief.png">
+                        <panel height="40px" width="350px" childLayout="vertical" marginTop="40px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
+                                   width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_OrderList"/>
+                                    <onHover name="changeImage"
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
+                                </effect>
+                            </image>
+                        </panel>
+                        <text wrap="true"
+                              text="Dein erster Auftrag lautet: Lege ein Grab an. Dazu gehst du auf den Button bauen. Wähle das Grab aus und klicke an die Stelle auf der das Grab errichtet werden soll."
+                              font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
+                              marginLeft="80px" marginTop="100px" color="#4c4a40" />
+                    </panel>
+                    <panel backgroundImage="res/de/fhflensburg/graveyardmanager/images/notiz.png" width="400px" height="400px" childLayout="vertical" id="window_gebaeude" y="5%">
+                        <panel height="40px" width="320px" childLayout="vertical" marginTop="45px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
+                                   width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_gebaeude"/>
+                                    <onHover name="changeImage"
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
+                                </effect>
+                            </image>
+                        </panel>
+                        <text wrap="true"
+                              text="In dieser Version ist es noch nicht möglich in Gebäude zu gehen."
+                              font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
+                              marginLeft="40px" color="#4c4a40" marginTop="50px" />
+                    </panel>
+                    <panel backgroundImage="res/de/fhflensburg/graveyardmanager/images/notiz.png" width="400px" height="400px" childLayout="vertical" id="window_personal" y="5%">
+                        <panel height="40px" width="320px" childLayout="vertical" marginTop="45px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
+                                   width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_personal"/>
+                                    <onHover name="changeImage"
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
+                                </effect>
+                            </image>
+                        </panel>
+                        <text wrap="true"
+                              text="In dieser Version ist es noch kein Personal vorhanden."
+                              font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
+                              marginLeft="40px" color="#4c4a40" />
+                    </panel>
+                    <panel backgroundImage="res/de/fhflensburg/graveyardmanager/images/notiz.png" width="400px" height="400px" childLayout="vertical" id="window_telefon" y="5%">
+                        <panel height="40px" width="320px" childLayout="vertical" marginTop="45px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
+                                   width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_telefon"/>
+                                    <onHover name="changeImage"
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
+                                </effect>
+                            </image>
+                        </panel>
+                        <text wrap="true"
+                              text="Das Telefon ist in dieser Version noch nicht vorhaden."
+                              font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
+                              marginLeft="40px" color="#4c4a40"  marginTop="50px" />
+                    </panel>
+                    <panel backgroundImage="res/de/fhflensburg/graveyardmanager/images/Winner.png" width="800px" height="500px" childLayout="vertical" id="window_winner" y="5%">
+                        <panel height="40px" width="630px" childLayout="vertical" marginTop="110px">
+                            <image filename="res/de/fhflensburg/graveyardmanager/images/kreuz.png" height="32px"
+                                   width="32px" visibleToMouse="true" align="right">
+                                <effect>
+                                    <onClick name="hide" targetElement="window_winner"/>
+                                    <onHover name="changeImage"
+                                             active="res/de/fhflensburg/graveyardmanager/images/kreuz_gedrueckt.png"
+                                             inactive="res/de/fhflensburg/graveyardmanager/images/kreuz.png"/>
+                                </effect>
+                            </image>
+                        </panel>
+
+                    </panel>
+                </panel>
+                <panel id="east" align="right" childLayout="vertical" height="100%" width="64px" marginTop="20%"
+                       marginRight="2%">
+                    <image id="mapToggleImage" filename="res/de/fhflensburg/graveyardmanager/images/kompassrose.png"
+                           height="64px" width="64px">
+                        <effect>
+                            <onClick name="fade" start="#a8" end="#a8" targetElement="mapToggleImage"/>
+                            <onHover name="hint" hintText="Minikarte" hintDelay="300"/>
+                        </effect>
+                        <interact onClick="toggleMiniMap()"/>
+                    </image>
+                </panel>
+                <panel id="west" childLayout="absolute-inside" width="100%" x="47px" y="25px" marginTop="5%">
+
                     <!--<control id="window_BuildItems" name="window" title="${locallang.build}" width="500px" height="400px" x="400px" hideOnClose="true">-->
                     <!--<text text="${locallang.build}" style="base-font" color="#eeef" valign="center" width="100%" />-->
                     <!--</control>-->
                 </panel>
+
             </panel>
             <panel id="south" childLayout="horizontal" height="64px" valign="bottom" width="100%" align="center">
                 <panel childLayout="vertical" align="center" width="80%" marginLeft="10%">
@@ -232,7 +298,7 @@
                             </effect>
                             <interact onClick="fon()"/>
                         </image>
-                        <image filename="res/de/fhflensburg/graveyardmanager/images/alterAuftrag.png" height="64px"
+                        <image filename="res/de/fhflensburg/graveyardmanager/images/alter_Auftrag.png" height="64px"
                                width="64px" marginTop="1%" id="curOrdButton">
                             <effect>
                                 <onClick name="fade" start="#a8" end="#a8" targetElement="currOrdButton"/>

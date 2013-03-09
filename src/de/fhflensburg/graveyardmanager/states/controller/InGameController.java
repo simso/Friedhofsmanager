@@ -40,13 +40,13 @@ public class InGameController implements ScreenController
 
 	private Building building;
 
-	NiftyImage[] orderImages = new NiftyImage[2];
+	NiftyImage[] orderImages = new NiftyImage[3];
 
 	private int newOrderImage;
 
 	public boolean newOrdersNoticed;
 
-	public Element[] nonVisibleElementsAtStart = new Element[3];
+	public Element[] nonVisibleElementsAtStart = new Element[6];
 
 	private NiftyImage buildItems;
 
@@ -68,6 +68,11 @@ public class InGameController implements ScreenController
 		nonVisibleElementsAtStart[0] = screen.findElementByName("window_BuildItems");
 		nonVisibleElementsAtStart[1] = screen.findElementByName("window_OrderList");
         nonVisibleElementsAtStart[2] = screen.findElementByName("window_OrderList2");
+        nonVisibleElementsAtStart[3] = screen.findElementByName("window_gebaeude");
+        nonVisibleElementsAtStart[4] = screen.findElementByName("window_personal");
+        nonVisibleElementsAtStart[5] = screen.findElementByName("window_telefon");
+
+
 //		buildItems = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Tombstones.png", false);
 
 	}
@@ -125,6 +130,40 @@ public class InGameController implements ScreenController
 			nonVisibleElementsAtStart[0].show();
 		}
 	}
+
+    public void buildings()
+    {
+        if (nonVisibleElementsAtStart[3].isVisible())
+        {
+            nonVisibleElementsAtStart[3].hide();
+        }
+        else
+        {
+            nonVisibleElementsAtStart[3].show();
+        }
+    }
+    public void staff()
+    {
+        if (nonVisibleElementsAtStart[4].isVisible())
+        {
+            nonVisibleElementsAtStart[4].hide();
+        }
+        else
+        {
+            nonVisibleElementsAtStart[4].show();
+        }
+    }
+    public void fon()
+    {
+        if (nonVisibleElementsAtStart[5].isVisible())
+        {
+            nonVisibleElementsAtStart[5].hide();
+        }
+        else
+        {
+            nonVisibleElementsAtStart[5].show();
+        }
+    }
 
 	public String getCurrentMoney()
 	{
