@@ -46,7 +46,7 @@ public class InGameController implements ScreenController
 
 	public boolean newOrdersNoticed;
 
-	public Element[] nonVisibleElementsAtStart = new Element[6];
+	public Element[] nonVisibleElementsAtStart = new Element[7];
 
 	private NiftyImage buildItems;
 
@@ -71,7 +71,7 @@ public class InGameController implements ScreenController
         nonVisibleElementsAtStart[3] = screen.findElementByName("window_gebaeude");
         nonVisibleElementsAtStart[4] = screen.findElementByName("window_personal");
         nonVisibleElementsAtStart[5] = screen.findElementByName("window_telefon");
-
+        nonVisibleElementsAtStart[6] = screen.findElementByName("window_winner");
 
 //		buildItems = nifty.getRenderEngine().createImage(View.IMAGE_PATH + "Tombstones.png", false);
 
