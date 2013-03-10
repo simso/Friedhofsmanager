@@ -8,9 +8,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/res" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.6" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="libs" level="project" />
+    <orderEntry type="library" name="eventbus-1.4" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
   </component>
 </module>
 

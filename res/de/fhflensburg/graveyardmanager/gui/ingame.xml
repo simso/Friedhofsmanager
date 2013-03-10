@@ -4,7 +4,7 @@
     <useStyles filename="nifty-default-styles.xml"/>
     <useControls filename="nifty-default-controls.xml"/>
 
-    <!--<resourceBundle id="locallang" filename="res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang"/>-->
+    <resourceBundle id="locallang" filename="res/de/fhflensburg/graveyardmanager/gui/dialogs/locallang"/>
 
     <screen id="start" controller="de.fhflensburg.graveyardmanager.states.controller.InGameController">
         <layer id="Hauptebene" childLayout="vertical">
@@ -202,7 +202,7 @@
                         <text wrap="true"
                               text="In dieser Version ist es noch kein Personal vorhanden."
                               font="fonts/Orienta-Regular.ttf" valign="center" width="60%"
-                              marginLeft="40px" color="#4c4a40" />
+                              marginLeft="40px" color="#4c4a40" marginTop="50px" />
                     </panel>
                     <panel backgroundImage="res/de/fhflensburg/graveyardmanager/images/notiz.png" width="400px" height="400px" childLayout="vertical" id="window_telefon" y="5%">
                         <panel height="40px" width="320px" childLayout="vertical" marginTop="45px">
@@ -269,6 +269,7 @@
                         <image id="buildingButton" filename="res/de/fhflensburg/graveyardmanager/images/Buildings.png"
                                height="64px" width="64px" margin="1%">
                             <effect>
+                                <onClick name="fade" start="#a8" end="#a8" targetElement="buildingButton"/>
                                 <onClick name="fade" start="#a8" end="#a8" targetElement="buildingButton"/>
                                 <onHover name="hint" hintText="Gebäude" hintDelay="300"/>
                             </effect>
